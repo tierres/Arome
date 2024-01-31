@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação - Projeto AROMÊ</title>
+</head>
+<body>
+  <h1>Documentação - Projeto AROMÊ</h1>
+  <p>Utilizando Vite, React e TypeScript</p>
+  <hr>
+
+  <ol>
+    <li>
+      Entrei em <strong>https://git-scm.com/download/win</strong>, baixei o <strong>Git</strong> e logo em seguida o instalei no Windows
+    </li>
+    <li>
+      Abri o terminal <strong>CMD</strong> do <strong>Windows</strong> e digitei <strong>git</strong> para terminar a instalação do Git
+    </li>
+    <li>
+      Ainda no terminal configurei o git com o meu nome e e-mail através de <strong>git config --global user.name "Tierres Griep"</strong> e <strong>git config --global user.email "tierresgriep@gmail.com"</strong>
+    </li>
+    <li>
+      No site <strong>https://nodejs.org/en/download/current</strong> baixei o <strong>NodeJS</strong> e logo após o instalei
+    </li>
+    <li>
+      Abri o <strong>CMD</strong> e instalei o <strong>Vite</strong> globalmente com: <strong>npm install -g create-vite
+      </strong>
+    </li>
+    <ul>
+      <li>
+        O <strong>NPM</strong> vem junto ao instalar o <strong>NodeJS</strong>
+      </li>
+    </ul>
+    <li>
+      Dentro da pasta <strong>Arome</strong> rodei <strong>npm create vite@latest</strong> e configurei o projeto da seguinte maneira:
+    </li>
+    <ul>
+      <li>
+        Project name: <strong>arome-ds</strong>
+      </li>
+      <li>
+        Select a framework: <strong>React</strong>
+      </li>
+      <li>
+        Select a variant: <strong>TypeScript</strong>
+      </li>
+    </ul>
+    <li>
+      Entrei na pasta <strong>arome-ds</strong> e rodei <strong>npm install</strong> para terminar de criar o esqueleto do projeto(assim como manda o Vite)
+    </li>
+    <li>
+      Rodei <strong>npm run dev</strong> para abrir o servidor do projeto na minha máquina
+    </li>
+    <li>
+      Apaguei todos os arquivos CSS e a pasta 'assets'
+    </li>
+    <li>
+      Deixei somente a carcaça do arquivo 'App.tsx'
+    </li>
+    <li>
+      Em 'App.tsx' troquei 'export defaul App' por 'export const App = () => {}'
+    </li>
+    <li>
+      Criei as pastas <strong>components</strong> e <strong>screens</strong>
+    </li>
+    <li>
+      Dentro de <strong>components</strong> criei uma pasta para cada componente que formam as páginas e criei uma pasta <strong>'shared'</strong> onde ficam os componentes que são compartilhados entre as páginas
+    </li>
+    <li>
+      Dentro de <strong>screens</strong> criei uma pasta para cada página principal
+    </li>
+    <ul>
+      <li>
+        Essas páginas utilizarão os componentes para formar a página em si
+      </li>
+    </ul>
+    <li>
+      Instalei a biblioteca <strong>React-Router-Dom-V6</strong> com o seguinte comando: <strong>npm install react-router-dom --save</strong>
+    </li>
+    <li>
+      Todos os componentes são do tipo function
+    </li>
+    <li>
+      Eu utilizei o seguinte padrão para todos os componentes:
+    </li>
+    <ul>
+      <li>
+        <strong>export const Header = () => {}</strong>
+      </li>
+    </ul>
+    <li>
+      Comecei a construção do site pela <strong>screen "Home"</strong>
+    </li>
+    <ol>
+      <li>
+        No arquivo <strong>Home.tsx</strong> coloquei os componentes: <strong>Header, SintaOPrazerDoAroma</strong> em ordem de exibição
+      </li>
+      <li>
+        No componente <strong>Header</strong> criei uma pasta <strong>Vetores</strong>
+      </li>
+      <ul>
+        <li>
+          Nessa pasta adicionei todos os vetores da logo do site que baixei do projeto <strong>Figma</strong>
+        </li>
+      </ul>
+      <li>
+        No componente <strong>Header</strong> importei todos os vetores e adicionei eles na renderização
+      </li>
+      <li>
+        Criei um <strong>'Home.css'</strong> para fazer a estilização da página Home e importei no arquivo <strong>Home.tsx</strong>
+      </li>
+      <li>
+        Em <strong>Home.css</strong> criei um estilo para o container do componente Home e importei esse estilo na div que envolve os componentes(em <strong>Home.tsx</strong>)
+      </li>
+    </ol>
+  </ol>
+</body>
+</html>
