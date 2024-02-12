@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+
+}
+
+.img {
+    width: 100%;
+    height: calc(100vh - 133px);
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+.text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: 75px;
+    margin-top:-160px;
+    color: #F0F0F0;
+    font-size: 40px;
+    width: 165px;
+    height: 160px;
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 50%
+    }
+}
+

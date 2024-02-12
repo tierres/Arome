@@ -8,6 +8,7 @@ export const Home = () => {
     <div className="container-home">
       <Header/>
       <SintaOPrazerDoAroma/>
+      <p>btobjo</p>
     </div>
   );
 }

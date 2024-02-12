@@ -1,21 +1,16 @@
-import './Header.css'
-import vetorA from './Vetores/vector-A.svg'
-import vetorR from './Vetores/vector-r.svg'
-import vetorO from './Vetores/vector-o.svg'
-import vetorM from './Vetores/vector-m.svg'
-import vetorE from './Vetores/vector-e.svg'
-import vetorPonto from './Vetores/vector-ponto.svg'
+import classes from './Header.module.css'
+import Logo from './Vetores/vector-logo.svg'
 
 export const Header = () => {
   return(
-    <div className="Header">
-      <img src={vetorA} alt="Vetor A" />
-      <img src={vetorR} alt="Vetor R" />
-      <img src={vetorO} alt="Vetor O" />
-      <img src={vetorM} alt="Vetor M" />
-      <img src={vetorE} alt="Vetor E" />
-      <img src={vetorPonto} alt="Vetor Ponto" />
-      <p>Testando a fonte</p>
-    </div>
+    <header className={classes.header}>
+      <img src={Logo} alt="Vector-Logo" />
+      <div className={classes.links}>
+        <p>LINK LINK LINK LINK</p>
+      </div>
+      <div className={classes.iconsLinks}>
+        <p>ICON ICON ICON</p>
+      </div>
+    </header>
   );
 };
