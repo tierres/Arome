@@ -1,5 +1,5 @@
 import classes from './Header.module.css'
-import Logo from './Vetores/vector-logo.svg'
+import Logo from './Vetores/logo.svg'
 
 export const Header = () => {
   return(
