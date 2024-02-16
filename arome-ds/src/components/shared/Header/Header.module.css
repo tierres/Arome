@@ -1,17 +1,24 @@
 .header {
     display: flex;
     justify-content: space-around;
-    height: 133px
+    height: 133px;
+}
+
+.logo {
+    margin: auto;
 }
 
 .links {
     a {
         text-decoration: none;
-        // add padding ou margin
+        font-size: 15px;
     }
+    display: inline-flex;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .iconsLinks {
-    
+    margin: auto;
 }
 
