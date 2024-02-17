@@ -1,15 +1,15 @@
-.header {
+.headerConteiner {
     display: flex;
     justify-content: space-around;
     height: 133px;
     
 }
 
-.logo {
+.logoConteiner {
     margin: auto;
 }
 
-.links {
+.linksConteiner {
     a {
         text-decoration: none;
         font-size: 18px;
@@ -23,10 +23,15 @@
     
 }
 
-.iconsLinks {
+.iconsLinksConteiner {
     margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-.cart {
-    background-image: url('./Vetores/cart.svg')
+.buttons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }

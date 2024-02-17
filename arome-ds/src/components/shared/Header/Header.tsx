@@ -6,13 +6,13 @@ import User from './Vetores/user.svg'
 
 export const Header = () => {
   return(
-    <header className={classes.header}>
+    <header className={classes.headerConteiner}>
 
-      <div className={classes.logo}>
+      <div className={classes.logoConteiner}>
         <img src={Logo} alt="Vector-Logo" />
       </div>
     
-      <div className={classes.links}>
+      <div className={classes.linksConteiner}>
         <nav>
           <a href=''>SAIBA MAIS</a>
           <a>•</a>
@@ -26,10 +26,16 @@ export const Header = () => {
         </nav>
       </div>
 
-      <div className={classes.iconsLinks}>
-        <button className={classes.cart}></button>
-        <button></button>
-        <button></button>
+      <div className={classes.iconsLinksConteiner}>
+        <button className={classes.buttons}>
+          <img src={Cart} alt="Botão Carrinho" />
+        </button>
+        <button className={classes.buttons}>
+          <img src={Lupa} alt="Botão Pesquisar" />
+        </button>
+        <button className={classes.buttons}>
+          <img src={User} alt="Botão Painel de Usuário" />
+        </button>
       </div>
       
     </header>
