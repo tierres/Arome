@@ -1,5 +1,8 @@
 import classes from './Header.module.css'
 import Logo from './Vetores/logo.svg'
+import Cart from './Vetores/cart.svg'
+import Lupa from './Vetores/lupa.svg'
+import User from './Vetores/user.svg'
 
 export const Header = () => {
   return(
@@ -24,7 +27,9 @@ export const Header = () => {
       </div>
 
       <div className={classes.iconsLinks}>
-        <p>ICON ICON ICON</p>
+        <button className={classes.cart}></button>
+        <button></button>
+        <button></button>
       </div>
       
     </header>
