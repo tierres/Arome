@@ -1,5 +1,9 @@
+import classes from './HighlightedProducts.module.css';
+
 export const HighlightedProducts = () => {
     return(
-        <div></div>
+        <div className={classes.whiteContainer}>
+
+        </div>
     )
 }

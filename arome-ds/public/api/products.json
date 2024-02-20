@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+            "name": "Infusão Valeriana Lomonai",
+            "price": 25
+        },
+        {
+            "name": "Infusão Valeriana Garden",
+            "price": 25
+        },
+        {
+            "name": "Infusão Happy Pumpkin",
+            "price": 36.80
+        },
+        {
+            "name": "Infusão Sangria Tea",
+            "price": 33.10
+        },
+        {
+            "name": "Infusão Cocktail de Frutas",
+            "price": 33.60
+        },
+        {
+            "name": "Infusão Apple Temptation",
+            "price": 33.60
+        },
+        {
+            "name": "Infusão Indian Secret",
+            "price": 34.70
+        },
+        {
+            "name": "Infusão Rooibos La Provence",
+            "price": 60.50
+        },
+        {
+            "name": "Infusão Gracia Blend",
+            "price": 66.50
+        },
+        {
+            "name": "Infusão Orange Kalahari",
+            "price": 56.39
+        }     
+    ]
+}

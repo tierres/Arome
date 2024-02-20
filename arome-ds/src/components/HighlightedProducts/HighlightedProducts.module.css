@@ -1,0 +1,7 @@
+.whiteContainer {
+    background-color: white;
+}
+
+.section {
+    display: flex;
+}
