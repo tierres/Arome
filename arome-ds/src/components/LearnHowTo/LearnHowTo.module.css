@@ -1,22 +1,17 @@
-.greenConteiner {
+.greenContainer {
     background-color: #425B41;
-    margin: auto;
-    position: relative;
-    width: 1349px;
-    height: 356px;
+}
 
+.section {
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .text {
-    width: 638px;
-    height: 100px;
     color: white;
-}
-
-.videoConteiner {
-
 }
 
 .video {
