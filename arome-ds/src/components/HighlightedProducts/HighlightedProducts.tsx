@@ -1,5 +1,6 @@
 import classes from './HighlightedProducts.module.css';
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
+import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard';
 
 
 export const HighlightedProducts = () => {
@@ -10,7 +11,9 @@ export const HighlightedProducts = () => {
                     <h1>Produtos em destaque</h1>
                 </div>
                 <div>
-                    
+                    <LittleProductCard>
+                        children
+                    </LittleProductCard>
                 </div>
             </SectionContainer>
         </div>
