@@ -1,3 +1,10 @@
 .littleProductCardContainer {
-    background-color: white;
+    background-color: #BB66FF;
+    border-color: blue;
+    border-style: dotted;
+}
+
+.superiorDiv {
+    display: flex;
+    flex-direction: column;
 }

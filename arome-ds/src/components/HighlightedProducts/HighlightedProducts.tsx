@@ -6,11 +6,17 @@ import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard
 export const HighlightedProducts = () => {
     return(
         <div className={classes.whiteContainer}>
-            <SectionContainer>
+            <SectionContainer className={classes.section}>
                 <div className={classes.tittle}>
                     <h1>Produtos em destaque</h1>
                 </div>
-                <div>
+                <div className={classes.cards}>
+                    <LittleProductCard>
+                        children
+                    </LittleProductCard>
+                    <LittleProductCard>
+                        children
+                    </LittleProductCard>
                     <LittleProductCard>
                         children
                     </LittleProductCard>

@@ -4,9 +4,14 @@
 
 .section {
     display: flex;
+    flex-direction: column;
 }
 
 .tittle {
     display: flex;
     
+}
+
+.cards {
+    display: flex;
 }

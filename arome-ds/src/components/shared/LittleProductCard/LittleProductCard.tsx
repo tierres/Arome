@@ -11,16 +11,17 @@ export const LittleProductCard = (params: ProductProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
             <div>
-                <img src="" alt="" />
+                <img src="../../../public/api/imgs/infusao-gracia-blend.svg" alt="" />
                 <h4>
                     Infusão Chá do Jane
                 </h4>
             </div>
             <div>
-                Botão de +, botão de favoritar, texto 'A partir de' e preço
+                <button>+</button>
+                <button>S2</button>
+                <p>A partir de</p>
+                <p>R$ 30,50</p>
             </div>
-
-
         </div>    
     )
 }
