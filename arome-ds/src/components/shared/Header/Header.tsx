@@ -7,12 +7,13 @@ import { SectionContainer } from '../SectionContainer/SectionContainer'
 
 export const Header = () => {
   return(
-    <header className={classes.headerConteiner}>   
+    <header className={classes.headerContainer}> 
+      <SectionContainer className={classes.sectionContainer}>  
         <div className={classes.logoConteiner}>
           <img src={Logo} alt="Vector-Logo" />
         </div>
       
-        <div className={classes.linksConteiner}>
+        <div className={classes.linksContainer}>
           <nav>
             <a href=''>SAIBA MAIS</a>
             <a>•</a>
@@ -26,7 +27,7 @@ export const Header = () => {
           </nav>
         </div>
 
-        <div className={classes.iconsLinksConteiner}>
+        <div className={classes.iconsLinksContainer}>
           <button className={classes.buttons}>
             <img src={Cart} alt="Botão Carrinho" />
           </button>
@@ -37,6 +38,7 @@ export const Header = () => {
             <img src={User} alt="Botão Painel de Usuário" />
           </button>
         </div>
+      </SectionContainer>
     </header>
      
   );
