@@ -1,13 +1,11 @@
 .headerContainer {
-    margin: auto;
-    height: 133px;
     background-color: white;
-    display: flex;
 }
 
 .sectionContainer {
+    height: 133px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 100px;
 }
 

@@ -9,7 +9,7 @@ export const Header = () => {
   return(
     <header className={classes.headerContainer}> 
       <SectionContainer className={classes.sectionContainer}>  
-        <div className={classes.logoConteiner}>
+        <div className={classes.logoContainer}>
           <img src={Logo} alt="Vector-Logo" />
         </div>
       
