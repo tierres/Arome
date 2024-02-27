@@ -20,6 +20,12 @@ export const HighlightedProducts = () => {
                     <LittleProductCard>
                         children
                     </LittleProductCard>
+                    <LittleProductCard>
+                        children
+                    </LittleProductCard>
+                    <LittleProductCard>
+                        children
+                    </LittleProductCard>
                 </div>
             </SectionContainer>
         </div>

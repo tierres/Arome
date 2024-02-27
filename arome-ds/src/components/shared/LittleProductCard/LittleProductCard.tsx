@@ -10,17 +10,22 @@ interface ProductProps {
 export const LittleProductCard = (params: ProductProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
-            <div>
+            <div className={classes.topside}>
                 <img src="../../../public/api/imgs/infusao-gracia-blend.svg" alt="" />
                 <h4>
                     Infusão Chá do Jane
                 </h4>
             </div>
-            <div>
-                <button>+</button>
-                <button>S2</button>
-                <p>A partir de</p>
-                <p>R$ 30,50</p>
+            <div className={classes.bottomside}>
+                <div className={classes.bottomsideButtons}>
+                    <button>+</button>
+                    <button>S2</button>
+                </div>
+                <div className={classes.bottomsidePrice}>
+                    <p>A partir de</p>
+                    <p>R$ 30,50</p>
+                </div>
+                
             </div>
         </div>    
     )

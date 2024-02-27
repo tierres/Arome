@@ -4,7 +4,26 @@
     border-style: dotted;
 }
 
-.superiorDiv {
+.topside {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomside {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottomsideButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bottomsidePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
