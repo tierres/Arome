@@ -4,61 +4,61 @@
             "id": 1,
             "name": "Infusão Valeriana Lomonai",
             "price": 25,
-            "image": "./imgs/infusao-valeriana-lomonai.svg"
+            "image": "/imgs/infusao-valeriana-lomonai.svg"
         },
         {
             "id": 2,
             "name": "Infusão Valeriana Garden",
             "price": 25,
-            "image": "./imgs/infusao-valeriana-garden.svg"
+            "image": "/imgs/infusao-valeriana-garden.svg"
         },
         {
             "id": 3,
             "name": "Infusão Happy Pumpkin",
             "price": 36.80,
-            "image": "./imgs/infusao-happy-pumpkin.svg"
+            "image": "/imgs/infusao-happy-pumpkin.svg"
         },
         {
             "id": 4,
             "name": "Infusão Sangria Tea",
             "price": 33.10,
-            "image": "./imgs/infusao-sangria-tea.svg"
+            "image": "/imgs/infusao-sangria-tea.svg"
         },
         {
             "id": 5,
             "name": "Infusão Cocktail de Frutas",
             "price": 33.60,
-            "image": "./imgs/infusao-cocktail-de-frutas.svg"
+            "image": "/imgs/infusao-cocktail-de-frutas.svg"
         },
         {
             "id": 6,
             "name": "Infusão Apple Temptation",
             "price": 33.60,
-            "image": "./imgs/infusao-apple-temptation.svg"
+            "image": "/imgs/infusao-apple-temptation.svg"
         },
         {
             "id": 7,
             "name": "Infusão Indian Secret",
             "price": 34.70,
-            "image": "./imgs/infusao-indian-secret.svg"
+            "image": "/imgs/infusao-indian-secret.svg"
         },
         {
             "id": 8,
             "name": "Infusão Rooibos La Provence",
             "price": 60.50,
-            "image": "./imgs/infusao-rooibos-laprovence.svg"
+            "image": "/imgs/infusao-rooibos-laprovence.svg"
         },
         {
             "id": 9,
             "name": "Infusão Gracia Blend",
             "price": 66.50,
-            "image": "./imgs/infusao-gracia-blend.svg"
+            "image": "/imgs/infusao-gracia-blend.svg"
         },
         {
             "id": 10,
             "name": "Infusão Orange Kalahari",
             "price": 56.39,
-            "image": "./imgs/infusao-orange-kalahari.svg"
+            "image": "/imgs/infusao-orange-kalahari.svg"
         }     
     ]
 }

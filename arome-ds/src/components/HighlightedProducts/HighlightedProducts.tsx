@@ -4,6 +4,8 @@ import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard
 
 
 export const HighlightedProducts = () => {
+    //
+
     return(
         <div className={classes.whiteContainer}>
             <SectionContainer className={classes.section}>
@@ -12,20 +14,15 @@ export const HighlightedProducts = () => {
                 </div>
                 <div className={classes.cards}>
                     <LittleProductCard>
-                        children
+                    </LittleProductCard>
+                    <LittleProductCard >
                     </LittleProductCard>
                     <LittleProductCard>
-                        children
                     </LittleProductCard>
                     <LittleProductCard>
-                        children
                     </LittleProductCard>
                     <LittleProductCard>
-                        children
-                    </LittleProductCard>
-                    <LittleProductCard>
-                        children
-                    </LittleProductCard>
+                    </LittleProductCard >
                 </div>
             </SectionContainer>
         </div>

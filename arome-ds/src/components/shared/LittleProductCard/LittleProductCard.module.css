@@ -16,10 +16,17 @@
     justify-content: flex-start;
 }
 
-.bottomsideButtons {
+.bottomsideButtonsContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.buttons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .bottomsidePrice {
