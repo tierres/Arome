@@ -30,9 +30,9 @@ export const LittleProductCard = (params: ProductProps) => {
                         <img src={FavIcon} />
                     </button>
                 </div>
-                <div className={classes.bottomsidePrice}>
-                    <p>A partir de</p>
-                    <p>R$ 30,50</p>
+                <div className={classes.bottomsidePriceContainer}>
+                    <p className={classes.aPartirDe}>A partir de</p>
+                    <p className={classes.price}>R$ 30,50</p>
                 </div>
                 
             </div>

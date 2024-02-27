@@ -29,8 +29,16 @@
     transition: background-color 0.3s ease;
 }
 
-.bottomsidePrice {
+.bottomsidePriceContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.aPartirDe {
+
+}
+
+.price {
+
 }
