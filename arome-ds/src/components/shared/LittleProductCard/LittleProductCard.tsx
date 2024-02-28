@@ -22,19 +22,18 @@ export const LittleProductCard = (params: ProductProps) => {
                 </h4>
             </div>
             <div className={classes.bottomside}>
-                <div className={classes.bottomsideButtonsContainer}>
+                <div className={classes.bottomsideFirtLine}>
                     <button className={classes.buttons}>
                         <img src={PlusIcon} />
                     </button>
+                    <p className={classes.aPartirDe}>A partir de</p>
+                </div>
+                <div className={classes.bottomsideSecondLine}>
                     <button className={classes.buttons}>
                         <img src={FavIcon} />
                     </button>
-                </div>
-                <div className={classes.bottomsidePriceContainer}>
-                    <p className={classes.aPartirDe}>A partir de</p>
                     <p className={classes.price}>R$ 30,50</p>
-                </div>
-                
+                </div>                
             </div>
         </div>    
     )
