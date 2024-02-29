@@ -1,5 +1,6 @@
 .littleProductCardContainer {
     background-color: white;
+    max-width: 244px;
 }
 
 .topside {
