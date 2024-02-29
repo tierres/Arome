@@ -11,29 +11,12 @@
 
 .bottomside {
     display: flex;
+    justify-content: center;
+}
+
+.buttonsContainer {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.bottomsideFirtLine {
-    display: flex;
-    justify-content: space-around;
-}
-
-.aPartirDe {
-    font-size: 25px;
-}
-
-.bottomsideSecondLine {
-    display: flex;
-    justify-content: space-around;
-}
-
-.price {
-    font-size: 40px;
-    font-weight: bold;
-    color: #425B41;
-    margin: 0;
 }
 
 .buttons {
@@ -41,5 +24,23 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
 
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.aPartirDe {
+    display: flex;
+    font-size: 25px;
+    margin: 0;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #425B41;
+    margin: 0;
 }
