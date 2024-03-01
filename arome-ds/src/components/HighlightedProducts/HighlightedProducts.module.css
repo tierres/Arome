@@ -13,7 +13,7 @@
 
 .tittle {
     display: flex;
-    
+    font-size: larger;
 }
 
 .cards {
