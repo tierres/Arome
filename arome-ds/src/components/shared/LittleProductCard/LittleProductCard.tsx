@@ -17,7 +17,7 @@ export const LittleProductCard = (params: ProductProps) => {
         <div className={classes.littleProductCardContainer}>
             <div className={classes.topside}>
                 <img src="/api/imgs/infusao-gracia-blend.svg" alt="" />
-                <h2>
+                <h2 className={classes.teaName}>
                     Infusão Chá da Albania Red John
                 </h2>
             </div>

@@ -1,6 +1,13 @@
 .littleProductCardContainer {
     background-color: white;
-    max-width: 244px;
+    max-width: 275px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-right: 10px; /* Adiciona margem à direita de cada card */
 }
 
 .topside {
@@ -10,9 +17,13 @@
     align-items: center;
 }
 
+.teaName {
+    text-align: center;
+}
+
 .bottomside {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .buttonsContainer {
@@ -30,7 +41,7 @@
 .priceContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .aPartirDe {

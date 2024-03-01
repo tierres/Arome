@@ -4,7 +4,7 @@ import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard
 
 
 export const HighlightedProducts = () => {
-    //
+    // states -- use effect
 
     return(
         <div className={classes.whiteContainer}>
@@ -19,10 +19,9 @@ export const HighlightedProducts = () => {
                     </LittleProductCard>
                     <LittleProductCard>
                     </LittleProductCard>
-                    <LittleProductCard>
+                    <LittleProductCard >
                     </LittleProductCard>
-                    <LittleProductCard>
-                    </LittleProductCard >
+                    
                 </div>
             </SectionContainer>
         </div>
