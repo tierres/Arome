@@ -8,8 +8,10 @@ export const FindNearestStore = () => {
         <div className={classes.redContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
-                    <h1 className={classes.text}>Encontre a Aromê mais perto<br/>de <strong>VOCÊ</strong></h1>
-                    <img src={locationIcon} alt="" />
+                    <h1 className={classes.text}>
+                        Encontre a Aromê mais perto<br/>de <strong className={classes.strongText}>VOCÊ</strong>
+                        <img src={locationIcon} alt="" />
+                    </h1>
                 </div>
                 <div className={classes.storeImage}>
                     <img src={storeImg} alt="" />
