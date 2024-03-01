@@ -8,9 +8,9 @@ export const HighlightedProducts = () => {
 
     return(
         <div className={classes.whiteContainer}>
-            <SectionContainer className={classes.section}>
-                <div className={classes.tittle}>
-                    <h1>Produtos em destaque</h1>
+            <SectionContainer className={classes.sectionContainer}>
+                <div>
+                    <h1 className={classes.tittle}>Produtos em destaque</h1>
                 </div>
                 <div className={classes.cards}>
                     <LittleProductCard>
@@ -21,7 +21,6 @@ export const HighlightedProducts = () => {
                     </LittleProductCard>
                     <LittleProductCard >
                     </LittleProductCard>
-                    
                 </div>
             </SectionContainer>
         </div>

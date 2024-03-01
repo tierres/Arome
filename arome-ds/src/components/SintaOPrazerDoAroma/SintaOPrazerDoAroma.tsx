@@ -1,5 +1,5 @@
 import classes from './SintaOPrazerDoAroma.module.css'
-import sintaImg from './sinta-img-hd.jpg'
+import sintaImg from './vectors/sinta-img-hd.jpg'
 
 
 export const SintaOPrazerDoAroma = () => {

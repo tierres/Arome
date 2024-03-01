@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import classes from './LittleProductCard.module.css'
-import PlusIcon from './Vectors/plus-icon.svg'
-import FavIcon from './Vectors/fav-icon.svg'
+import PlusIcon from './vectors/plus-icon.svg'
+import FavIcon from './vectors/fav-icon.svg'
 
 interface ProductProps {
     tea: {
@@ -18,7 +18,7 @@ export const LittleProductCard = (params: ProductProps) => {
             <div className={classes.topside}>
                 <img src="/api/imgs/infusao-gracia-blend.svg" alt="" />
                 <h2 className={classes.teaName}>
-                    Infusão Chá da Albania Red John
+                    Infusão Red Tea
                 </h2>
             </div>
             <div className={classes.bottomside}>

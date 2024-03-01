@@ -1,8 +1,8 @@
 import classes from './Header.module.css'
-import Logo from './Vectors/logo.svg'
-import Cart from './Vectors/cart.svg'
-import Lupa from './Vectors/lupa.svg'
-import User from './Vectors/user.svg'
+import Logo from './vectors/logo.svg'
+import Cart from './vectors/cart.svg'
+import Lupa from './vectors/lupa.svg'
+import User from './vectors/user.svg'
 import { SectionContainer } from '../SectionContainer/SectionContainer'
 
 export const Header = () => {
