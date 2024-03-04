@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 408px;
 }
 
 .logoContainer {
@@ -17,7 +19,6 @@
 .linksContainer {
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 
 .navs {
@@ -33,5 +34,6 @@
 }
 
 .paymentsAndSocialContainer {
-
+    display: flex;
+    justify-content: space-between;
 }

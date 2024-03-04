@@ -33,7 +33,12 @@ export const Footer = () => {
                     </nav>
                 </div>
                 <div className={classes.paymentsAndSocialContainer}>
-                    formas de pagamento / redes sociais
+                    <div>
+                        <p>FORMAS DE PAGAMENTO</p>
+                    </div>
+                    <div>
+                        <p>REDES SOCIAIS</p>
+                    </div>
                 </div>
             </SectionContainer>
         </footer>

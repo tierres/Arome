@@ -3,7 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 
 export const LearnHowTo = () => {
     return(
-        <div className={classes.greenContainer}>
+        <div className={classes.learnHowToContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
                     <h1 className={classes.text}>Aprenda a montar o seu chá<br/>GOURMET</h1>
