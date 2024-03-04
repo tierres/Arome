@@ -7,7 +7,7 @@ export const HighlightedProducts = () => {
     // states -- use effect
 
     return(
-        <div className={classes.whiteContainer}>
+        <div className={classes.highlightedProductsContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
                     <h1 className={classes.tittle}>Produtos em destaque</h1>

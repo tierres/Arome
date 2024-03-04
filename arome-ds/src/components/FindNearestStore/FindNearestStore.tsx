@@ -5,7 +5,7 @@ import locationIcon from './vectors/location-icon.svg'
 
 export const FindNearestStore = () => {
     return(
-        <div className={classes.redContainer}>
+        <div className={classes.findNearestStoreContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
                     <h1 className={classes.text}>
