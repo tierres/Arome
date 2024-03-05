@@ -1,6 +1,8 @@
 import classes from './HighlightedProducts.module.css';
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard';
+import LeftArrow from './vectors/left-arrow.svg'
+import RightArrow from './vectors/right-arrow.svg'
 
 
 export const HighlightedProducts = () => {

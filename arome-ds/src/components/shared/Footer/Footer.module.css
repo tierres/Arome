@@ -35,7 +35,7 @@
     /* Aqui estou fazendo a borda a direita de cada 'nav': */
     flex: 1;
     padding: 10px;
-    border-right: 1px solid #ccc; 
+    border-right: 1px solid #cccccc; 
 }
 
 .navs:last-child {
@@ -50,12 +50,14 @@
 .leftContainer {
     display: flex;
     flex-direction: column;
-    margin-right: 410px;
+    margin-right: 330px;
 }
 
-.paymentsLogo {
+.paymentsLogos {
     display: flex;
-    justify-content: space-between;
+    img {
+        margin-right: 10px;
+    }
 }
 
 .rightContainer {
@@ -65,7 +67,9 @@
 
 .socialLogos {
     display: flex;
-    justify-content: space-between;
+    img {
+        margin-right: 10px;
+    }
 }
 
 .Xlogo {
