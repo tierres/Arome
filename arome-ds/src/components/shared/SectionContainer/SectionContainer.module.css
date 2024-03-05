@@ -4,3 +4,10 @@
     max-width: 2350px;
     padding: 0 64px;
 }
+
+/*
+Não é bom utilizar com o nosso componente SectionContainer:
+
+align-items: center;
+margin: auto;
+*/

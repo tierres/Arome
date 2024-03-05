@@ -22,16 +22,14 @@
 .navs {
     display: flex;
     flex-direction: column;
-    /* talvez colocar aqui um 'margin-right: 30px;' */
 
     a {
         text-decoration: none;
         font-size: 14px;
         font-weight: normal;
-        
         color: white;
     }
-    /* Aqui estou fazendo a borda a direita de cada 'nav': */
+    /* Aqui estou fazendo a borda a esquerda de cada 'nav': */
     padding: 20px 0;
     padding-left: 10px;
     border-left: 1px solid #ccc; 
@@ -39,8 +37,8 @@
 
 .navs:first-child {
     padding-left: 0;
-      border-left: none; /* Aqui estou removendo a borda do último 'nav' */
-    }
+    border-left: none; /* Aqui estou removendo a borda a esquerda do primeiro 'nav' */
+}
 
 .paymentsAndSocialContainer {
     display: flex;
