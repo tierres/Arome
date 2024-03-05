@@ -5,12 +5,11 @@
 .sectionContainer {
     height: 133px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logoContainer {
-    margin: auto;
     
 }
 
@@ -22,15 +21,14 @@
         margin-right: 15px;
         color: #000000;
     }
-    margin: auto;
     display: inline-flex;
     justify-content: space-around;
 }
 
 .iconsLinksContainer {
-    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .buttons {

@@ -20,6 +20,7 @@ export const LittleProductCard = (params: ProductProps) => {
                 <h2 className={classes.teaName}>
                     Infusão Red Tea
                 </h2>
+                <br/>
             </div>
             <div className={classes.bottomside}>
                 <div className={classes.buttonsContainer}>

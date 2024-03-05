@@ -1,7 +1,3 @@
-.highlightedProductsContainer {
-    background-color: white;
-}
-
 .sectionContainer {
     display: flex;
     flex-direction: column;
@@ -11,8 +7,23 @@
     padding-bottom: 45px;
 }
 
+.highlightedProductsContainer {
+    background-color: white;
+}
+
 .tittle {
     font-size: xx-large
+}
+
+.arrowsPlusCards {
+    display: flex; 
+}
+
+.arrowsButtons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .cards {

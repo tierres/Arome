@@ -62,6 +62,6 @@ export const Footer = () => {
                     </div>
                 </div>
             </SectionContainer>
-        </footer>
+        </footer>    
     )
 }

@@ -14,17 +14,25 @@ export const HighlightedProducts = () => {
                 <div>
                     <h1 className={classes.tittle}>Produtos em destaque</h1>
                 </div>
-                <div className={classes.cards}>
-                    <LittleProductCard>
-                    </LittleProductCard>
-                    <LittleProductCard >
-                    </LittleProductCard>
-                    <LittleProductCard>
-                    </LittleProductCard>
-                    <LittleProductCard >
-                    </LittleProductCard>
+                <div className={classes.arrowsPlusCards}>
+                    <button className={classes.arrowsButtons}>
+                        <img src={LeftArrow} alt="" />
+                    </button>
+                    <div className={classes.cards}>
+                        <LittleProductCard>
+                        </LittleProductCard>
+                        <LittleProductCard >
+                        </LittleProductCard>
+                        <LittleProductCard>
+                        </LittleProductCard>
+                        <LittleProductCard >
+                        </LittleProductCard>
+                    </div>
+                    <button className={classes.arrowsButtons}>
+                        <img src={RightArrow} alt="" />
+                    </button>
                 </div>
-            </SectionContainer>
+            </SectionContainer>         
         </div>
     )
 }

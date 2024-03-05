@@ -1,4 +1,6 @@
 .sectionContainer{
     margin: auto;
-    max-width: 3000px;
+    width: 100%;
+    max-width: 2350px;
+    padding: 0 64px;
 }

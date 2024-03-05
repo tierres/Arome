@@ -6,13 +6,12 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     height: 408px;
 }
 
 .logoContainer {
-    
+    align-self: center;
 }
 
 .linksContainer {
@@ -29,17 +28,18 @@
         text-decoration: none;
         font-size: 14px;
         font-weight: normal;
-        margin-right: 15px;
+        
         color: white;
     }
     /* Aqui estou fazendo a borda a direita de cada 'nav': */
-    flex: 1;
-    padding: 10px;
-    border-right: 1px solid #cccccc; 
+    padding: 20px 0;
+    padding-left: 10px;
+    border-left: 1px solid #ccc; 
 }
 
-.navs:last-child {
-      border-right: none; /* Aqui estou removendo a borda do último 'nav' */
+.navs:first-child {
+    padding-left: 0;
+      border-left: none; /* Aqui estou removendo a borda do último 'nav' */
     }
 
 .paymentsAndSocialContainer {
