@@ -48,6 +48,7 @@
 .leftContainer {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     margin-right: 330px;
 }
 
@@ -61,6 +62,7 @@
 .rightContainer {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .socialLogos {
