@@ -6,7 +6,12 @@ import RightArrow from './vectors/right-arrow.svg'
 
 
 export const HighlightedProducts = () => {
-    // states -- use effect
+    // states -- use effect:
+    async function getProducts(){
+        let response = await fetch('/api/products.json') 
+        let data = await response.json() 
+        return data;
+      }
 
     return(
         <div className={classes.highlightedProductsContainer}>

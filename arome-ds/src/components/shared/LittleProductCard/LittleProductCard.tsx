@@ -10,7 +10,7 @@ interface ProductProps {
         price: number
         img: string
     }
-   }
+}
    
 export const LittleProductCard = (params: ProductProps) => {
     return(
