@@ -4,14 +4,16 @@ import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard
 import LeftArrow from './vectors/left-arrow.svg'
 import RightArrow from './vectors/right-arrow.svg'
 
+async function getProducts(){
+    let response = await fetch('/api/products.json') 
+    let data = await response.json() 
+    return data;
+  }
 
 export const HighlightedProducts = () => {
-    // states -- use effect:
-    async function getProducts(){
-        let response = await fetch('/api/products.json') 
-        let data = await response.json() 
-        return data;
-      }
+    // state
+    
+    // useEffect
 
     return(
         <div className={classes.highlightedProductsContainer}>
@@ -24,14 +26,13 @@ export const HighlightedProducts = () => {
                         <img src={LeftArrow} alt="" />
                     </button>
                     <div className={classes.cards}>
-                        <LittleProductCard>
-                        </LittleProductCard>
-                        <LittleProductCard >
-                        </LittleProductCard>
-                        <LittleProductCard>
-                        </LittleProductCard>
-                        <LittleProductCard >
-                        </LittleProductCard>
+                        {/* utilizar um .map no LittleProductCard */}
+                        {ProductCarousel.map(product => (
+                            <LittleProductCard
+                                key={product.id}
+                                tea={product}
+                            />
+                        ))}
                     </div>
                     <button className={classes.arrowsButtons}>
                         <img src={RightArrow} alt="" />
