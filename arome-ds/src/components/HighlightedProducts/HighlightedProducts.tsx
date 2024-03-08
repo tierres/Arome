@@ -3,6 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard';
 import LeftArrow from './vectors/left-arrow.svg'
 import RightArrow from './vectors/right-arrow.svg'
+import { useEffect } from 'react';
 
 async function getProducts(){
     let response = await fetch('/api/products.json') 
@@ -11,9 +12,13 @@ async function getProducts(){
   }
 
 export const HighlightedProducts = () => {
-    // state
-    
-    // useEffect
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        getProducts().then(data => {
+            setProducts(data['products'])
+        })
+    }, [])
 
     return(
         <div className={classes.highlightedProductsContainer}>
