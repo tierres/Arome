@@ -8,7 +8,7 @@ interface ProductProps {
         id: number
         name: string
         price: number
-        img: string
+        image: string
     }
 }
    
@@ -16,9 +16,9 @@ export const LittleProductCard = (params: ProductProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
             <div className={classes.topside}>
-                <img src="/api/imgs/infusao-gracia-blend.svg" alt="" />
+                <img src={params.tea.image} alt="" />
                 <h2 className={classes.teaName}>
-                    Infusão Red Tea
+                    {params.tea.name}
                 </h2>
                 <br/>
             </div>
@@ -33,7 +33,7 @@ export const LittleProductCard = (params: ProductProps) => {
                 </div>
                 <div className={classes.priceContainer}>
                     <p className={classes.aPartirDe}>A partir de</p>
-                    <p className={classes.price}>R$30,50</p>
+                    <p className={classes.price}>R${params.tea.price.toFixed(2)}</p>
                 </div>            
             </div>
         </div>    

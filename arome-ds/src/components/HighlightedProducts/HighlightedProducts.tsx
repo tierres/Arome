@@ -3,7 +3,9 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard';
 import LeftArrow from './vectors/left-arrow.svg'
 import RightArrow from './vectors/right-arrow.svg'
+
 import { useEffect } from 'react';
+import { useState } from 'react';
 
 async function getProducts(){
     let response = await fetch('/api/products.json') 
@@ -32,10 +34,10 @@ export const HighlightedProducts = () => {
                     </button>
                     <div className={classes.cards}>
                         {/* utilizar um .map no LittleProductCard */}
-                        {ProductCarousel.map(product => (
+                        {products.map(tea => (
                             <LittleProductCard
-                                key={product.id}
-                                tea={product}
+                                key={tea.id}
+                                tea={tea}
                             />
                         ))}
                     </div>

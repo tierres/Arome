@@ -1,6 +1,8 @@
 .littleProductCardContainer {
     background-color: white;
     max-width: 275px;
+    display: flex;
+    flex-direction: column;
 
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -15,6 +17,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
 }
 
 .teaName {
