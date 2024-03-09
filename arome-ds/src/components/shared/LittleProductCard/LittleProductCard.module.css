@@ -20,6 +20,11 @@
     flex: 1;
 }
 
+.teaImage {
+    height: 244px;
+    width: 244px;
+}
+
 .teaName {
     text-align: center;
     font-size: x-large;

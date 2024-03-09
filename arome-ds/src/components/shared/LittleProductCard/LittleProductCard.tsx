@@ -16,7 +16,7 @@ export const LittleProductCard = (params: ProductProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
             <div className={classes.topside}>
-                <img src={params.tea.image} alt="" />
+                <img className={classes.teaImage} src={params.tea.image} alt="" />
                 <h2 className={classes.teaName}>
                     {params.tea.name}
                 </h2>

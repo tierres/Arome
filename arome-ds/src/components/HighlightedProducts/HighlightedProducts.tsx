@@ -33,7 +33,6 @@ export const HighlightedProducts = () => {
                         <img src={LeftArrow} alt="" />
                     </button>
                     <div className={classes.cards}>
-                        {/* utilizar um .map no LittleProductCard */}
                         {products.map(tea => (
                             <LittleProductCard
                                 key={tea.id}
