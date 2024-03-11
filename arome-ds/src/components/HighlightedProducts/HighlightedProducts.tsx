@@ -22,6 +22,8 @@ export const HighlightedProducts = () => {
         })
     }, [])
 
+    const highlightedProducts = products.slice(4, 8)
+
     return(
         <div className={classes.highlightedProductsContainer}>
             <SectionContainer className={classes.sectionContainer}>
@@ -33,7 +35,7 @@ export const HighlightedProducts = () => {
                         <img src={LeftArrow} alt="" />
                     </button>
                     <div className={classes.cards}>
-                        {products.map(tea => (
+                        {highlightedProducts.map(tea => (
                             <LittleProductCard
                                 key={tea.id}
                                 tea={tea}
