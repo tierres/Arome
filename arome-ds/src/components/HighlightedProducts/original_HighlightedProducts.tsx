@@ -7,9 +7,6 @@ import RightArrow from './vectors/right-arrow.svg'
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-import React from "react";
-import Slider from "react-slick";
-
 async function getProducts(){
     let response = await fetch('/api/products.json') 
     let data = await response.json() 
@@ -25,15 +22,7 @@ export const HighlightedProducts = () => {
         })
     }, [])
 
-    //const highlightedProducts = products.slice(4, 8)
-
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      };
+    const highlightedProducts = products.slice(4, 8)
 
     return(
         <div className={classes.highlightedProductsContainer}>
@@ -46,16 +35,12 @@ export const HighlightedProducts = () => {
                         <img src={LeftArrow} alt="" />
                     </button>
                     <div className={classes.cards}>
-                        <Slider {...settings}>
-                            <div>
-                                {products.map(tea => (
-                                        <LittleProductCard
-                                            key={tea.id}
-                                            tea={tea}
-                                        />
-                                ))}
-                            </div>
-                        </Slider>
+                        {highlightedProducts.map(tea => (
+                                <LittleProductCard
+                                    key={tea.id}
+                                    tea={tea}
+                                />
+                        ))}
                     </div>
                     <button className={classes.arrowsButtons}>
                         <img src={RightArrow} alt="" />
