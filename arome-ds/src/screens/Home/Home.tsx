@@ -9,7 +9,7 @@ import './Home.css'
 
 export const Home = () => {
   return (
-    <div className='homeContainer'>
+    <div className='homeScreen'>
       <Header/>
       <SintaOPrazerDoAroma/>
       <LearnHowTo/>

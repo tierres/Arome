@@ -1,5 +1,6 @@
 import { SectionContainer } from "../SectionContainer/SectionContainer"
 import classes from './Footer.module.css'
+
 import AromeWhiteLogo from './vectors/arome-white-logo.svg'
 import VisaLogo from './vectors/visa-logo.svg'
 import MasterCardLogo from './vectors/mastercard-logo.svg'
