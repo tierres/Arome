@@ -9,12 +9,12 @@
     align-items: center;
 }
 
-.logoContainer {
-    
+.activeLink {
+        border: 1px solid black;
 }
 
 .linksContainer {
-    a {
+    a, span {
         text-decoration: none;
         font-size: 18px;
         font-weight: bold;
@@ -36,4 +36,8 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.linksContainer a.active {
+    border: 1px solid black;
 }

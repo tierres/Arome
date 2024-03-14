@@ -1,29 +1,48 @@
 import classes from './Header.module.css'
+
 import Logo from './vectors/logo.svg'
 import Cart from './vectors/cart.svg'
 import Lupa from './vectors/lupa.svg'
 import User from './vectors/user.svg'
+
 import { SectionContainer } from '../SectionContainer/SectionContainer'
+
+import { Link, NavLink } from 'react-router-dom'
+
+interface ICustomLinksProps {
+  to: string
+  children: string
+}
+
+const CustomLink = (params: ICustomLinksProps) => {
+  return(
+    <NavLink 
+      className={({isActive}) => isActive ? classes.activeLink : ''} 
+      to={params.to}>{params.children}</NavLink>
+  )
+}
 
 export const Header = () => {
   return(
     <header className={classes.headerContainer}> 
       <SectionContainer className={classes.sectionContainer}>  
         <div className={classes.logoContainer}>
-          <img src={Logo} alt="Vector-Logo" />
+          <Link to='/'>
+            <img src={Logo} alt="Vector-Logo" />
+          </Link>
         </div>
       
         <div className={classes.linksContainer}>
           <nav>
-            <a href=''>SAIBA MAIS</a>
-            <a>•</a>
-            <a href=''>CHÁS</a>
-            <a>•</a>
-            <a href=''>UTENSÍLIOS</a>
-            <a>•</a>
-            <a href=''>MONTE O SEU</a>
-            <a>•</a>
-            <a href=''>AROME CLUB</a>
+            <CustomLink to='/'>SAIBA MAIS</CustomLink>
+            <span>•</span>
+            <CustomLink to='/'>CHÁS</CustomLink>
+            <span>•</span>
+            <CustomLink to='/'>UTENSÍLIOS</CustomLink>
+            <span>•</span>
+            <CustomLink to='/'>MONTE O SEU</CustomLink>
+            <span>•</span>
+            <CustomLink to='/becomeamember'>AROME CLUB</CustomLink>
           </nav>
         </div>
 

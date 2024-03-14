@@ -7,7 +7,6 @@ import RightArrow from './vectors/right-arrow.svg'
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-import React from "react";
 import Slider from "react-slick";
 
 async function getProducts(){
@@ -16,8 +15,15 @@ async function getProducts(){
     return data;
   }
 
+interface ITea {
+    id: number
+    name: string
+    price: number
+    image: string
+}
+
 export const HighlightedProducts = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState<ITea[]>([])
 
     useEffect(() => {
         getProducts().then(data => {
@@ -28,11 +34,19 @@ export const HighlightedProducts = () => {
     //const highlightedProducts = products.slice(4, 8)
 
     var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: (
+                    <img src={LeftArrow} alt="" />
+            ),
+            nextArrow: (
+                    <img src={RightArrow} alt="" />
+            ),
+            dotsClass: 'slick-dots ' + classes.dots
       };
 
     return(
@@ -42,24 +56,25 @@ export const HighlightedProducts = () => {
                     <h1 className={classes.tittle}>Produtos em destaque</h1>
                 </div>
                 <div className={classes.arrowsPlusCards}>
-                    <button className={classes.arrowsButtons}>
+                    {/* <button className={classes.arrowsButtons}>
                         <img src={LeftArrow} alt="" />
-                    </button>
-                    <div className={classes.cards}>
-                        <Slider {...settings}>
-                            <div>
+                    </button> */}
+   
+                        <Slider {...settings} className={classes.slider} >
                                 {products.map(tea => (
                                         <LittleProductCard
                                             key={tea.id}
                                             tea={tea}
                                         />
+                                        // <div>
+                                        //     <h1>{tea.name}</h1>
+                                        // </div>
                                 ))}
-                            </div>
                         </Slider>
-                    </div>
-                    <button className={classes.arrowsButtons}>
+        
+                    {/* <button className={classes.arrowsButtons}>
                         <img src={RightArrow} alt="" />
-                    </button>
+                    </button> */}
                 </div>
             </SectionContainer>         
         </div>

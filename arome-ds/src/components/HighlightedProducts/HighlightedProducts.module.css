@@ -5,6 +5,7 @@
     align-items: center;
     padding-top: 45px;
     padding-bottom: 45px;
+    gap: 35px;
 }
 
 .highlightedProductsContainer {
@@ -17,6 +18,8 @@
 
 .arrowsPlusCards {
     display: flex; 
+    align-self: stretch;
+    flex-direction: column;
 }
 
 .arrowsButtons {
@@ -26,7 +29,23 @@
     transition: background-color 0.3s ease;
 }
 
-.cards {
+/* .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
+} */
+
+.slider {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.slider .slick-track {
+    display: flex;
+}
+
+.dots {
+    bottom: -33px !important;
 }
