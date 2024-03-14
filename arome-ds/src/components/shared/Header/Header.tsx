@@ -18,7 +18,8 @@ const CustomLink = (params: ICustomLinksProps) => {
   return(
     <NavLink 
       className={({isActive}) => isActive ? classes.activeLink : ''} 
-      to={params.to}>{params.children}</NavLink>
+      to={params.to}>{params.children}
+    </NavLink>
   )
 }
 
@@ -34,13 +35,13 @@ export const Header = () => {
       
         <div className={classes.linksContainer}>
           <nav>
-            <CustomLink to='/'>SAIBA MAIS</CustomLink>
+            <CustomLink to='/about'>SAIBA MAIS</CustomLink>
             <span>•</span>
-            <CustomLink to='/'>CHÁS</CustomLink>
+            <CustomLink to='/teas'>CHÁS</CustomLink>
             <span>•</span>
-            <CustomLink to='/'>UTENSÍLIOS</CustomLink>
+            <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>
             <span>•</span>
-            <CustomLink to='/'>MONTE O SEU</CustomLink>
+            <CustomLink to='/buildyour'>MONTE O SEU</CustomLink>
             <span>•</span>
             <CustomLink to='/becomeamember'>AROME CLUB</CustomLink>
           </nav>

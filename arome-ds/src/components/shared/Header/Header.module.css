@@ -9,10 +9,6 @@
     align-items: center;
 }
 
-.activeLink {
-        border: 1px solid black;
-}
-
 .linksContainer {
     a, span {
         text-decoration: none;
@@ -20,9 +16,15 @@
         font-weight: bold;
         margin-right: 15px;
         color: #000000;
+
     }
-    display: inline-flex;
-    justify-content: space-around;
+}
+
+.activeLink {
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 4px;
+    
 }
 
 .iconsLinksContainer {
@@ -38,6 +40,3 @@
     transition: background-color 0.3s ease;
 }
 
-.linksContainer a.active {
-    border: 1px solid black;
-}

@@ -4,7 +4,7 @@ import { HowItWorks } from "../../components/HowItWorks/HowItWorks.tsx";
 import { ClubForm } from "../../components/ClubForm/ClubForm.tsx";
 import { Footer } from "../../components/shared/Footer/Footer.tsx"
 
-import './BecomeAMember.module.css'
+import './BecomeAMember.css'
 
 export const BecomeAMember = () => {
   return (
