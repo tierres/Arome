@@ -6,12 +6,12 @@ export const HowItWorks = () => {
   return(
     <div className={classes.howItWorksContainer}>
       <SectionContainer className={classes.sectionContainer}>
-        <div className={classes.text}>
+        <div className={classes.textContainer}>
           <h1>
             Entenda
           </h1>
           <br />
-          <p>
+          <p className={classes.paragraph}>
             Fazendo parte do nosso clube, você paga 
             um valor mensal e recebe na sua casa cinco 
             amostras de chás que são sucesso de vendas. 

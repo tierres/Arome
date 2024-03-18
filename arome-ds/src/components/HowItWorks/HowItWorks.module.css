@@ -1,6 +1,6 @@
 .howItWorksContainer {
     background-color: white;
-    height: 423px;
+    
 }
 
 .sectionContainer {
@@ -9,10 +9,14 @@
     align-items: center;
 }
 
-.text {
+.textContainer {
     color: black;
     font-size: xx-large;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+}
+
+.paragraph {
+    margin: 0 60px;
 }
