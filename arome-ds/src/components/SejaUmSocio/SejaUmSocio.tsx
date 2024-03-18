@@ -1,5 +1,5 @@
 import classes from './SejaUmSocio.module.css'
-import socioImg from './vectors/work-in-progress-4.jpg'
+import socioImg from './vectors/canva-1.jpg'
 
 export const SejaUmSocio = () => {
   return(

@@ -1,7 +1,6 @@
 .socioContainer {
     position: relative;
-    height: 1300px; /* Altura desejada do elemento */
-    height: calc(100vh - 133px);  
+
     }
 
 .img {
