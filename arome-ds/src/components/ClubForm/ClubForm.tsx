@@ -11,15 +11,15 @@ export const ClubForm = () => {
           </h1>
         </div>
         <div>
-            <p>
-              Nome
-              Email
-              Telefone
-              senha e 
-              endereço
-            </p>
+          
         </div>
       </SectionContainer>
     </div>
   );
 };
+
+              // Nome
+              // Email
+              // Telefone
+              // Endereço 
+              // Senha

@@ -1,9 +1,8 @@
-import { ReactNode } from 'react'
 import classes from './LittleProductCard.module.css'
 import PlusIcon from './vectors/plus-icon.svg'
 import FavIcon from './vectors/fav-icon.svg'
 
-interface ProductProps {
+interface IProductProps {
     tea: {
         id: number
         name: string
@@ -12,7 +11,7 @@ interface ProductProps {
     }
 }
    
-export const LittleProductCard = (params: ProductProps) => {
+export const LittleProductCard = (params: IProductProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
             <div className={classes.topside}>

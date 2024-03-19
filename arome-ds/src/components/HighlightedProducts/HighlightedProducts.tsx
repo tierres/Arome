@@ -31,8 +31,6 @@ export const HighlightedProducts = () => {
         })
     }, [])
 
-    //const highlightedProducts = products.slice(4, 8)
-
     var settings = {
             dots: true,
             infinite: true,
@@ -56,25 +54,14 @@ export const HighlightedProducts = () => {
                     <h1 className={classes.tittle}>Produtos em destaque</h1>
                 </div>
                 <div className={classes.arrowsPlusCards}>
-                    {/* <button className={classes.arrowsButtons}>
-                        <img src={LeftArrow} alt="" />
-                    </button> */}
-   
-                        <Slider {...settings} className={classes.slider} >
+                        <Slider {...settings} className={classes.slider}>
                                 {products.map(tea => (
                                         <LittleProductCard
                                             key={tea.id}
                                             tea={tea}
                                         />
-                                        // <div>
-                                        //     <h1>{tea.name}</h1>
-                                        // </div>
                                 ))}
                         </Slider>
-        
-                    {/* <button className={classes.arrowsButtons}>
-                        <img src={RightArrow} alt="" />
-                    </button> */}
                 </div>
             </SectionContainer>         
         </div>
