@@ -1,0 +1,14 @@
+.clubFormContainer {
+
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.tittle {
+    text-align: center;
+    font-size: xx-large;
+    margin: 80px;
+}
