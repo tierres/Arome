@@ -50,8 +50,8 @@ export const ClubForm = () => {
             Faça parte
           </h1>
         </div>
-        <div className={classes.form}>
-          <form onSubmit={handleSubmit}>
+        <div>
+          <form className={classes.form} onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">Nome: </label>
               <input type="text" name='name' value={fields.name} onChange={handleFieldsChange}/>

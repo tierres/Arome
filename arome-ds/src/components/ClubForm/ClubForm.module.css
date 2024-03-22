@@ -10,9 +10,13 @@
 .tittle {
     text-align: center;
     font-size: xx-large;
-    margin: 80px;
+    margin: 50px;
 }
 
 .form {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/*8 
