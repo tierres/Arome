@@ -1,5 +1,5 @@
 .clubFormContainer {
-
+    
 }
 
 .sectionContainer {
@@ -14,9 +14,13 @@
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+}
+
+.formDiv {
+    flex: 1;
 }
 
 /* 

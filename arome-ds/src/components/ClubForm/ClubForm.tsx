@@ -52,23 +52,23 @@ export const ClubForm = () => {
         </div>
         <div>
           <form className={classes.form} onSubmit={handleSubmit}>
-            <div>
+            <div className={classes.formDiv}>
               <label htmlFor="name">Nome: </label>
               <input type="text" name='name' value={fields.name} onChange={handleFieldsChange}/>
             </div>
-            <div>
+            <div className={classes.formDiv}>
               <label htmlFor="email">E-mail: </label>
               <input type="text" name='email' value={fields.email} onChange={handleFieldsChange}/>
             </div>
-            <div>
+            <div className={classes.formDiv}>
               <label htmlFor="phone">Telefone: </label>
               <input type="text" name='phone' value={fields.phone} onChange={handleFieldsChange}/>
             </div>
-            <div>
+            <div className={classes.formDiv}>
               <label htmlFor="address">Endereço: </label>
               <input type="text" name='address' value={fields.address} onChange={handleFieldsChange}/>
             </div>
-            <div>
+            <div className={classes.formDiv}>
               <label htmlFor="password">Senha: </label>
               <input type="text" name='password' value={fields.password} onChange={handleFieldsChange}/>
             </div>
