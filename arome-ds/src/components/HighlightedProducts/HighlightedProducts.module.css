@@ -1,3 +1,7 @@
+.highlightedProductsContainer {
+    background-color: white;
+}
+
 .sectionContainer {
     display: flex;
     flex-direction: column;
@@ -6,10 +10,6 @@
     padding-top: 45px;
     padding-bottom: 45px;
     gap: 35px;
-}
-
-.highlightedProductsContainer {
-    background-color: white;
 }
 
 .tittle {
