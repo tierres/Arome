@@ -14,36 +14,12 @@
 }
 
 .form {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-around !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formDiv {
+    margin: 5px;
     flex: 1;
 }
-
-/* 
-
-Eu:
-Estranho. Pois ao aplicar 'display: flex' no 'form' deveria ter aplicado as 'div' filhas, não?
-
-ChatGPT:
-Sim, você está absolutamente correto. Se você aplicar display: flex; ao formulário (<form>), todas as <div> filhas diretas do formulário também serão tratadas como contêineres flexíveis, herdando as propriedades de layout flexíveis do pai. Isso ocorre porque o valor display: flex; é herdado pelos elementos filhos diretos.
-
-Portanto, se você aplicou display: flex; ao formulário e ainda assim as <div> filhas diretas estão com display: block;, há algo interferindo na herança da propriedade display.
-
-Aqui estão algumas coisas que você pode verificar:
-
-Confira a Especificidade do Seletor:
-
-Verifique se não há regras CSS que estão sendo aplicadas mais especificamente às <div> filhas diretas do formulário, o que pode estar substituindo a propriedade display: flex;. Por exemplo, se você tem uma regra CSS mais específica para as <div> que anula a propriedade display, isso pode causar esse comportamento.
-Outras Regras CSS:
-
-Certifique-se de que não há outras regras CSS que possam estar afetando o display das <div> filhas diretas do formulário. Pode haver outras regras CSS que estão sendo aplicadas a essas <div> que estão anulando a herança de display: flex;.
-Regras CSS Inline ou Inline-Block:
-
-Verifique se há regras CSS aplicadas diretamente às <div> filhas dentro do HTML (por exemplo, através de estilos inline ou por meio da propriedade display: inline; ou display: inline-block;). Essas regras podem estar substituindo o valor de display herdado.
-Certifique-se de investigar esses pontos para entender por que a propriedade display: flex; não está sendo herdada pelas <div> filhas diretas do formulário. Se necessário, você pode usar as ferramentas de desenvolvimento do navegador para inspecionar as regras CSS aplicadas às <div> e encontrar possíveis conflitos ou substituições de propriedades. 
-
-*/
