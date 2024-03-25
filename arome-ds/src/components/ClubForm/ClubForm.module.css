@@ -26,8 +26,8 @@
     }
     input {
         border: 1px solid black;
-        border-radius: 14px;
-        padding: 3px;
+        border-radius: 16px;
+        padding-left: 10px;
         width: 520px;
         height: 34px;
     }
