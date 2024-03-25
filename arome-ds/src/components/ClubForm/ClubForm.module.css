@@ -1,5 +1,5 @@
 .clubFormContainer {
-    
+    margin-bottom: 50px;
 }
 
 .sectionContainer {
@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .formDiv {
@@ -26,8 +25,13 @@
     align-items: center;
     label {
         margin-right: 10px;
+        width: 70px;
     }
     input {
-        margin-left: auto;
+        border: 1px solid black;
+        border-radius: 14px;
+        padding: 3px;
+        width: 520px;
+        height: 34px;
     }
 }
