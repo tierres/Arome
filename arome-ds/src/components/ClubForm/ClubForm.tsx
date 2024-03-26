@@ -60,12 +60,12 @@ export const ClubForm = () => {
             <div className={classes.formDiv}>
               <label htmlFor="email">E-mail: </label>
               <br />
-              <input type="text" name='email' value={fields.email} onChange={handleFieldsChange}/>
+              <input type="email" name='email' value={fields.email} onChange={handleFieldsChange}/>
             </div>
             <div className={classes.formDiv}>
               <label htmlFor="phone">Telefone: </label>
               <br />
-              <input type="text" name='phone' value={fields.phone} onChange={handleFieldsChange}/>
+              <input type="tel" name='phone' value={fields.phone} onChange={handleFieldsChange}/>
             </div>
             <div className={classes.formDiv}>
               <label htmlFor="address">Endereço: </label>
@@ -79,7 +79,10 @@ export const ClubForm = () => {
             </div>
             <br />
             <br />
-            <input className={classes.submitButton} type='submit' value="Comece"/>
+            <button className={classes.submitButton} type='submit'>
+              Comece
+            </button>
+            
           </form>
         </div>
       </SectionContainer>
