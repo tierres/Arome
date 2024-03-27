@@ -55,12 +55,12 @@ export const ClubForm = () => {
             <div className={classes.formDiv}>
               <label htmlFor="name">Nome: </label>
               <br />
-              <input type="text" name='name' value={fields.name} onChange={handleFieldsChange}/>
+              <input type="text" name='name' value={fields.name} onChange={handleFieldsChange} required/>
             </div>
             <div className={classes.formDiv}>
               <label htmlFor="email">E-mail: </label>
               <br />
-              <input type="email" name='email' value={fields.email} onChange={handleFieldsChange}/>
+              <input type="email" name='email' value={fields.email} onChange={handleFieldsChange} required/>
             </div>
             <div className={classes.formDiv}>
               <label htmlFor="phone">Telefone: </label>
@@ -70,12 +70,13 @@ export const ClubForm = () => {
             <div className={classes.formDiv}>
               <label htmlFor="address">Endereço: </label>
               <br />
-              <input type="text" name='address' value={fields.address} onChange={handleFieldsChange}/>
+              {/* Configurar para autocompletar o endereço colocando CEP */}
+              <input type="text" name='address' value={fields.address} onChange={handleFieldsChange} required/>
             </div>
             <div className={classes.formDiv}>
               <label htmlFor="password">Senha: </label>
               <br />
-              <input type="text" name='password' value={fields.password} onChange={handleFieldsChange}/>
+              <input type="password" name='password' value={fields.password} onChange={handleFieldsChange} required/>
             </div>
             <br />
             <br />
