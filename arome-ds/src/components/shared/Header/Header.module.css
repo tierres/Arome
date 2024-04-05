@@ -9,16 +9,14 @@
     align-items: center;
 }
 
-.linksContainer {
-    a, span {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
-        margin-right: 15px;
-        color: #000000;
-        height: 25px;
-        display: inline-block;
-    }
+.linksContainerItem {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+    color: #000000;
+    height: 25px;
+    display: inline-block;
 }
 
 .activeLink {

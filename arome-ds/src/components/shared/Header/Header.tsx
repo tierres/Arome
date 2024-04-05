@@ -15,13 +15,25 @@ interface ICustomLinksProps {
 }
 
 const CustomLink = (params: ICustomLinksProps) => {
-  return(
-    <NavLink 
-      className={({isActive}) => isActive ? classes.activeLink : ''} 
-      to={params.to}>{params.children}
+  return (
+    <NavLink
+      className={({ isActive }) => classes.linksContainerItem + ' ' + (isActive ? classes.activeLink : "")}
+      // a linha 20 eh igual a isso:
+
+      // className={function (navLinksParams) {
+      //   const isActive = navLinksParams.isActive
+      //        ou
+      //   const { isActive: possoEscolherONome } = navLinksParams
+
+      //   if (isActive === true) return classes.activeLink
+      //   else return ''
+      // }}
+      to={params.to}
+    >
+      {params.children}
     </NavLink>
-  )
-}
+  );
+};
 
 export const Header = () => {
   return(
@@ -36,13 +48,13 @@ export const Header = () => {
         <div className={classes.linksContainer}>
           <nav>
             <CustomLink to='/about'>SAIBA MAIS</CustomLink>
-            <span>•</span>
+            <span className={classes.linksContainerItem}>•</span>
             <CustomLink to='/teas'>CHÁS</CustomLink>
-            <span>•</span>
+            <span className={classes.linksContainerItem}>•</span>
             <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>
-            <span>•</span>
+            <span className={classes.linksContainerItem}>•</span>
             <CustomLink to='/buildyour'>MONTE O SEU</CustomLink>
-            <span>•</span>
+            <span className={classes.linksContainerItem}>•</span>
             <CustomLink to='/becomeamember'>AROME CLUB</CustomLink>
           </nav>
         </div>
