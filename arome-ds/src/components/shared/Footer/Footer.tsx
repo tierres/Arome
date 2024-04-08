@@ -12,6 +12,17 @@ import TwitterLogo from './vectors/twitter-logo.svg'
 import Xlogo from './vectors/x-logo.png'
 import YoutubeLogo from './vectors/youtube-logo.svg'
 
+interface ICustomAnchor {
+    children: string
+    to?: string
+}
+
+const CustomAnchor = (params: ICustomAnchor) => {
+    return (
+        <a className={classes.navsAnchors} href={params.to}>{params.children}</a>
+    )
+}
+
 export const Footer = () => {
     return(
         <footer className={classes.footerContainer}>
@@ -21,19 +32,19 @@ export const Footer = () => {
                 </div>
                 <div className={classes.linksContainer}>
                     <nav className={classes.navs}>
-                        <a href="">A AROMÊ</a>
-                        <a href="">SEGURANÇA</a>
-                        <a href="">PAGAMENTO</a>
-                        <a href="">POLÍTICA DE PRIVACIDADE</a>
+                        <CustomAnchor>A AROMÊ</CustomAnchor>
+                        <CustomAnchor>SEGURANÇA</CustomAnchor>
+                        <CustomAnchor>PAGAMENTO</CustomAnchor>
+                        <CustomAnchor>POLÍTICA DE PRIVACIDADE</CustomAnchor>
                     </nav>
                     <nav className={classes.navs}>
-                        <a href="">SEJA SÓCIO</a>
-                        <a href="">FALE CONOSCO</a>
-                        <a href="">TROCAS E DEVOLUÇÕES</a>
+                        <CustomAnchor>SEJA SÓCIO</CustomAnchor>
+                        <CustomAnchor>FALE CONOSCO</CustomAnchor>
+                        <CustomAnchor>TROCAS E DEVOLUÇÕES</CustomAnchor>
                     </nav>
                     <nav className={classes.navs}>
-                        <a href="">ENTREGA E PRAZOS</a>
-                        <a href="">TRABALHE CONOSCO</a>
+                        <CustomAnchor>ENTREGA E PRAZOS</CustomAnchor>
+                        <CustomAnchor>TRABALHE CONOSCO</CustomAnchor>
                     </nav>
                     <nav className={classes.navs}>
                         <a>ENTRE EM CONTATO</a>

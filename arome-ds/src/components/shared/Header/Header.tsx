@@ -9,16 +9,16 @@ import { SectionContainer } from '../SectionContainer/SectionContainer'
 
 import { Link, NavLink } from 'react-router-dom'
 
-interface ICustomLinksProps {
+interface ICustomLinks {
   to: string
   children: string
 }
 
-const CustomLink = (params: ICustomLinksProps) => {
+const CustomLink = (params: ICustomLinks) => {
   return (
     <NavLink
       className={({ isActive }) => classes.linksContainerItem + ' ' + (isActive ? classes.activeLink : "")}
-      // a linha 20 eh igual a isso:
+      // a linha 20 é igual a isso:
 
       // className={function (navLinksParams) {
       //   const isActive = navLinksParams.isActive

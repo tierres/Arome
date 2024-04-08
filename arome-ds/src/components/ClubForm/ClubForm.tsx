@@ -53,30 +53,30 @@ export const ClubForm = () => {
         <div>
           <form className={classes.form} onSubmit={handleSubmit}>
             <div className={classes.formDiv}>
-              <label htmlFor="name">Nome: </label>
+              <label className={classes.formLabel} htmlFor="name">Nome: </label>
               <br />
-              <input type="text" name='name' value={fields.name} onChange={handleFieldsChange} required/>
+              <input className={classes.formInput} type="text" name='name' value={fields.name} onChange={handleFieldsChange} required/>
             </div>
             <div className={classes.formDiv}>
-              <label htmlFor="email">E-mail: </label>
+              <label className={classes.formLabel} htmlFor="email">E-mail: </label>
               <br />
-              <input type="email" name='email' value={fields.email} onChange={handleFieldsChange} required/>
+              <input className={classes.formInput} type="email" name='email' value={fields.email} onChange={handleFieldsChange} required/>
             </div>
             <div className={classes.formDiv}>
-              <label htmlFor="phone">Telefone: </label>
+              <label className={classes.formLabel} htmlFor="phone">Telefone: </label>
               <br />
-              <input type="tel" name='phone' value={fields.phone} onChange={handleFieldsChange}/>
+              <input className={classes.formInput} type="tel" name='phone' value={fields.phone} onChange={handleFieldsChange}/>
             </div>
             <div className={classes.formDiv}>
-              <label htmlFor="address">Endereço: </label>
+              <label className={classes.formLabel} htmlFor="address">Endereço: </label>
               <br />
               {/* Configurar para autocompletar o endereço colocando CEP */}
-              <input type="text" name='address' value={fields.address} onChange={handleFieldsChange} required/>
+              <input className={classes.formInput} type="text" name='address' value={fields.address} onChange={handleFieldsChange} required/>
             </div>
             <div className={classes.formDiv}>
-              <label htmlFor="password">Senha: </label>
+              <label className={classes.formLabel} htmlFor="password">Senha: </label>
               <br />
-              <input type="password" name='password' value={fields.password} onChange={handleFieldsChange} required/>
+              <input className={classes.formInput} type="password" name='password' value={fields.password} onChange={handleFieldsChange} required/>
             </div>
             <br />
             <br />

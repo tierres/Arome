@@ -21,16 +21,18 @@
 
 .formDiv {
     margin: 10px;
-    label {
-        font-size: x-large;
-    }
-    input {
-        border: 1px solid black;
-        border-radius: 16px;
-        padding-left: 10px;
-        width: 520px;
-        height: 34px;
-    }
+}
+
+.formLabel {
+    font-size: x-large;
+}
+
+.formInput {
+    border: 1px solid black;
+    border-radius: 16px;
+    padding-left: 10px;
+    width: 520px;
+    height: 34px;
 }
 
 .submitButton {

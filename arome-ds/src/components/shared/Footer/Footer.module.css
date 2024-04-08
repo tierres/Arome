@@ -22,17 +22,17 @@
 .navs {
     display: flex;
     flex-direction: column;
-
-    a {
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: normal;
-        color: white;
-    }
     /* Aqui estou fazendo a borda a esquerda de cada 'nav': */
     padding: 20px 0;
     padding-left: 10px;
     border-left: 1px solid #ccc; 
+}
+
+.navsAnchors {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
 }
 
 .navs:first-child {
