@@ -54,9 +54,6 @@
 
 .paymentsLogos {
     display: flex;
-    img {
-        margin-right: 10px;
-    }
 }
 
 .rightContainer {
@@ -67,11 +64,13 @@
 
 .socialLogos {
     display: flex;
-    img {
-        margin-right: 10px;
-    }
+}
+
+.logo {
+    margin-right: 10px;
 }
 
 .Xlogo {
     height: 32px;
+    margin-right: 10px;
 }
