@@ -13,7 +13,8 @@
 }
 
 .tittle {
-    font-size: xx-large
+    font-size: xx-large;
+    font-weight: 400;
 }
 
 .arrowsPlusCards {
