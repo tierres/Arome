@@ -7,7 +7,7 @@ export const HowItWorks = () => {
     <div className={classes.howItWorksContainer}>
       <SectionContainer className={classes.sectionContainer}>
         <div className={classes.textContainer}>
-          <h1>
+          <h1 className={classes.tittle}>
             Entenda
           </h1>
           <br />

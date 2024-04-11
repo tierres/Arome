@@ -10,13 +10,20 @@
 }
 
 .textContainer {
-    color: black;
-    font-size: xx-large;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+.tittle {
+    color: black;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
 .paragraph {
+    color: black;
+    font-size: x-large;
+    font-weight: 400;
     margin: 0 60px;
 }

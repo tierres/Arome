@@ -74,3 +74,13 @@
     height: 32px;
     margin-right: 10px;
 }
+
+.email {
+    transition: text-decoration 0.3s;
+    text-decoration: none; 
+    color: #c56967; 
+}
+
+.email:hover {
+    text-decoration: underline;
+}

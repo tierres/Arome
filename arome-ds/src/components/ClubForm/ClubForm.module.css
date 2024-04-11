@@ -11,6 +11,8 @@
 .tittle {
     text-align: center;
     font-size: xx-large;
+    font-weight: 500;
+    padding-bottom: 40px;
 }
 
 .form {
