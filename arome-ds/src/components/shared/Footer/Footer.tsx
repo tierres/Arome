@@ -53,8 +53,7 @@ export const Footer = () => {
                     <nav className={classes.navs}>
                         <CustomAnchor to="">ENTRE EM CONTATO</CustomAnchor>
                         <a className={classes.email} href="mailto:contato@arome.com.br">contato@arome.com.br</a>
-                        <CustomAnchor>FALE CONOSCO</CustomAnchor>
-                        <span>(53) 3283-3026</span>
+                        <span className={classes.phone}>(53) 3283-3026</span>
                     </nav>
                 </div>
                 <div className={classes.paymentsAndSocialContainer}>

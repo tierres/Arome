@@ -84,3 +84,7 @@
 .email:hover {
     text-decoration: underline;
 }
+
+.phone {
+    color: #c56967;
+}
