@@ -10,22 +10,17 @@
     object-position: 50% 70%;
 }
 
-/* .text {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-left: 160px;
-    margin-top:-250px;
-    color: #F0F0F0;
-    font-size: 40px;
-    font-weight: regular;
-    width: 165px;
-    height: 160px;
-} */
-
 @media (max-width: 768px) {
     .img {
         width: 50%
     }
 }
 
+
+
+
+
+
+
+
+/* Tierres Romig Griep */
