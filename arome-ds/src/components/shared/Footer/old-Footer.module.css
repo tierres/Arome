@@ -1,0 +1,90 @@
+.footerContainer {
+    background-color: black;
+}
+
+.sectionContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 408px;
+}
+
+.logoContainer {
+    align-self: center;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navs {
+    display: flex;
+    flex-direction: column;
+    /* Aqui estou fazendo a borda a esquerda de cada 'nav': */
+    padding: 20px 0;
+    padding-left: 10px;
+    border-left: 1px solid #ccc; 
+}
+
+.navsAnchors {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}
+
+.navs:first-child {
+    padding-left: 0;
+    border-left: none; /* Aqui estou removendo a borda a esquerda do primeiro 'nav' */
+}
+
+.paymentsAndSocialContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-right: 330px;
+}
+
+.paymentsLogos {
+    display: flex;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.socialLogos {
+    display: flex;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.Xlogo {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.email {
+    transition: text-decoration 0.3s;
+    text-decoration: none; 
+    color: #c56967; 
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.phone {
+    color: #c56967;
+}
