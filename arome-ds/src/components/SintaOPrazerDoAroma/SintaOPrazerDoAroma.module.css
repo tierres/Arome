@@ -10,7 +10,7 @@
     object-position: 50% 70%;
 }
 
-.text {
+/* .text {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -21,7 +21,7 @@
     font-weight: regular;
     width: 165px;
     height: 160px;
-}
+} */
 
 @media (max-width: 768px) {
     .img {
