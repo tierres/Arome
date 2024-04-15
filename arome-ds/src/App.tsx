@@ -17,10 +17,10 @@ export const App = () => {
         {/*colocar o HEADER aqui */}
         <Routes>
           <Route path="/" element={(<Home />)} />
-          <Route path='/becomeamember' element={(<BecomeAMember />)} />
-          <Route path="/buildyour" element={(<BuildYour />)} />
+          <Route path='/become-a-member' element={(<BecomeAMember />)} />
+          <Route path="/build-your" element={(<BuildYour />)} />
           <Route path="/cart" element={(<Cart />)} />
-          <Route path="/productdetails" element={(<ProductDetails />)} />
+          <Route path="/product-details" element={(<ProductDetails />)} />
           <Route path="/teas" element={(<Teas />)} />
           <Route path='/*' element={<Home />} />
         </Routes>

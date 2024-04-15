@@ -53,9 +53,9 @@ export const Header = () => {
             <span className={classes.linksContainerItem}>•</span>
             <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>
             <span className={classes.linksContainerItem}>•</span>
-            <CustomLink to='/buildyour'>MONTE O SEU</CustomLink>
+            <CustomLink to='/build-your'>MONTE O SEU</CustomLink>
             <span className={classes.linksContainerItem}>•</span>
-            <CustomLink to='/becomeamember'>AROME CLUB</CustomLink>
+            <CustomLink to='/become-a-member'>AROME CLUB</CustomLink>
           </nav>
         </div>
 

@@ -42,7 +42,7 @@ export const Footer = () => {
                         <CustomAnchor>POLÍTICA DE PRIVACIDADE</CustomAnchor>
                     </nav>
                     <nav className={classes.navs}>
-                        <CustomAnchor to="/becomeamember">SEJA SÓCIO</CustomAnchor>
+                        <CustomAnchor to="/become-a-member">SEJA SÓCIO</CustomAnchor>
                         <CustomAnchor>FALE CONOSCO</CustomAnchor>
                         <CustomAnchor>TROCAS E DEVOLUÇÕES</CustomAnchor>
                     </nav>
@@ -80,3 +80,5 @@ export const Footer = () => {
         </footer>    
     )
 }
+
+// oi

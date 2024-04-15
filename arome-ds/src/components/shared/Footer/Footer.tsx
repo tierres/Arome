@@ -11,33 +11,26 @@ import FacebookLogo from './vectors/facebook-logo.svg'
 import Xlogo from './vectors/x-logo.png'
 import YoutubeLogo from './vectors/youtube-logo.svg'
 
-interface ICustomAnchor {
-    to?: string
-    children: string
+interface ICustomNavAnchor {
+    label: string
+    to: string
 }
 
 interface ICustomNav {
     children: string
-}
-
-const CustomAnchor = (params: ICustomAnchor) => {
-    return (
-        <a 
-            className={classes.navsAnchors} 
-            href={ typeof params.to === 'string' ? params.to : '' }
-        >
-            {params.children}
-        </a>
-    )
+    anchors: ICustomNavAnchor[]
 }
 
 const CustomNav = (params: ICustomNav) => {
     return (
-        <div>
-            <p>{params.children}</p>
-            <nav>
-                
-            </nav>
+        <div className={classes.customNav}>
+            <h1 className={classes.footerTittles}>{params.children}</h1>
+
+            {params.anchors.map((anchor, index) => (
+                <a className={classes.customNavAnchors} key={index} href={anchor.to}>
+                    {anchor.label}
+                </a>
+            ))}    
         </div>
     )
 }
@@ -47,35 +40,48 @@ export const Footer = () => {
         <footer className={classes.footerContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div className={classes.upSide}>
-                    <div className={classes.reducedLogo}>
+                    <div className={classes.upSideLeft}>
                         <img src={ReducedLogo} alt="Aromê" />
                     </div>
-                    <div className={classes.institutional}>
-                        <p className={classes.tittles}>INSTITUCIONAL</p>
-                        <nav>
-                            <CustomAnchor>A Aromê</CustomAnchor>
-                            <CustomAnchor>Pagamentos</CustomAnchor>
-                            <CustomAnchor>Política de privacidade</CustomAnchor>
-                            <CustomAnchor>Segurança</CustomAnchor>
-                            <CustomAnchor>Seja sócio</CustomAnchor>
-                            <CustomAnchor>Seja um franqueado</CustomAnchor>
-                            <CustomAnchor>Trocas e devoluções</CustomAnchor>
-                        </nav>
-                    </div>
-                    <div className={classes.contact}>
-                        <p className={classes.tittles}>CONTATO</p>
-                        <nav>
 
-                        </nav>
-                    </div>
-                    <div className={classes.paymentsAndSocial}>
-                        <div className={classes.socialLogos}>
-                            <p className={classes.tittles}>REDES SOCIAIS</p>
+                    <div className={classes.upSideRight}>
+                        <CustomNav anchors={[{label: "A Aromê", to: ""}, {label: "Pagamentos", to: ""}, {label: "Política de Privacidade", to: ""}, {label: "Segurança", to: ""}, {label: "Seja sócio", to: "/become-a-member"}, {label: "Seja um franqueado", to: ""}, {label: "Trocas e devoluções", to: ""}]}>
+                            INSTITUCIONAL
+                        </CustomNav>
+                        <CustomNav anchors={[{label: "contato@arome.com.br", to: "mailto:contato@arome.com.br"}, {label: "(53) 98144-3026", to: ""}]}>
+                            CONTATO
+                        </CustomNav>
+        
+
+                        <div className={classes.paymentsAndSocialContainer}>
+                            <div className={classes.socialContainer}>
+                                <h3 className={classes.footerTittles}>REDES SOCIAIS</h3>
+                                <div className={classes.logosContainer}>
+                                    <a href="https://www.instagram.com/arome/">
+                                        <img className={classes.logo} src={InstagramLogo} alt="Instagram Logo" />
+                                    </a>
+                                    <a href="https://pt-br.facebook.com/arome/">
+                                        <img className={classes.logo} src={FacebookLogo} alt="Facebook Logo" />
+                                    </a>
+                                    <a href="https://twitter.com/arome">
+                                        <img className={classes.Xlogo} src={Xlogo} alt="X Logo" />
+                                    </a>
+                                    <a href="https://www.youtube.com/user/arome">
+                                        <img className={classes.logo} src={YoutubeLogo} alt="Youtube Logo" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div className={classes.paymentsContainer}>
+                                <h3 className={classes.footerTittles}>FORMAS DE PAGAMENTO</h3>
+                                <div className={classes.logosContainer}>
+                                        <img className={classes.logo} src={VisaLogo} alt="Visa Logo" />
+                                        <img className={classes.logo} src={MasterCardLogo} alt="MasterCard Logo" />
+                                        <img className={classes.logo} src={EloLogo} alt="Elo Logo" />
+                                        <img className={classes.logo} src={BoletoLogo} alt="Boleto Logo" />
+                                </div>
+                            </div>
                         </div>
-                        <div className={classes.paymentsLogos}>
-                            <p className={classes.tittles}>FORMAS DE PAGAMENTO</p>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
                 <div className={classes.bottomSide}>
                     <p>
