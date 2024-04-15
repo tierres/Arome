@@ -1,3 +1,23 @@
 .footerContainer {
     background-color: black;
 }
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.upSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.tittles {
+    color: #848484;
+}
+
+.bottomSide {
+    color: #848484;
+}
