@@ -1,9 +1,27 @@
 import classes from './ClubForm.module.css'
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer';
 import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod';
+
+const clubMemberSchema = z.object({
+  name: z.string().min(3),
+  email: z.string(),
+  phone: z.string(),
+  address: z.string(),
+  password: z.string()
+})
+
+type ClubMembersSchema = z.infer<typeof clubMemberSchema>
 
 export const ClubForm = () => {
-    const { register, handleSubmit, errors } = useForm()
+    const { register, handleSubmit } = useForm<ClubMembersSchema>({
+      resolver: zodResolver(clubMemberSchema),
+    })
+
+    function handleClubMember(data: ClubMembersSchema) {
+      console.log(data)
+    }
 
   return(
     <div className={classes.clubFormContainer}>
@@ -14,32 +32,31 @@ export const ClubForm = () => {
           </h1>
         </div>
         <div>
-          <form className={classes.form} onSubmit={handleSubmit}>
+          <form className={classes.form} onSubmit={handleSubmit(handleClubMember)}>
             <div className={classes.formDiv}>
               <label className={classes.formLabel} htmlFor="name">Nome: </label>
               <br />
-              <input className={classes.formInput} type="text" name='name' value={fields.name} onChange={handleFieldsChange} ref={register({ required: true })} />
+              <input className={classes.formInput} {...register('name')} />
             </div>
             <div className={classes.formDiv}>
               <label className={classes.formLabel} htmlFor="email">E-mail: </label>
               <br />
-              <input className={classes.formInput} type="email" name='email' value={fields.email} onChange={handleFieldsChange} ref={register({ required: true })} />
+              <input className={classes.formInput} {...register('email')} />
             </div>
             <div className={classes.formDiv}>
               <label className={classes.formLabel} htmlFor="phone">Telefone: </label>
               <br />
-              <input className={classes.formInput} type="tel" name='phone' value={fields.phone} onChange={handleFieldsChange} ref={register({ required: true })}/>
+              <input className={classes.formInput} {...register('phone')} />
             </div>
             <div className={classes.formDiv}>
               <label className={classes.formLabel} htmlFor="address">Endereço: </label>
               <br />
-              {/* Configurar para autocompletar o endereço colocando CEP */}
-              <input className={classes.formInput} type="text" name='address' value={fields.address} onChange={handleFieldsChange} ref={register({ required: true })} />
+              <input className={classes.formInput} {...register('address')} />
             </div>
             <div className={classes.formDiv}>
               <label className={classes.formLabel} htmlFor="password">Senha: </label>
               <br />
-              <input className={classes.formInput} type="password" name='password' value={fields.password} onChange={handleFieldsChange} ref={register({ required: true })} />
+              <input className={classes.formInput} {...register('password')} />
             </div>
             <br />
             <br />
