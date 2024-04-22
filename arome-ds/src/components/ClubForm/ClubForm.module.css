@@ -38,7 +38,7 @@
 }
 
 .formInput:focus {
-    border-color: #425B41;
+    border: 3px solid #425B41;
     outline: none;
 }
 
