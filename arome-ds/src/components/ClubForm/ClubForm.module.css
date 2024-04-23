@@ -38,8 +38,26 @@
 }
 
 .formInput:focus {
-    border: 3px solid #425B41;
+    border: 2px solid #425B41;
     outline: none;
+}
+
+.formInputErrors {
+    border: 1px solid red;
+    border-radius: 16px;
+    padding-left: 10px;
+    width: 520px;
+    height: 34px;
+}
+
+.formInputErrors:focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+.errorsMessage {
+    color: red;
+    padding-top: 5px;
 }
 
 .submitButton {
@@ -58,15 +76,5 @@
     height: 52px;
 }
 
-.errorsMessage {
-    color: red;
-    padding-top: 5px;
-}
 
-.formInputErrors {
-    border: 1px solid red;
-    border-radius: 16px;
-    padding-left: 10px;
-    width: 520px;
-    height: 34px;
-}
+
