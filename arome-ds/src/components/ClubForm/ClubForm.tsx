@@ -8,7 +8,7 @@ import CircleX from './vectors/circle-x.svg';
 const clubMemberSchema = z.object({
   name: z.string().min(3, "*O nome deve ter pelo menos 3 letras")
     .nonempty("O nome é necessário para o cadastro")
-    .regex(/^[A-Za-z]+$/i, "Only letters are allowed"),
+    .regex(/^[A-Za-z]+$/i, "Apenas letras são permitidas"),
   email: z.string().email("*O e-mail deve ser válido"),
   phone: z.string(),
   address: z.string(),
