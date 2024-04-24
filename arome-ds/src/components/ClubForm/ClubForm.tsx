@@ -16,6 +16,24 @@ const clubMemberSchema = z.object({
 
 type ClubMembersSchema = z.infer<typeof clubMemberSchema>
 
+interface ICustomDivForm {
+  children: string
+}
+
+const CustomDivForm = (params: ICustomDivForm) => {
+  return (
+    <div className={classes.formDiv}>
+      <label className={classes.formLabel} htmlFor="name">*Nome: </label>
+      <br />
+      <input className={classes.formInput + ' ' + (formState.errors.name ? classes.formInputErrors : "")} {...register('name')} />
+
+      {formState.errors.name && (
+      <p className={classes.errorsMessage}>{formState.errors.name.message}</p>
+      )}
+  </div>
+  )
+}
+
 export const ClubForm = () => {
     const { register, handleSubmit , formState } = useForm<ClubMembersSchema>({
       resolver: zodResolver(clubMemberSchema),
