@@ -112,4 +112,4 @@ export const ClubForm = () => {
   );
 };
 
-// Tierres Griep - Sat - 14h18
+// Tierres Griep - Aromê
