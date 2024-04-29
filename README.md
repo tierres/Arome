@@ -2,6 +2,10 @@
 
 <p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href=''>Acesse a demo.</a>- em desenvolvimento... 🚧</p> 
 
+## 💡 Objetivo
+
+<p>Esse E-commerce está sendo produzido através desse <a href='https://www.figma.com/file/f3fkNm6wy74DNAVnucpb6TUD/site-arome?type=design&node-id=0%3A1&mode=design&t=HVve7kprLR3uc6fX-1'>projeto figma.</a></p>
+
 ![Layout do E-commerce - 1](screenshot_1.png)
 
  
