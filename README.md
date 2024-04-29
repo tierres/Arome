@@ -1,6 +1,6 @@
 # 🍵 Aromê
 
-<p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href=''>Acesse a demo.</a>- em desenvolvimento... 🚧</p> 
+<p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href=''>Acesse a demo.</a> - em desenvolvimento... 🚧</p> 
 
 ## 💡 Objetivo
 
@@ -23,3 +23,8 @@
 <br />
 <br />
 ![Layout do E-commerce - 1](screenshot_3.png)
+
+
+## 🚧 Status do projeto
+### Frontend: Em desenvolvimento...
+### Backend: ...
