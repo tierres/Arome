@@ -9,6 +9,7 @@
 ### 💻 Website
 
 <ul>
+ <li>Vite</li>
  <li>React</li>
 </ul>
 
