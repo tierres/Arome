@@ -5,7 +5,12 @@
 ![Layout do E-commerce - 1](screenshot_1.png)
 
  
-# Tecnologias empregadas
+## 🔧 Tecnologias empregadas
+### 💻 Website
+
+<ul>
+ <li>React</li>
+</ul>
 
 
 ![Layout do E-commerce - 1](screenshot_2.png)
