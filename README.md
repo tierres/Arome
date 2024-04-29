@@ -1,4 +1,4 @@
-# 🍵 Aromê
+# 🍵 Aromê  ...em desenvolvimento... 🚧
 
 <p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href=''>Acesse a demo.</a></p> 
 
@@ -6,7 +6,7 @@
 <br />
 <br />
 
-# teste
+# Tecnologias empregadas
 
 
 ![Layout do E-commerce - 1](screenshot_2.png)
