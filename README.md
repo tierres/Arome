@@ -20,8 +20,13 @@
 
 
 ![Layout do E-commerce - 1](screenshot_2.png)
-<br />
-<br />
+
+
+## react-slick
+
+<p>ola</p>
+
+
 ![Layout do E-commerce - 1](screenshot_3.png)
 
 
