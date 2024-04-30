@@ -24,7 +24,7 @@
 
 ## 🎠 react-slick
 
-<p>Utilizei a biblioteca react-slick para fazer o carrossel de produtos em destaque</p>
+<p>Utilizei a biblioteca <strong>react-slick</strong> para fazer o carrossel de produtos em destaque.</p>
 
 
 ![Layout do E-commerce - 1](screenshot_3.png)
@@ -32,7 +32,11 @@
 
 ## 📋 react-hook-form com zod
 
-<p>Fiz o formulário utilizando <strong>react-hook-form</strong> e a validação com <strong>zod</strong> </p>
+<p>Fiz o formulário utilizando <strong>react-hook-form</strong> e a validação com <strong>zod</strong>.</p>
+
+
+
+## 🧱 Estrutura dos arquivos
 
 ## 🚧 Status do projeto
 ### Frontend: Em desenvolvimento...
