@@ -34,7 +34,7 @@
 
 ## 📋 react-hook-form com zod
 
-<p>Fiz o formulário utilizando <strong>react-hook-form</strong> e a validação com <strong>zod</strong>.</p>
+<p>Fiz o formulário de inscrição no club utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong>.</p>
 
 
 
