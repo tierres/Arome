@@ -48,3 +48,21 @@
 ## 🚧 Status do projeto
 ### Frontend: Em desenvolvimento...
 ### Backend: ...
+
+## 📚 Como usar
+
+```
+# Entre na pasta do projeto através de um console e digite o seguinte comando
+
+$ npm run dev
+
+ou
+
+$ yarn dev
+
+# O servidor irá iniciar na porta 5173
+```
+
+<hr>
+
+<p align="center"><strong>Feito por</strong><a href='https://www.linkedin.com/in/tierres-griep-23131621a/'>Tierres Griep</a></p>
