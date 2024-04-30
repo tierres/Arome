@@ -22,9 +22,9 @@
 ![Layout do E-commerce - 1](screenshot_2.png)
 
 
-## react-slick
+## 🎠 react-slick
 
-<p>ola</p>
+<p>Utilizei a biblioteca react-slick para fazer o carrossel de produtos em destaque</p>
 
 
 ![Layout do E-commerce - 1](screenshot_3.png)
