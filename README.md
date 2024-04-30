@@ -30,6 +30,10 @@
 ![Layout do E-commerce - 1](screenshot_3.png)
 
 
+## 📋 react-hook-form com zod
+
+<p>Fiz o formulário utilizando <strong>react-hook-form</strong> e a validação com <strong>zod</strong> </p>
+
 ## 🚧 Status do projeto
 ### Frontend: Em desenvolvimento...
 ### Backend: ...
