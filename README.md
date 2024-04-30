@@ -65,4 +65,4 @@ $ yarn dev
 
 <hr>
 
-<p align="center"><strong>Feito por</strong><a href='https://www.linkedin.com/in/tierres-griep-23131621a/'>Tierres Griep</a></p>
+<p align="center"><strong>Feito por </strong><a href='https://www.linkedin.com/in/tierres-griep-23131621a/' style="text-decoration: none;>Tierres Griep</a></p>
