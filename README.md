@@ -6,7 +6,7 @@
 
 <p>Esse E-commerce está sendo produzido através desse <a href='https://www.figma.com/file/f3fkNm6wy74DNAVnucpb6TUD/site-arome?type=design&node-id=0%3A1&mode=design&t=HVve7kprLR3uc6fX-1'>projeto figma.</a> É o meu primeiro projeto grande e estou aprendendo diversas tecnologias desenvolvendo ele.</p>
 
-</br>
+
 ![Layout do E-commerce - 1](screenshot_1.png)
 
  
@@ -19,7 +19,7 @@
 </ul>
 
 
-</br>
+
 ![Layout do E-commerce - 1](screenshot_2.png)
 
 
@@ -28,7 +28,7 @@
 <p>Utilizei a biblioteca <strong>react-slick</strong> para fazer o carrossel de produtos em destaque.</p>
 
 
-</br>
+
 ![Layout do E-commerce - 1](screenshot_3.png)
 
 
@@ -37,7 +37,7 @@
 <p>Fiz o formulário de inscrição no club utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong>.</p>
 
 
-</br>
+
 ![Layout do E-commerce - 1](screenshot_4.png)
 
 
