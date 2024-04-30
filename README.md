@@ -43,7 +43,7 @@
 
 ## 🧱 Estrutura dos arquivos
 <p>O meu projeto consta com duas pastas principais: de <strong>componentes</strong> e de <strong>telas</strong>.</p>
-<p>Cada tela é composta por diversos componentes, sendo o <strong>Header</strong> e o <strong>Footer</strong> sempre o primeiro e último, respectivamente.</p>
+<p>Cada tela é composta por diversos componentes, sendo o <strong>Header</strong> e o <strong>Footer</strong> sempre o primeiro e o último, respectivamente.</p>
 
 ## 🚧 Status do projeto
 ### Frontend: Em desenvolvimento...
