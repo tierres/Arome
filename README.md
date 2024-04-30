@@ -38,7 +38,7 @@
 
 
 
-![Layout do E-commerce - 1](screenshot_3.png)
+![Layout do E-commerce - 1](screenshot_4.png)
 
 
 ## 🧱 Estrutura dos arquivos
