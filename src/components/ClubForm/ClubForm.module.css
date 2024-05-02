@@ -22,7 +22,9 @@
 }
 
 .formDiv {
-    margin: 10px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .formLabel {
@@ -57,7 +59,7 @@
 
 .errorsMessage {
     color: red;
-    padding-top: 5px;
+    margin-top: 4px;
 }
 
 .submitButton {
