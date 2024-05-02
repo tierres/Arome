@@ -32,9 +32,9 @@
 ![Layout do E-commerce - 1](screenshot_3.png)
 
 
-## 📋 react-hook-form com zod
+## 📋 react-hook-form com zod e zod resolver
 
-<p>Fiz o formulário de inscrição no club utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong>.</p>
+<p>Fiz o formulário de inscrição no club utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
 
 
 
