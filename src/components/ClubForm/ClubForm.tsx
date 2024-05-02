@@ -19,7 +19,7 @@ type ClubMembersSchema = z.infer<typeof clubMemberSchema>
 
 interface ICustomDivForm {
   children: string
-  type: string
+  type: keyof FieldErrors<{ name: string; email: string; phone: string; address: string; password: string; }>;
 }
 
 
@@ -40,11 +40,11 @@ export const ClubForm = () => {
         <div className={classes.formDiv}>
           <label className={classes.formLabel} htmlFor={params.type}>{params.children}</label>
           <input className={classes.formInput + ' ' + (formState.errors[params.type] ? classes.formInputErrors : "")} {...register(params.type)} />
-    
-          {formState.errors.{params.type} && (
-          <p className={classes.errorsMessage}>{formState.errors.{params.type}.message}</p>
+
+          {formState.errors[params.type] && (
+            <p className={classes.errorsMessage}>{formState.errors[params.type].message}</p>
           )}
-      </div>
+        </div>
       )
     }
 
@@ -58,41 +58,11 @@ export const ClubForm = () => {
         </div>
         <div>
           <form className={classes.form} onSubmit={handleSubmit(handleClubMember)}>
-            <div className={classes.formDiv}>
-              <label className={classes.formLabel} htmlFor="name">*Nome: </label>
-              <input className={classes.formInput + ' ' + (formState.errors.name ? classes.formInputErrors : "")} {...register('name')} />
-              {formState.errors.name && (
-                <p className={classes.errorsMessage}>{formState.errors.name.message}</p>
-              )}
-            </div>
-            <div className={classes.formDiv}>
-              <label className={classes.formLabel} htmlFor="email">*E-mail: </label>
-              <input className={classes.formInput + ' ' + (formState.errors.email ? classes.formInputErrors : "")} {...register('email')} />
-              {formState.errors.email && (
-                <p className={classes.errorsMessage}>{formState.errors.email.message}</p>
-              )}
-            </div>
-            <div className={classes.formDiv}>
-              <label className={classes.formLabel} htmlFor="phone">Telefone: </label>
-              <input className={classes.formInput + ' ' + (formState.errors.phone ? classes.formInputErrors : "")} {...register('phone')} />
-              {formState.errors.phone && (
-                <p className={classes.errorsMessage}>{formState.errors.phone.message}</p>
-              )}
-            </div>
-            <div className={classes.formDiv}>
-              <label className={classes.formLabel} htmlFor="address">*Endereço: </label>
-              <input className={classes.formInput + ' ' + (formState.errors.address ? classes.formInputErrors : "")} {...register('address')} />
-              {formState.errors.address && (
-                <p className={classes.errorsMessage}>{formState.errors.address.message}</p>
-              )}
-            </div>
-            <div className={classes.formDiv}>
-              <label className={classes.formLabel} htmlFor="password">*Senha: </label>
-              <input className={classes.formInput + ' ' + (formState.errors.password ? classes.formInputErrors : "")} {...register('password')} />
-              {formState.errors.password && (
-                <p className={classes.errorsMessage}>{formState.errors.password.message}</p>
-              )}
-            </div>
+            <CustomDivForm type='name'>*Nome: </CustomDivForm>
+            <CustomDivForm type='email'>*E-mail: </CustomDivForm>
+            <CustomDivForm type='phone'>Telefone: </CustomDivForm>
+            <CustomDivForm type='address'>*Endereço: </CustomDivForm>
+            <CustomDivForm type='password'>*Senha: </CustomDivForm>
             <br />
             <br />
             <p>Os campos marcados com um <strong>*asterisco</strong> são obrigatórios</p>
@@ -101,8 +71,6 @@ export const ClubForm = () => {
             <button className={classes.submitButton} type='submit'>
               Comece
             </button>
-            
-            
           </form>
         </div>
       </SectionContainer>
