@@ -50,6 +50,7 @@
     padding-left: 10px;
     width: 520px;
     height: 34px;
+    background: url('./vectors/circle-x.svg') no-repeat 490px center;
 }
 
 .formInputErrors:focus {
@@ -60,6 +61,7 @@
 .errorsMessage {
     color: red;
     margin-top: 4px;
+    width: 520px
 }
 
 .submitButton {
