@@ -14,7 +14,6 @@ export const App = () => {
   return (
     <div>
       <Router>
-        {/*colocar o HEADER aqui */}
         <Routes>
           <Route path="/" element={(<Home />)} />
           <Route path='/become-a-member' element={(<BecomeAMember />)} />
@@ -24,7 +23,6 @@ export const App = () => {
           <Route path="/teas" element={(<Teas />)} />
           <Route path='/*' element={<Home />} />
         </Routes>
-        {/* FOOTER */}
        </Router>
     </div>
   );
