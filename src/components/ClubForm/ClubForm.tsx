@@ -3,8 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer';
 import { FormState, UseFormRegister, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod';
-import CircleX from './vectors/circle-x.svg';
-import { HTMLInputTypeAttribute, useState } from 'react';
+import { HTMLInputTypeAttribute} from 'react';
 
 const clubMemberSchema = z.object({
   name: z.string().min(3, "*O nome deve ter pelo menos 3 letras")
