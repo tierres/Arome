@@ -1,6 +1,6 @@
 # 🍵 Aromê
 
-<p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href=''>Acesse a demo.</a> - em desenvolvimento... 🚧</p> 
+<p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href='https://arome-gzym5l4ql-tierres-projects.vercel.app/'>- Acesse a demo.</a> - projeto em desenvolvimento... 🚧</p> 
 
 ## 💡 Objetivo
 
