@@ -11,8 +11,8 @@ const clubMemberSchema = z.object({
   email: z.string().email("*O e-mail deve ser válido"),
   phone: z.string(),
   address: z.string().min(3, "*Um endereço deve ser indicado"),
-  password: z.string().min(8, "*Crie uma senha de no mínimo 8 caracteres, \nsendo: 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial")
-    .regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/, "*A senha deve conter no mínimo 8 caracteres, \nsendo: 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial")
+  password: z.string().min(8, "*Crie uma senha de no mínimo 8 caracteres, sendo: 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial")
+    .regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/, "*A senha deve conter no mínimo 8 caracteres, sendo: 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial")
 })
 
 type ClubMembersSchema = z.infer<typeof clubMemberSchema>
