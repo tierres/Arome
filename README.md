@@ -45,6 +45,9 @@
 <p>O meu projeto consta com duas pastas principais: de <strong>componentes</strong> e de <strong>telas</strong>.</p>
 <p>Cada tela é composta por diversos componentes, sendo o <strong>Header</strong> e o <strong>Footer</strong> sempre o primeiro e o último, respectivamente.</p>
 
+## 🎨 CSS Modules
+<p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
+
 ## 🚧 Status do projeto
 ### Frontend: Em desenvolvimento...
 ### Backend: ...
