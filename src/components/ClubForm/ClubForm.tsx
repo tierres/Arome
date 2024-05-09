@@ -84,5 +84,3 @@ export const ClubForm = () => {
     </div>
   );
 };
-
-// Tierres Griep - Aromê - teste - 27 de abril 20h33
