@@ -7,7 +7,7 @@
 <p>Esse E-commerce está sendo produzido através desse <a href='https://www.figma.com/file/f3fkNm6wy74DNAVnucpb6TUD/site-arome?type=design&node-id=0%3A1&mode=design&t=HVve7kprLR3uc6fX-1'>projeto figma.</a> É o meu primeiro projeto grande e estou aprendendo diversas tecnologias desenvolvendo ele.</p>
 
 
-![Layout do E-commerce - 1](screenshots/screenshot_1.png)
+![Screenshot do e-commerce - 1](screenshots/screenshot_1.png)
 
  
 ## 🔧 Tecnologias empregadas
@@ -20,7 +20,7 @@
 
 
 
-![Layout do E-commerce - 1](screenshot_2.png)
+![Screenshot do e-commerce - 2](screenshots/screenshot_2.png)
 
 
 ## 🎠 react-slick
@@ -29,7 +29,7 @@
 
 
 
-![Layout do E-commerce - 1](screenshot_3.png)
+![Screenshot do e-commerce - 3](screenshots/screenshot_3.png)
 
 
 ## 📋 react-hook-form com zod e zod resolver
@@ -38,7 +38,7 @@
 
 
 
-![Layout do E-commerce - 1](screenshot_4.png)
+![Screenshot do e-commerce - 4](screenshots/screenshot_4.png)
 
 
 ## 🧱 Estrutura dos arquivos
