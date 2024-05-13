@@ -1,0 +1,40 @@
+.headerContainer {
+    background-color: white;
+}
+
+.sectionContainer {
+    height: 133px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksContainerItem {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: regular;
+    margin-right: 15px;
+    color: #000000;
+    height: 25px;
+    display: inline-block;
+}
+
+.activeLink {
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 4px;
+}
+
+.iconsLinksContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.buttons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
