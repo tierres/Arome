@@ -85,4 +85,4 @@ export const ClubForm = () => {
   );
 };
 
-// PC - 13/05/24 - 16h45 - Alteração na organização das pastas - Tierres R. G.
+// PC - 13/05/24 - 17h19 - Arrumando um erro no Vercel
