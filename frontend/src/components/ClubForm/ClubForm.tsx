@@ -85,4 +85,4 @@ export const ClubForm = () => {
   );
 };
 
-// PC - 13/05/24 - 17h19 - Arrumando um erro no Vercel
+// Macbook - 16/05/24 17h14
