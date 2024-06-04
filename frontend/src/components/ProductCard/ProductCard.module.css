@@ -7,7 +7,22 @@
 }
 
 .gallery {
+    display: flex;
+}
 
+.twoLittleImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.littleImage {
+    width: 130px;
+    height: 130px;
+}
+
+.bigImage {
+    width: 572px;
+    height: 572px;
 }
 
 .productInfos {

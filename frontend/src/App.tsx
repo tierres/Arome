@@ -10,6 +10,8 @@ import { Teas } from './screens/Teas/Teas';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+
+
 export const App = () => {
   return (
     <div>
@@ -19,8 +21,8 @@ export const App = () => {
           <Route path='/become-a-member' element={(<BecomeAMember />)} />
           <Route path="/build-your" element={(<BuildYour />)} />
           <Route path="/cart" element={(<Cart />)} />
-          <Route path="/product-details" element={(<ProductDetails />)} />
           <Route path="/teas" element={(<Teas />)} />
+          <Route path="/teas/:slug" element={(<ProductDetails />)} />
           <Route path='/*' element={<Home />} />
         </Routes>
        </Router>

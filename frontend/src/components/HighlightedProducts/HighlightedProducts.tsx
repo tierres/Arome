@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Slider from "react-slick";
 
 async function getProducts(){
-    let response = await fetch('/api/products.json') 
+    let response = await fetch('http://localhost:3000/products') 
     let data = await response.json() 
     return data;
   }
