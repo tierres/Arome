@@ -13,7 +13,6 @@ async function getProduct(slug:string){
   }
 
 interface ITea {
-    id: number
     name: string
     price: number
     image: string
@@ -21,9 +20,7 @@ interface ITea {
 }
 
 export const ProductCard = () => {
-
     const [product, setProduct] = useState<ITea>()
-    
 
     const {slug} = useParams()
 
@@ -40,7 +37,7 @@ export const ProductCard = () => {
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
-                    <h1>{products.}</h1>
+                    <h1>{product.name}</h1>
                 </div>
                 <div>
                     <div className={classes.gallery}>
@@ -49,7 +46,7 @@ export const ProductCard = () => {
                             <img className={classes.littleImage} src={NutricionFacts} alt="" />
                         </div>
                         <div className={classes.bigImage}>
-                            <img src="" alt="" />
+                            <img className={classes.bigImage} src={product.image} alt="" />
                         </div>
                     </div>
                     <div className={classes.productInfos}>
