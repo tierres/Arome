@@ -3,6 +3,9 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 import CupOfTeaImage from './cup_of_tea.png'
 import NutricionFacts from './nutricion_facts.png'
 
@@ -12,6 +15,10 @@ async function getProduct(slug:string){
     return data;
   }
 
+interface ISlug {
+    slug: string;
+}
+
 interface ITea {
     name: string
     price: number
@@ -20,9 +27,9 @@ interface ITea {
 }
 
 export const ProductCard = () => {
-    const [product, setProduct] = useState<ITea>()
+    const { slug } = useParams<ISlug>()
 
-    const {slug} = useParams()
+    const [product, setProduct] = useState<ITea>()
 
     useEffect(() => {
         if (slug)
@@ -31,13 +38,15 @@ export const ProductCard = () => {
         })
     }, [slug])
 
-
+    if (!product) {
+        return <div>Carregando...</div>
+    }
 
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
-                    <h1>{product.name}</h1>
+                    <h1>{(product.name ?? 'N/A') || <Skeleton />}</h1>
                 </div>
                 <div>
                     <div className={classes.gallery}>
