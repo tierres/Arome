@@ -15,10 +15,6 @@ async function getProduct(slug:string){
     return data;
   }
 
-interface ISlug {
-    slug: string;
-}
-
 interface ITea {
     name: string
     price: number
@@ -27,7 +23,7 @@ interface ITea {
 }
 
 export const ProductCard = () => {
-    const { slug } = useParams<ISlug>()
+    const { slug } = useParams()
 
     const [product, setProduct] = useState<ITea>()
 
@@ -46,7 +42,7 @@ export const ProductCard = () => {
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div>
-                    <h1>{(product.name ?? 'N/A') || <Skeleton />}</h1>
+                    <h1>{product.name}</h1>
                 </div>
                 <div>
                     <div className={classes.gallery}>

@@ -4,10 +4,10 @@ import FavIcon from './vectors/fav-icon.svg'
 
 interface IProductProps {
     tea: {
-        id: number
         name: string
         price: number
         image: string
+        id: string
     }
 }
    

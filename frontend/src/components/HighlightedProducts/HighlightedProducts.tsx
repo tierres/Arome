@@ -16,10 +16,10 @@ async function getProducts(){
   }
 
 interface ITea {
-    id: number
     name: string
     price: number
     image: string
+    id: string
 }
 
 export const HighlightedProducts = () => {
@@ -27,7 +27,7 @@ export const HighlightedProducts = () => {
 
     useEffect(() => {
         getProducts().then(data => {
-            setProducts(data['products'])
+            setProducts(data)
         })
     }, [])
 
