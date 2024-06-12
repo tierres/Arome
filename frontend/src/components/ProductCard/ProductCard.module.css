@@ -3,11 +3,25 @@
 }
 
 .sectionContainer {
-
+    display: flex;
+    flex-direction: column;
 }
 
-.gallery {
+.tittle {
+    padding-top: 110px;
+    padding-bottom: 15px;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.product {
     display: flex;
+    justify-content: space-between;
+}
+
+.productGallery {
+    display: flex;
+    justify-content: space-between;
 }
 
 .twoLittleImages {

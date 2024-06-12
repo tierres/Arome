@@ -41,11 +41,11 @@ export const ProductCard = () => {
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
-                <div>
-                    <h1>{product.name}</h1>
+                <div className={classes.productTittle}>
+                    <h1 className={classes.tittle}>{product.name}</h1>
                 </div>
-                <div>
-                    <div className={classes.gallery}>
+                <div className={classes.product}>
+                    <div className={classes.productGallery}>
                         <div className={classes.twoLittleImages}>
                             <img className={classes.littleImage} src={CupOfTeaImage} alt="" />
                             <img className={classes.littleImage} src={NutricionFacts} alt="" />
@@ -55,7 +55,14 @@ export const ProductCard = () => {
                         </div>
                     </div>
                     <div className={classes.productInfos}>
-
+                        <p className={classes.priceLine}>PREÇO R$66,50</p>
+                        <p className={classes.quantityLine}>QUANTIDADE 100g</p>
+                        <button className={classes.buttons}>
+                            <img src='' />
+                        </button>
+                        <button className={classes.buttons}>
+                            <img src='' />
+                        </button>
                     </div>
                 </div>
                 <div>
