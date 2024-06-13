@@ -8,6 +8,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 
 import CupOfTeaImage from './cup_of_tea.png'
 import NutricionFacts from './nutricion_facts.png'
+import PlusIcon from './plus_icon.png'
 
 async function getProduct(slug:string){
     let response = await fetch(`http://localhost:3000/products/${slug}`) 
@@ -41,22 +42,22 @@ export const ProductCard = () => {
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
-                <div className={classes.productTittle}>
-                    <h1 className={classes.tittle}>{product.name}</h1>
-                </div>
-                <div className={classes.product}>
-                    <div className={classes.productGallery}>
-                        <div className={classes.twoLittleImages}>
+                
+                <div className={classes.mediaAndInfosContainer}>
+                    <div className={classes.gallery}>
+                        <div className={classes.littleMedias}>
                             <img className={classes.littleImage} src={CupOfTeaImage} alt="" />
                             <img className={classes.littleImage} src={NutricionFacts} alt="" />
+                            <img className={classes.littleImage} src={PlusIcon} alt="" />
                         </div>
-                        <div className={classes.bigImage}>
+                        <div className={classes.bigMedia}>
                             <img className={classes.bigImage} src={product.image} alt="" />
                         </div>
                     </div>
-                    <div className={classes.productInfos}>
-                        <p className={classes.priceLine}>PREÇO R$66,50</p>
-                        <p className={classes.quantityLine}>QUANTIDADE 100g</p>
+                    <div className={classes.productInfos}>     
+                        <h1 className={classes.tittle}>{product.name}</h1>
+                        <p className={classes.priceAndQuantity}>PREÇO R$66,50</p>
+                        <p className={classes.priceAndQuantity}>QUANTIDADE 100g</p>
                         <button className={classes.buttons}>
                             <img src='' />
                         </button>
@@ -65,8 +66,8 @@ export const ProductCard = () => {
                         </button>
                     </div>
                 </div>
-                <div>
-                    <h1>PREPARO</h1>
+                <div className={classes.prepareContainer}>
+                    <h1 className={classes.prepareTittle}>PREPARO</h1>
                 </div>
             </SectionContainer>
         </div>
