@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.headerContainerOption2 {
+    background-color: #6D3938;
+}
+
 .sectionContainer {
     height: 133px;
     display: flex;

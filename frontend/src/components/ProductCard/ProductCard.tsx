@@ -42,7 +42,9 @@ export const ProductCard = () => {
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
-                
+                <div className={classes.navigation}>
+                    <p>Home{'>'}Chás{'>'}Valeriana Garden</p>
+                </div>
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>
                         <div className={classes.littleMedias}>
@@ -56,14 +58,30 @@ export const ProductCard = () => {
                     </div>
                     <div className={classes.productInfos}>     
                         <h1 className={classes.tittle}>{product.name}</h1>
-                        <p className={classes.priceAndQuantity}>PREÇO R$66,50</p>
-                        <p className={classes.priceAndQuantity}>QUANTIDADE 100g</p>
+                        <hr />
+                        <br />
+                        <p className={classes.priceAndQuantity}>PREÇO: <strong>R$ {product.price.toFixed(2)}</strong></p>
                         <button className={classes.buttons}>
                             <img src='' />
                         </button>
                         <button className={classes.buttons}>
                             <img src='' />
                         </button>
+                        <div className={classes.about}>
+                            <h2 className={classes.aboutH2}>Sobre o chá {product.name}</h2>
+                            <br />
+                            <p className={classes.aboutParagraph}>
+                                Uma mescla redonda que combina o 
+                                sabor frutado do Rooibos africano, uma 
+                                infusão altamente mineralizante, que não 
+                                contém teína, com a carícia da baunilha, 
+                                casca de laranja, pétalas de rosa, de 
+                                marianinha e de girassol. Ideal para toda 
+                                a família a qualquer hora do dia. 
+                                Também disponível na base de Chá Preto, 
+                                Verde, Vermelho e Branco.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className={classes.prepareContainer}>
