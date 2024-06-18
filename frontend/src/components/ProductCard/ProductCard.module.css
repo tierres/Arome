@@ -62,12 +62,12 @@
     font-weight: 400;
 }
 
-.priceAndQuantity {
+.price {
     font-size: 24px;
     font-weight: 300;
 }
 
-.about {
+.aboutContainer {
     margin-top: 80px;
 }
 
@@ -79,6 +79,12 @@
 .aboutParagraph {
     font-size: 24px;
     font-weight: 300;
+}
+
+/* ------------- */
+
+.buttonsContainer {
+    display: flex;
 }
 
 /* -------------------------------------- */

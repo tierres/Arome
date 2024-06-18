@@ -60,14 +60,16 @@ export const ProductCard = () => {
                         <h1 className={classes.tittle}>{product.name}</h1>
                         <hr />
                         <br />
-                        <p className={classes.priceAndQuantity}>PREÇO: <strong>R$ {product.price.toFixed(2)}</strong></p>
-                        <button className={classes.buttons}>
-                            <img src='' />
-                        </button>
-                        <button className={classes.buttons}>
-                            <img src='' />
-                        </button>
-                        <div className={classes.about}>
+                        <p className={classes.price}>R$ {product.price.toFixed(2)}</p>
+                        <div className={classes.buttonsContainer}>
+                            <button className={classes.buttons}>
+                                <img src='' />
+                            </button>
+                            <button className={classes.buttons}>
+                                <img src='' />
+                            </button>
+                        </div>
+                        <div className={classes.aboutContainer}>
                             <h2 className={classes.aboutH2}>Sobre o chá {product.name}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
