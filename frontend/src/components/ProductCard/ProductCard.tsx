@@ -63,9 +63,11 @@ export const ProductCard = () => {
                         <p className={classes.price}>R$ {product.price.toFixed(2)}</p>
                         <div className={classes.buttonsContainer}>
                             <button className={classes.buttons}>
+                                Quantidade
                                 <img src='' />
                             </button>
                             <button className={classes.buttons}>
+                                Adicionar ao carrinho
                                 <img src='' />
                             </button>
                         </div>
