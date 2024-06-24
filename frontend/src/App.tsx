@@ -15,19 +15,17 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 export const App = () => {
   return (
     <div>
-      <SkeletonTheme baseColor="#202020" highlightColor="#444">
-        <Router>
-          <Routes>
-            <Route path="/" element={(<Home />)} />
-            <Route path='/become-a-member' element={(<BecomeAMember />)} />
-            <Route path="/build-your" element={(<BuildYour />)} />
-            <Route path="/cart" element={(<Cart />)} />
-            <Route path="/teas" element={(<Teas />)} />
-            <Route path="/teas/:slug" element={(<ProductDetails />)} />
-            <Route path='/*' element={<Home />} />
-          </Routes>
-        </Router>
-       </SkeletonTheme>
+      <Router>
+        <Routes>
+          <Route path="/" element={(<Home />)} />
+          <Route path='/become-a-member' element={(<BecomeAMember />)} />
+          <Route path="/build-your" element={(<BuildYour />)} />
+          <Route path="/cart" element={(<Cart />)} />
+          <Route path="/teas" element={(<Teas />)} />
+          <Route path="/teas/:slug" element={(<ProductDetails />)} />
+          <Route path='/*' element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

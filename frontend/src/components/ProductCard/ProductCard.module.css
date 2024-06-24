@@ -97,3 +97,33 @@
     font-size: 36px;
     font-weight: 400;
 }
+
+
+
+/* ---------- Skeleton ------------------ */
+
+.navSkeleton {
+    background-color: #E9EAE9;
+    width: 300px;
+    height: 16px;
+}
+
+.littleImageSkeleton {
+    background-color: #E9EAE9;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+}
+
+.bigImageSkeleton {
+    background-color: #E9EAE9;
+    width: 572px;
+    height: 572px;
+}
+
+.tittleSkeleton {
+    background-color: #E9EAE9;
+    margin-bottom: 15px;
+    width: 467px;
+    height: 96px;
+}

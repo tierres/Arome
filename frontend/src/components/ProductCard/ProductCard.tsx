@@ -3,17 +3,16 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-import CupOfTeaImage from './cup_of_tea.png'
-import NutricionFacts from './nutricion_facts.png'
-import PlusIcon from './plus_icon.png'
+import CupOfTeaImage from './images/cup_of_tea.png'
+import NutricionFacts from './images/nutricion_facts.png'
+import PlusIcon from './images/plus_icon.png'
 
 async function getProduct(slug:string){
     let response = await fetch(`http://localhost:3000/products/${slug}`) 
     let data = await response.json() 
-    return data;
+    // return data;
   }
 
 interface ITea {
@@ -36,7 +35,61 @@ export const ProductCard = () => {
     }, [slug])
 
     if (!product) {
-        return <div>Carregando...</div>
+        return(
+            <div className={classes.productCardContainer}>
+            <SectionContainer className={classes.sectionContainer}>
+                <div className={classes.navigation}>
+                    <p className={classes.navSkeleton}></p>
+                </div>
+                <div className={classes.mediaAndInfosContainer}>
+                    <div className={classes.gallery}>
+                        <div className={classes.littleMedias}>
+                            <img className={classes.littleImageSkeleton} />
+                            <img className={classes.littleImageSkeleton} />
+                            <img className={classes.littleImageSkeleton} />
+                        </div>
+                        <div className={classes.bigMedia}>
+                            <img className={classes.bigImageSkeleton} />
+                        </div>
+                    </div>
+                    <div className={classes.productInfos}>     
+                        <div className={classes.tittleSkeleton}></div>
+                        <hr />
+                        <br />
+                        <p className={classes.price}>R$</p>
+                        <div className={classes.buttonsContainer}>
+                            <button className={classes.buttons}>
+                                Quantidade
+                                <img src='' />
+                            </button>
+                            <button className={classes.buttons}>
+                                Adicionar ao carrinho
+                                <img src='' />
+                            </button>
+                        </div>
+                        <div className={classes.aboutContainer}>
+                            <h2 className={classes.aboutH2}>Sobre o chá </h2>
+                            <br />
+                            <p className={classes.aboutParagraph}>
+                                Uma mescla redonda que combina o 
+                                sabor frutado do Rooibos africano, uma 
+                                infusão altamente mineralizante, que não 
+                                contém teína, com a carícia da baunilha, 
+                                casca de laranja, pétalas de rosa, de 
+                                marianinha e de girassol. Ideal para toda 
+                                a família a qualquer hora do dia. 
+                                Também disponível na base de Chá Preto, 
+                                Verde, Vermelho e Branco.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.prepareContainer}>
+                    <h1 className={classes.prepareTittle}>PREPARO</h1>
+                </div>
+            </SectionContainer>
+        </div>
+        )
     }
 
     return(
