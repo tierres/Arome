@@ -85,6 +85,17 @@
 
 .buttonsContainer {
     display: flex;
+    justify-content: space-between;
+}
+
+.quantityButton {
+    width: 130px;
+    height: 45px;
+}
+
+.addCartButton {
+    width: 250px;
+    height: 45px;
 }
 
 /* -------------------------------------- */
@@ -126,4 +137,14 @@
     margin-bottom: 15px;
     width: 467px;
     height: 96px;
+}
+
+.priceContainerSkeleton {
+    display: flex;
+}
+
+.priceSkeleton {
+    background-color: #E9EAE9;
+    width: 70px;
+    height: 22px;
 }

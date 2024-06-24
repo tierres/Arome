@@ -12,7 +12,7 @@ import PlusIcon from './images/plus_icon.png'
 async function getProduct(slug:string){
     let response = await fetch(`http://localhost:3000/products/${slug}`) 
     let data = await response.json() 
-    // return data;
+    return data
   }
 
 interface ITea {
@@ -44,19 +44,25 @@ export const ProductCard = () => {
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>
                         <div className={classes.littleMedias}>
-                            <img className={classes.littleImageSkeleton} />
-                            <img className={classes.littleImageSkeleton} />
-                            <img className={classes.littleImageSkeleton} />
+                            <div className={classes.littleImageSkeleton} />
+                            <div className={classes.littleImageSkeleton} />
+                            <div className={classes.littleImageSkeleton} />
                         </div>
                         <div className={classes.bigMedia}>
-                            <img className={classes.bigImageSkeleton} />
+                            <div className={classes.bigImageSkeleton} />
                         </div>
                     </div>
                     <div className={classes.productInfos}>     
                         <div className={classes.tittleSkeleton}></div>
                         <hr />
                         <br />
-                        <p className={classes.price}>R$</p>
+                        <div className={classes.priceContainerSkeleton}>
+                            <p className={classes.price}>R$</p>
+                            <div className={classes.priceSkeleton}></div>
+                        </div>
+                        parei aqui
+                        <br />
+                        <br />
                         <div className={classes.buttonsContainer}>
                             <button className={classes.buttons}>
                                 Quantidade
@@ -68,6 +74,8 @@ export const ProductCard = () => {
                             </button>
                         </div>
                         <div className={classes.aboutContainer}>
+                            <hr />
+                            <br />
                             <h2 className={classes.aboutH2}>Sobre o chá </h2>
                             <br />
                             <p className={classes.aboutParagraph}>
@@ -114,18 +122,22 @@ export const ProductCard = () => {
                         <hr />
                         <br />
                         <p className={classes.price}>R$ {product.price.toFixed(2)}</p>
+                        <br />
+                        <br />
                         <div className={classes.buttonsContainer}>
-                            <button className={classes.buttons}>
-                                Quantidade
+                            <button className={classes.quantityButton}>
+                                - 1 +
                                 <img src='' />
                             </button>
-                            <button className={classes.buttons}>
+                            <button className={classes.addCartButton}>
                                 Adicionar ao carrinho
                                 <img src='' />
                             </button>
                         </div>
                         <div className={classes.aboutContainer}>
-                            <h2 className={classes.aboutH2}>Sobre o chá {product.name}</h2>
+                            <hr />
+                            <br />
+                            <h2 className={classes.aboutH2}>Sobre a {product.name}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
                                 Uma mescla redonda que combina o 
