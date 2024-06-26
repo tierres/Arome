@@ -68,7 +68,7 @@
 }
 
 .aboutContainer {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .aboutH2 {
@@ -89,13 +89,37 @@
 }
 
 .quantityButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #d0d0d0;
     width: 130px;
     height: 45px;
 }
 
+.plusAndMinusButtons {
+    background-color: white;
+    width: 60px;
+    height: 40px;
+    border: 0;
+    color: #6D3938;
+    cursor: pointer;
+    user-select: none;
+}
+
+.quantityNumber {
+    width: 10px;
+    color: black;
+}
+
 .addCartButton {
+    background-color: #425B41;
     width: 250px;
     height: 45px;
+    border-radius: 14px;
+    border: 0;
+    color: white;
 }
 
 /* -------------------------------------- */

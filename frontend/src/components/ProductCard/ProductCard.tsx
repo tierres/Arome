@@ -26,6 +26,7 @@ export const ProductCard = () => {
     const { slug } = useParams()
 
     const [product, setProduct] = useState<ITea>()
+    const [quantity, setQuantity] = useState<number>(1)
 
     useEffect(() => {
         if (slug)
@@ -125,10 +126,15 @@ export const ProductCard = () => {
                         <br />
                         <br />
                         <div className={classes.buttonsContainer}>
-                            <button className={classes.quantityButton}>
-                                - 1 +
-                                <img src='' />
-                            </button>
+                            <div className={classes.quantityButton}>
+                                <button className={classes.plusAndMinusButtons}>
+                                    <strong>-</strong>
+                                </button>
+                                <p className={classes.quantityNumber}><strong>{quantity}</strong></p>
+                                <button className={classes.plusAndMinusButtons}>
+                                    <strong>+</strong>
+                                </button>
+                            </div>
                             <button className={classes.addCartButton}>
                                 Adicionar ao carrinho
                                 <img src='' />

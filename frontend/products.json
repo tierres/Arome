@@ -1,61 +1,61 @@
 {
     "products": [
         {
-            "name": "Infusão Valeriana Lomonai",
+            "name": "Infusão Valeriana Lomonai 45g",
             "price": 25,
             "image": "/api/imgs/infusao-valeriana-lomonai.svg",
             "id": "infusao-valeriana-lomonai"
         },
         {
-            "name": "Infusão Valeriana Garden",
+            "name": "Infusão Valeriana Garden 45g",
             "price": 25,
             "image": "/api/imgs/infusao-valeriana-garden.svg",
             "id": "infusao-valeriana-garden"
         },
         {
-            "name": "Infusão Happy Pumpkin",
+            "name": "Infusão Happy Pumpkin 45g",
             "price": 36.80,
             "image": "/api/imgs/infusao-happy-pumpkin.svg",
             "id": "infusao-happy-pumpkin"
         },
         {
-            "name": "Infusão Sangria Tea",
+            "name": "Infusão Sangria Tea 45g",
             "price": 33.10,
             "image": "/api/imgs/infusao-sangria-tea.svg",
             "id": "infusao-sangria-tea"
         },
         {
-            "name": "Infusão Cocktail de Frutas",
+            "name": "Infusão Cocktail de Frutas 45g",
             "price": 33.60,
             "image": "/api/imgs/infusao-cocktail-de-frutas.svg",
             "id": "infusao-cocktail-de-frutas"
         },
         {
-            "name": "Infusão Apple Temptation",
+            "name": "Infusão Apple Temptation 45g",
             "price": 33.60,
             "image": "/api/imgs/infusao-apple-temptation.svg",
             "id": "infusao-apple-temptation"
         },
         {
-            "name": "Infusão Indian Secret",
+            "name": "Infusão Indian Secret 45g",
             "price": 34.70,
             "image": "/api/imgs/infusao-indian-secret.svg",
             "id": "infusao-indian-secret"
         },
         {
-            "name": "Infusão Rooibos La Provence",
+            "name": "Infusão Rooibos La Provence 45g",
             "price": 60.50,
             "image": "/api/imgs/infusao-rooibos-laprovence.svg",
             "id": "infusao-rooibos-la-provence"
         },
         {
-            "name": "Infusão Gracia Blend",
+            "name": "Infusão Gracia Blend 45g",
             "price": 66.50,
             "image": "/api/imgs/infusao-gracia-blend.svg",
             "id": "infusao-gracia-blend"
         },
         {
-            "name": "Infusão Orange Kalahari",
+            "name": "Infusão Orange Kalahari 45g",
             "price": 56.39,
             "image": "/api/imgs/infusao-orange-kalahari.svg",
             "id": "infusao-orange-kalahari"
