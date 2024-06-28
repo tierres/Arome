@@ -67,7 +67,7 @@ export const ProductCard = () => {
                             <p className={classes.price}>R$</p>
                             <div className={classes.priceSkeleton}></div>
                         </div>
-                        parei aqui
+                        parei de fazer o skeleton aqui
                         <br />
                         <br />
                         <div className={classes.buttonsContainer}>
@@ -133,11 +133,11 @@ export const ProductCard = () => {
                         <br />
                         <div className={classes.buttonsContainer}>
                             <div className={classes.quantityButton}>
-                                <button className={classes.plusAndMinusButtons}>
+                                <button className={classes.plusAndMinusButtons} onClick={() => setQuantity(quantity - 1)}>
                                     <strong>-</strong>
                                 </button>
                                 <p className={classes.quantityNumber}><strong>{quantity}</strong></p>
-                                <button className={classes.plusAndMinusButtons}>
+                                <button className={classes.plusAndMinusButtons} onClick={() => setQuantity(quantity + 1)}>
                                     <strong>+</strong>
                                 </button>
                             </div>
@@ -170,23 +170,28 @@ export const ProductCard = () => {
                     <div className={classes.prepareSteps}>
                         <div className={classes.step}>
                             <img src={Spoon} className={classes.stepImage} />
-                            <p className={classes.stepParagraph} >2 Medidas<br /> de chá</p>
+                            <br />
+                            <p>2 Medidas<br /> de chá</p>
                         </div>
                         <div className={classes.step}>
                             <img src={Cup} className={classes.stepImage} />
-                            <p className={classes.stepParagraph} >200 ML de água</p>
+                            <br />
+                            <p>200 ML de água</p>
                         </div>
                         <div className={classes.step}>
                             <img src={Thermometer} className={classes.stepImage} />
-                            <p className={classes.stepParagraph} >Temperatura de<br /> infusão: 100ºC</p>
+                            <br />
+                            <p>Temperatura de<br /> infusão: 100ºC</p>
                         </div>
                         <div className={classes.step}>
                             <img src={Clock} className={classes.stepImage} />
-                            <p className={classes.stepParagraph} >Tempo de infusão<br /> 6 a 10 minutos</p>
+                            <br />
+                            <p>Tempo de infusão<br /> 6 a 10 minutos</p>
                         </div>
                         <div className={classes.step}>
                             <img src={SunAndIce} className={classes.stepImage} />
-                            <p className={classes.stepParagraph} >Beba quente ou<br /> gelado</p>
+                            <br />
+                            <p>Beba quente ou<br /> gelado</p>
                         </div>
                     </div>
                 </div>
