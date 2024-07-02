@@ -34,6 +34,15 @@ export const ProductCard = () => {
     const [product, setProduct] = useState<ITea>()
     const [quantity, setQuantity] = useState<number>(1)
 
+    const quantityDecrement = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1)
+        }
+    }
+    const quantityIncrement = () => {
+        setQuantity(quantity + 1)
+    }
+
     useEffect(() => {
         if (slug)
         getProduct(slug).then(data => {
@@ -133,11 +142,11 @@ export const ProductCard = () => {
                         <br />
                         <div className={classes.buttonsContainer}>
                             <div className={classes.quantityButton}>
-                                <button className={classes.plusAndMinusButtons} onClick={() => setQuantity(quantity - 1)}>
+                                <button className={classes.plusAndMinusButtons} onClick={quantityDecrement}>
                                     <strong>-</strong>
                                 </button>
                                 <p className={classes.quantityNumber}><strong>{quantity}</strong></p>
-                                <button className={classes.plusAndMinusButtons} onClick={() => setQuantity(quantity + 1)}>
+                                <button className={classes.plusAndMinusButtons} onClick={quantityIncrement}>
                                     <strong>+</strong>
                                 </button>
                             </div>
