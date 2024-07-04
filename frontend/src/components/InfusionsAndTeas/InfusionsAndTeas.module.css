@@ -1,0 +1,12 @@
+.imageContainer {
+    width: 100%; /* largura desejada */
+    height: 250px; /* altura desejada */
+    overflow: hidden; /* esconde qualquer parte da imagem que ultrapasse as dimensões do contêiner */
+    position: relative; /* permite ajustar a posição da imagem dentro do contêiner */
+}
+
+.img {
+    width: 100%; /* imagem ocupa toda a largura do contêiner */
+    position: relative; /* garante que a posição definida seja relativa ao contêiner */
+    top: -500px; /* move a imagem para cima, ajuste este valor conforme necessário */
+}

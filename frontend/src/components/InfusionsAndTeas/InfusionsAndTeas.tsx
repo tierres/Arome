@@ -1,10 +1,10 @@
 import classes from './InfusionsAndTeas.module.css'
-import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
+import infusionsAndTeasImg from './images/chas_e_infusoes_image.png'
 
 export const InfusionsAndTeas = () => {
   return(
-    <div>
-        InfusionsAndTeas
+    <div className={classes.imageContainer}>
+        <img className={classes.img} src={infusionsAndTeasImg} alt="Chás" />
     </div>
   );
 };

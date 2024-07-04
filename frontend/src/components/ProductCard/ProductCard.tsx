@@ -3,17 +3,9 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-import 'react-loading-skeleton/dist/skeleton.css'
-
 import CupOfTeaImage from './images/cup_of_tea.png'
 import NutricionFacts from './images/nutricion_facts.png'
 import PlusIcon from './images/plus_icon.png'
-
-import Spoon from './vectors/spoon.svg'
-import Cup from './vectors/cup.svg'
-import Thermometer from './vectors/thermometer.svg'
-import Clock from './vectors/clock.svg'
-import SunAndIce from './vectors/sun-ice.svg'
  
 async function getProduct(slug:string){
     let response = await fetch(`http://localhost:3000/products/${slug}`) 
@@ -108,9 +100,6 @@ export const ProductCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className={classes.prepareContainer}>
-                    <h1 className={classes.prepareTittle}>PREPARO</h1>
-                </div>
             </SectionContainer>
         </div>
         )
@@ -171,36 +160,6 @@ export const ProductCard = () => {
                                 Também disponível na base de Chá Preto, 
                                 Verde, Vermelho e Branco.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={classes.prepareContainer}>
-                    <h1 className={classes.prepareTittle}>PREPARO</h1>
-                    <div className={classes.prepareSteps}>
-                        <div className={classes.step}>
-                            <img src={Spoon} className={classes.stepImage} />
-                            <br />
-                            <p>2 Medidas<br /> de chá</p>
-                        </div>
-                        <div className={classes.step}>
-                            <img src={Cup} className={classes.stepImage} />
-                            <br />
-                            <p>200 ML de água</p>
-                        </div>
-                        <div className={classes.step}>
-                            <img src={Thermometer} className={classes.stepImage} />
-                            <br />
-                            <p>Temperatura de<br /> infusão: 100ºC</p>
-                        </div>
-                        <div className={classes.step}>
-                            <img src={Clock} className={classes.stepImage} />
-                            <br />
-                            <p>Tempo de infusão<br /> 6 a 10 minutos</p>
-                        </div>
-                        <div className={classes.step}>
-                            <img src={SunAndIce} className={classes.stepImage} />
-                            <br />
-                            <p>Beba quente ou<br /> gelado</p>
                         </div>
                     </div>
                 </div>

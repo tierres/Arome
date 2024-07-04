@@ -10,6 +10,7 @@ export const ProductDetails = () => {
     <div className='productDetailsScreen'>
         <Header />
         <ProductCard />
+        {/* Colocar aqui o componente 'Prepare' caso a página acessada seja 'teas' */}
         <IsntThis />
         <Footer />
     </div>
