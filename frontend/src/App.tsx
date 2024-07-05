@@ -10,8 +10,6 @@ import { Teas } from './screens/Teas/Teas';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-
 export const App = () => {
   return (
     <div>

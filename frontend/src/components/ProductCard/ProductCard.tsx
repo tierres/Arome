@@ -105,11 +105,17 @@ export const ProductCard = () => {
         )
     }
 
+    const isATeaDetailPage = location.pathname.startsWith('/teas/')
+
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div className={classes.navigation}>
-                    <p>Home{'>'}Chás{'>'}Valeriana Garden</p>
+                    <a href="/" className={classes.firstsAnchors}>Página Inicial</a>
+                    <span>{'>'}</span>
+                    <a href="/teas" className={classes.firstsAnchors}>Chás</a>
+                    <span>{'>'}</span>
+                    <a href="/teas/${slug}" className={classes.lastAnchor}>{product.name}</a>
                 </div>
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>
