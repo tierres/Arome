@@ -1,5 +1,5 @@
 import classes from './InfusionsAndTeas.module.css'
-import infusionsAndTeasImg from './images/chas_e_infusoes_image.png'
+import infusionsAndTeasImg from './images/infusions-and-teas_small.jpg'
 
 export const InfusionsAndTeas = () => {
   return(

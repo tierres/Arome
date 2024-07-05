@@ -106,16 +106,23 @@ export const ProductCard = () => {
     }
 
     const isATeaDetailPage = location.pathname.startsWith('/teas/')
+    let teaOrUtensil = ''
+
+    if (isATeaDetailPage) {
+        teaOrUtensil = "Chás" 
+    } else { 
+        teaOrUtensil = "Utensílios"
+    }
 
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div className={classes.navigation}>
-                    <a href="/" className={classes.firstsAnchors}>Página Inicial</a>
-                    <span>{'>'}</span>
-                    <a href="/teas" className={classes.firstsAnchors}>Chás</a>
-                    <span>{'>'}</span>
-                    <a href="/teas/${slug}" className={classes.lastAnchor}>{product.name}</a>
+                    <a href="/" className={classes.firstsAnchors}>Página Inicial </a>
+                    <span>{'>'} </span>
+                    <a href={isATeaDetailPage ? "/teas" : "/utensils"} className={classes.firstsAnchors}>{teaOrUtensil} </a>
+                    <span>{'>'} </span>
+                    <a href="" className={classes.lastAnchor}>{product.name}</a>
                 </div>
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>

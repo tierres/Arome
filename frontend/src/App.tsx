@@ -6,6 +6,7 @@ import { BuildYour } from './screens/BuildYour/BuildYour';
 import { Cart } from './screens/Cart/Cart';
 import { ProductDetails } from './screens/ProductDetails/ProductDetails';
 import { Teas } from './screens/Teas/Teas';
+import { Utensils } from './screens/Utensils/Utensils';
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -21,6 +22,7 @@ export const App = () => {
           <Route path="/cart" element={(<Cart />)} />
           <Route path="/teas" element={(<Teas />)} />
           <Route path="/teas/:slug" element={(<ProductDetails />)} />
+          <Route path="/utensils" element={(<Utensils />)} />
           <Route path="/utensils/:slug" element={(<ProductDetails />)} />
           <Route path='/*' element={<Home />} />
         </Routes>

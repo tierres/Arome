@@ -16,7 +16,8 @@
 
 .firstsAnchors {
     text-decoration: none;
-    color: #555;
+    color: #777;
+    font-weight: 800;
 }
 
 .navigation a:hover {
@@ -30,6 +31,7 @@
 .lastAnchor {
     text-decoration: none;
     color: #000;
+    font-weight: 800;
 }
 
 /* -------------------------------------- */
