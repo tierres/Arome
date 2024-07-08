@@ -15,9 +15,11 @@ async function getProduct(slug:string){
 
 interface ITea {
     name: string
+    short_name: string
     price: number
     image: string
-    slug: string
+    id: string
+    type: string
 }
 
 export const ProductCard = () => {
@@ -43,7 +45,7 @@ export const ProductCard = () => {
     }, [slug])
 
     if (!product) {
-        return(
+        return( //skeleton:
             <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div className={classes.navigation}>
@@ -106,6 +108,7 @@ export const ProductCard = () => {
     }
 
     const isATeaDetailPage = location.pathname.startsWith('/teas/')
+
     let teaOrUtensil = ''
 
     if (isATeaDetailPage) {
@@ -122,7 +125,7 @@ export const ProductCard = () => {
                     <span>{'>'} </span>
                     <a href={isATeaDetailPage ? "/teas" : "/utensils"} className={classes.firstsAnchors}>{teaOrUtensil} </a>
                     <span>{'>'} </span>
-                    <a href="" className={classes.lastAnchor}>{product.name}</a>
+                    <a href="" className={classes.lastAnchor}>{product.short_name}</a>
                 </div>
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>
@@ -160,7 +163,7 @@ export const ProductCard = () => {
                         <div className={classes.aboutContainer}>
                             <hr />
                             <br />
-                            <h2 className={classes.aboutH2}>Sobre a {product.name}</h2>
+                            <h2 className={classes.aboutH2}>Sobre a {product.name.slice(0, -3)}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
                                 Uma mescla redonda que combina o 

@@ -2,63 +2,83 @@
     "products": [
         {
             "name": "Infusão Valeriana Lomonai 45g",
+            "short_name": "Valeriana Lomonai",
             "price": 25,
             "image": "/api/imgs/infusao-valeriana-lomonai.svg",
-            "id": "infusao-valeriana-lomonai"
+            "id": "infusao-valeriana-lomonai",
+            "type": "tea"
         },
         {
             "name": "Infusão Valeriana Garden 45g",
+            "short_name": "Valeriana Garden",
             "price": 25,
             "image": "/api/imgs/infusao-valeriana-garden.svg",
-            "id": "infusao-valeriana-garden"
+            "id": "infusao-valeriana-garden",
+            "type": "tea"
         },
         {
             "name": "Infusão Happy Pumpkin 45g",
+            "short_name": "Happy Pumpkin",
             "price": 36.80,
             "image": "/api/imgs/infusao-happy-pumpkin.svg",
-            "id": "infusao-happy-pumpkin"
+            "id": "infusao-happy-pumpkin",
+            "type": "tea"
         },
         {
             "name": "Infusão Sangria Tea 45g",
+            "short_name": "Sangria Tea",
             "price": 33.10,
             "image": "/api/imgs/infusao-sangria-tea.svg",
-            "id": "infusao-sangria-tea"
+            "id": "infusao-sangria-tea",
+            "type": "tea"
         },
         {
             "name": "Infusão Cocktail de Frutas 45g",
+            "short_name": "Cocktail de Frutas",
             "price": 33.60,
             "image": "/api/imgs/infusao-cocktail-de-frutas.svg",
-            "id": "infusao-cocktail-de-frutas"
+            "id": "infusao-cocktail-de-frutas",
+            "type": "tea"
         },
         {
             "name": "Infusão Apple Temptation 45g",
+            "short_name": "Apple Temptation",
             "price": 33.60,
             "image": "/api/imgs/infusao-apple-temptation.svg",
-            "id": "infusao-apple-temptation"
+            "id": "infusao-apple-temptation",
+            "type": "tea"
         },
         {
             "name": "Infusão Indian Secret 45g",
+            "short_name": "Indian Secret",
             "price": 34.70,
             "image": "/api/imgs/infusao-indian-secret.svg",
-            "id": "infusao-indian-secret"
+            "id": "infusao-indian-secret",
+            "type": "tea"
         },
         {
             "name": "Infusão Rooibos La Provence 45g",
+            "short_name": "Rooibos La Provence",
             "price": 60.50,
             "image": "/api/imgs/infusao-rooibos-laprovence.svg",
-            "id": "infusao-rooibos-la-provence"
+            "id": "infusao-rooibos-la-provence",
+            "type": "tea"
         },
         {
             "name": "Infusão Gracia Blend 45g",
+            "short_name": "Gracia Blend",
             "price": 66.50,
             "image": "/api/imgs/infusao-gracia-blend.svg",
-            "id": "infusao-gracia-blend"
+            "id": "infusao-gracia-blend",
+            "type": "tea"
         },
         {
             "name": "Infusão Orange Kalahari 45g",
+            "short_name": "Orange Kalahari",
             "price": 56.39,
             "image": "/api/imgs/infusao-orange-kalahari.svg",
-            "id": "infusao-orange-kalahari"
+            "id": "infusao-orange-kalahari",
+            "type": "tea"
         }     
     ]
 }

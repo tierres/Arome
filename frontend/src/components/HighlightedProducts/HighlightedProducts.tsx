@@ -17,9 +17,11 @@ async function getProducts(){
 
 interface ITea {
     name: string
+    short_name: string
     price: number
     image: string
     id: string
+    type: string
 }
 
 export const HighlightedProducts = () => {
