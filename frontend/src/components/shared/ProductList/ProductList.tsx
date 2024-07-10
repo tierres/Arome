@@ -1,5 +1,5 @@
 import classes from './ProductList.module.css'
-import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
+import { SectionContainer } from '../SectionContainer/SectionContainer'
 
 export const ProductList = () => {
   return(

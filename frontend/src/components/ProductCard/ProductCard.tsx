@@ -14,12 +14,12 @@ async function getProduct(slug:string){
   }
 
 interface ITea {
+    type: string
+    id: string
     name: string
     short_name: string
     price: number
     image: string
-    id: string
-    type: string
 }
 
 export const ProductCard = () => {
@@ -110,7 +110,6 @@ export const ProductCard = () => {
     const isATeaDetailPage = location.pathname.startsWith('/teas/')
 
     let teaOrUtensil = ''
-
     if (isATeaDetailPage) {
         teaOrUtensil = "Chás" 
     } else { 
@@ -163,7 +162,7 @@ export const ProductCard = () => {
                         <div className={classes.aboutContainer}>
                             <hr />
                             <br />
-                            <h2 className={classes.aboutH2}>Sobre a {product.name.slice(0, -3)}</h2>
+                            <h2 className={classes.aboutH2}>Sobre a {isATeaDetailPage ? product.name.slice(0, -3) : product.name}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
                                 Uma mescla redonda que combina o 

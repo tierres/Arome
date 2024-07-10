@@ -1,84 +1,84 @@
 {
     "products": [
         {
+            "type": "tea",
+            "id": "infusao-valeriana-lomonai",
             "name": "Infusão Valeriana Lomonai 45g",
             "short_name": "Valeriana Lomonai",
             "price": 25,
-            "image": "/api/imgs/infusao-valeriana-lomonai.svg",
-            "id": "infusao-valeriana-lomonai",
-            "type": "tea"
+            "image": "/api/imgs/infusao-valeriana-lomonai.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-valeriana-garden",
             "name": "Infusão Valeriana Garden 45g",
             "short_name": "Valeriana Garden",
             "price": 25,
-            "image": "/api/imgs/infusao-valeriana-garden.svg",
-            "id": "infusao-valeriana-garden",
-            "type": "tea"
+            "image": "/api/imgs/infusao-valeriana-garden.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-happy-pumpkin",
             "name": "Infusão Happy Pumpkin 45g",
             "short_name": "Happy Pumpkin",
             "price": 36.80,
-            "image": "/api/imgs/infusao-happy-pumpkin.svg",
-            "id": "infusao-happy-pumpkin",
-            "type": "tea"
+            "image": "/api/imgs/infusao-happy-pumpkin.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-sangria-tea",
             "name": "Infusão Sangria Tea 45g",
             "short_name": "Sangria Tea",
             "price": 33.10,
-            "image": "/api/imgs/infusao-sangria-tea.svg",
-            "id": "infusao-sangria-tea",
-            "type": "tea"
+            "image": "/api/imgs/infusao-sangria-tea.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-cocktail-de-frutas",
             "name": "Infusão Cocktail de Frutas 45g",
             "short_name": "Cocktail de Frutas",
             "price": 33.60,
-            "image": "/api/imgs/infusao-cocktail-de-frutas.svg",
-            "id": "infusao-cocktail-de-frutas",
-            "type": "tea"
+            "image": "/api/imgs/infusao-cocktail-de-frutas.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-apple-temptation",
             "name": "Infusão Apple Temptation 45g",
             "short_name": "Apple Temptation",
             "price": 33.60,
-            "image": "/api/imgs/infusao-apple-temptation.svg",
-            "id": "infusao-apple-temptation",
-            "type": "tea"
+            "image": "/api/imgs/infusao-apple-temptation.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-indian-secret",
             "name": "Infusão Indian Secret 45g",
             "short_name": "Indian Secret",
             "price": 34.70,
-            "image": "/api/imgs/infusao-indian-secret.svg",
-            "id": "infusao-indian-secret",
-            "type": "tea"
+            "image": "/api/imgs/infusao-indian-secret.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-rooibos-la-provence",
             "name": "Infusão Rooibos La Provence 45g",
             "short_name": "Rooibos La Provence",
             "price": 60.50,
-            "image": "/api/imgs/infusao-rooibos-laprovence.svg",
-            "id": "infusao-rooibos-la-provence",
-            "type": "tea"
+            "image": "/api/imgs/infusao-rooibos-laprovence.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-gracia-blend",
             "name": "Infusão Gracia Blend 45g",
             "short_name": "Gracia Blend",
             "price": 66.50,
-            "image": "/api/imgs/infusao-gracia-blend.svg",
-            "id": "infusao-gracia-blend",
-            "type": "tea"
+            "image": "/api/imgs/infusao-gracia-blend.svg"
         },
         {
+            "type": "tea",
+            "id": "infusao-orange-kalahari",
             "name": "Infusão Orange Kalahari 45g",
             "short_name": "Orange Kalahari",
             "price": 56.39,
-            "image": "/api/imgs/infusao-orange-kalahari.svg",
-            "id": "infusao-orange-kalahari",
-            "type": "tea"
+            "image": "/api/imgs/infusao-orange-kalahari.svg"
         }     
     ]
 }

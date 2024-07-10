@@ -1,0 +1,23 @@
+.navigationContainer {
+    margin-top: 40px;
+}
+
+.firstsAnchors {
+    text-decoration: none;
+    color: #777;
+    font-weight: 800;
+}
+
+.navigationContainer a:hover {
+    color: #c46766;
+}
+
+.navigationContainer span {
+    color: #DBDBDB;
+}
+
+.lastAnchor {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
