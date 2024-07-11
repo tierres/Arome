@@ -4,7 +4,7 @@ import { Home } from './screens/Home/Home'
 import { BecomeAMember } from './screens/BecomeAMember/BecomeAMember';
 import { BuildYour } from './screens/BuildYour/BuildYour';
 import { Cart } from './screens/Cart/Cart';
-import { ProductDetails } from './screens/ProductDetails/ProductDetails';
+import { ProductPage } from './screens/ProductPage/ProductPage';
 import { Teas } from './screens/Teas/Teas';
 import { Utensils } from './screens/Utensils/Utensils';
 
@@ -21,9 +21,9 @@ export const App = () => {
           <Route path="/build-your" element={(<BuildYour />)} />
           <Route path="/cart" element={(<Cart />)} />
           <Route path="/teas" element={(<Teas />)} />
-          <Route path="/teas/:slug" element={(<ProductDetails />)} />
+          <Route path="/teas/:slug" element={(<ProductPage />)} />
           <Route path="/utensils" element={(<Utensils />)} />
-          <Route path="/utensils/:slug" element={(<ProductDetails />)} />
+          <Route path="/utensils/:slug" element={(<ProductPage />)} />
           <Route path='/*' element={<Home />} />
         </Routes>
       </Router>
