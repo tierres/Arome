@@ -5,9 +5,12 @@ export const ProductList = () => {
   return(
     <div className={classes.productListContainer}>
         <SectionContainer className={classes.sectionContainer}>
-            <p>
-                ProductList vai fazer uma verificação através do link se está em um página de chás ou utensílios, se for de chá é só chamar vários LittleProductCard, se for de utensílios é preciso estudar a possibilidade de utilizar o LittleProductCard.
-            </p>
+            <div className={classes.filtersContainer}>
+              Tipo Ordenar
+            </div>
+            <div>
+
+            </div>
         </SectionContainer>
     </div>
   );
