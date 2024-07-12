@@ -1,17 +1,10 @@
 import classes from './ProductCard.module.css'
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
-import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import CupOfTeaImage from './images/cup_of_tea.png'
 import NutricionFacts from './images/nutricion_facts.png'
 import PlusIcon from './images/plus_icon.png'
- 
-async function getProduct(slug:string){
-    let response = await fetch(`http://localhost:3000/products/${slug}`) 
-    let data = await response.json() 
-    return data
-  }
 
 interface ITea {
     type: string
@@ -22,10 +15,11 @@ interface ITea {
     image: string
 }
 
-export const ProductCard = () => {
-    const { slug } = useParams()
+interface IProductCardProps {
+    product?: ITea;
+  }
 
-    const [product, setProduct] = useState<ITea>()
+export const ProductCard = ({product} : IProductCardProps) => {
     const [quantity, setQuantity] = useState<number>(1)
 
     const quantityDecrement = () => {
@@ -36,13 +30,6 @@ export const ProductCard = () => {
     const quantityIncrement = () => {
         setQuantity(quantity + 1)
     }
-
-    useEffect(() => {
-        if (slug)
-        getProduct(slug).then(data => {
-            setProduct(data)
-        })
-    }, [slug])
 
     if (!product) {
         return( //skeleton:
@@ -109,23 +96,9 @@ export const ProductCard = () => {
 
     const isATeaDetailPage = location.pathname.startsWith('/teas/')
 
-    let teaOrUtensil = ''
-    if (isATeaDetailPage) {
-        teaOrUtensil = "Chás" 
-    } else { 
-        teaOrUtensil = "Utensílios"
-    }
-
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
-                <div className={classes.navigation}>
-                    <a href="/" className={classes.firstsAnchors}>Página Inicial </a>
-                    <span>{'>'} </span>
-                    <a href={isATeaDetailPage ? "/teas" : "/utensils"} className={classes.firstsAnchors}>{teaOrUtensil} </a>
-                    <span>{'>'} </span>
-                    <a href="" className={classes.lastAnchor}>{product.short_name}</a>
-                </div>
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>
                         <div className={classes.littleMedias}>

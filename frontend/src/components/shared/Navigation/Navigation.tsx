@@ -1,7 +1,24 @@
 import classes from './Navigation.module.css'
 import { SectionContainer } from '../SectionContainer/SectionContainer'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
-export const Navigation = () => {
+interface ITea {
+  type: string
+  id: string
+  name: string
+  short_name: string
+  price: number
+  image: string
+}
+
+interface INavigationProps {
+  product?: ITea;
+}
+
+
+export const Navigation = ({product} : INavigationProps) => {
+  const location = useLocation()
   const isTheTeasPage = location.pathname.startsWith('/teas')
   const isItATeaDetailsPage = location.pathname.startsWith('/teas/')
   const isItAUtensilDetailsPage = location.pathname.startsWith('/utensils/')
@@ -19,13 +36,13 @@ export const Navigation = () => {
   return(
     <div className={classes.navigationContainer}>
         <SectionContainer className={classes.sectionContainer}>
-            <a href="/" className={classes.firstsAnchors}>Página Inicial </a>
+            <Link to="/" className={classes.firstsAnchors}>Página Inicial </Link>
             <span>{'>'} </span>
-            <a href={teaOrUtensilLink} className={isItATeaDetailsPage ? classes.firstsAnchors : classes.lastAnchor}>{teaOrUtensil} </a>
-            {(isItATeaDetailsPage || isItAUtensilDetailsPage) ? (
+            <Link to={teaOrUtensilLink} className={isItATeaDetailsPage ? classes.firstsAnchors : classes.lastAnchor}>{teaOrUtensil} </Link>
+            {(isItATeaDetailsPage || isItAUtensilDetailsPage) && product ? (
             <>
               <span>{'>'} </span>
-              <a href="" className={classes.lastAnchor}>nome do produto</a>
+              <Link to="" className={classes.lastAnchor}>{product.short_name}</Link>
             </>
             ) : null}
             
@@ -33,11 +50,3 @@ export const Navigation = () => {
     </div>
   );
 };
-
-              //  <div className={classes.navigation}>
-              //      <a href="/" className={classes.firstsAnchors}>Página Inicial </a>
-              //      <span>{'>'} </span>
-              //      <a href={isATeaDetailPage ? "/teas" : "/utensils"} className={classes.firstsAnchors}>{teaOrUtensil} </a>
-              //      <span>{'>'} </span>
-              //      <a href="" className={classes.lastAnchor}>{product.short_name}</a>
-              //  </div>

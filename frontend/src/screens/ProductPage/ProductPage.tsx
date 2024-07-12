@@ -5,16 +5,45 @@ import { Prepare } from "../../components/Prepare/Prepare.tsx";
 import { IsntThis } from "../../components/IsntThis/IsntThis.tsx";
 import { Footer } from "../../components/shared/Footer/Footer.tsx"
 
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+
 import './ProductPage.css'
 
+async function getProduct(slug:string){
+  let response = await fetch(`http://localhost:3000/products/${slug}`) 
+  let data = await response.json() 
+  return data
+}
+
+interface ITea {
+  type: string
+  id: string
+  name: string
+  short_name: string
+  price: number
+  image: string
+}
+
 export const ProductPage = () => {
+  const { slug } = useParams()
+
+  const [product, setProduct] = useState<ITea>()
+
+  useEffect(() => {
+    if (slug)
+    getProduct(slug).then(data => {
+        setProduct(data)
+    })
+}, [slug])
+  
   const isATeaDetailPage = location.pathname.startsWith('/teas/')
 
   return (
     <div className='productDetailsScreen'>
         <Header />
-        <Navigation />
-        <ProductCard />
+        <Navigation product={product}/>
+        <ProductCard product={product}/>
         {isATeaDetailPage && <Prepare />}
         <IsntThis />
         <Footer />
