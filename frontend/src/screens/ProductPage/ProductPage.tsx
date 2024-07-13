@@ -26,7 +26,7 @@ interface ITea {
 }
 
 interface IGenericProduct {
-  
+
 }
 
 export const ProductPage = () => {
@@ -41,6 +41,12 @@ export const ProductPage = () => {
     })
 }, [slug])
   
+  if (location.pathname.startsWith('/teas/')) {
+
+  }
+
+  switch
+
   const isATeaDetailPage = location.pathname.startsWith('/teas/')
 
   return (
