@@ -25,6 +25,10 @@ interface ITea {
   image: string
 }
 
+interface IGenericProduct {
+  
+}
+
 export const ProductPage = () => {
   const { slug } = useParams()
 

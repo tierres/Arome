@@ -1,84 +1,96 @@
 {
-    "products": [
-        {
-            "type": "tea",
-            "id": "infusao-valeriana-lomonai",
-            "name": "Infusão Valeriana Lomonai 45g",
-            "short_name": "Valeriana Lomonai",
-            "price": 25,
-            "image": "/api/imgs/infusao-valeriana-lomonai.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-valeriana-garden",
-            "name": "Infusão Valeriana Garden 45g",
-            "short_name": "Valeriana Garden",
-            "price": 25,
-            "image": "/api/imgs/infusao-valeriana-garden.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-happy-pumpkin",
-            "name": "Infusão Happy Pumpkin 45g",
-            "short_name": "Happy Pumpkin",
-            "price": 36.80,
-            "image": "/api/imgs/infusao-happy-pumpkin.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-sangria-tea",
-            "name": "Infusão Sangria Tea 45g",
-            "short_name": "Sangria Tea",
-            "price": 33.10,
-            "image": "/api/imgs/infusao-sangria-tea.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-cocktail-de-frutas",
-            "name": "Infusão Cocktail de Frutas 45g",
-            "short_name": "Cocktail de Frutas",
-            "price": 33.60,
-            "image": "/api/imgs/infusao-cocktail-de-frutas.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-apple-temptation",
-            "name": "Infusão Apple Temptation 45g",
-            "short_name": "Apple Temptation",
-            "price": 33.60,
-            "image": "/api/imgs/infusao-apple-temptation.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-indian-secret",
-            "name": "Infusão Indian Secret 45g",
-            "short_name": "Indian Secret",
-            "price": 34.70,
-            "image": "/api/imgs/infusao-indian-secret.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-rooibos-la-provence",
-            "name": "Infusão Rooibos La Provence 45g",
-            "short_name": "Rooibos La Provence",
-            "price": 60.50,
-            "image": "/api/imgs/infusao-rooibos-laprovence.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-gracia-blend",
-            "name": "Infusão Gracia Blend 45g",
-            "short_name": "Gracia Blend",
-            "price": 66.50,
-            "image": "/api/imgs/infusao-gracia-blend.svg"
-        },
-        {
-            "type": "tea",
-            "id": "infusao-orange-kalahari",
-            "name": "Infusão Orange Kalahari 45g",
-            "short_name": "Orange Kalahari",
-            "price": 56.39,
-            "image": "/api/imgs/infusao-orange-kalahari.svg"
-        }     
-    ]
+    "products": {
+        "teas": [
+            {
+                "type": "tea",
+                "id": "infusao-valeriana-lomonai",
+                "name": "Infusão Valeriana Lomonai 45g",
+                "short_name": "Valeriana Lomonai",
+                "price": 25,
+                "image": "/api/imgs/infusao-valeriana-lomonai.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-valeriana-garden",
+                "name": "Infusão Valeriana Garden 45g",
+                "short_name": "Valeriana Garden",
+                "price": 25,
+                "image": "/api/imgs/infusao-valeriana-garden.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-happy-pumpkin",
+                "name": "Infusão Happy Pumpkin 45g",
+                "short_name": "Happy Pumpkin",
+                "price": 36.80,
+                "image": "/api/imgs/infusao-happy-pumpkin.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-sangria-tea",
+                "name": "Infusão Sangria Tea 45g",
+                "short_name": "Sangria Tea",
+                "price": 33.10,
+                "image": "/api/imgs/infusao-sangria-tea.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-cocktail-de-frutas",
+                "name": "Infusão Cocktail de Frutas 45g",
+                "short_name": "Cocktail de Frutas",
+                "price": 33.60,
+                "image": "/api/imgs/infusao-cocktail-de-frutas.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-apple-temptation",
+                "name": "Infusão Apple Temptation 45g",
+                "short_name": "Apple Temptation",
+                "price": 33.60,
+                "image": "/api/imgs/infusao-apple-temptation.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-indian-secret",
+                "name": "Infusão Indian Secret 45g",
+                "short_name": "Indian Secret",
+                "price": 34.70,
+                "image": "/api/imgs/infusao-indian-secret.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-rooibos-la-provence",
+                "name": "Infusão Rooibos La Provence 45g",
+                "short_name": "Rooibos La Provence",
+                "price": 60.50,
+                "image": "/api/imgs/infusao-rooibos-laprovence.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-gracia-blend",
+                "name": "Infusão Gracia Blend 45g",
+                "short_name": "Gracia Blend",
+                "price": 66.50,
+                "image": "/api/imgs/infusao-gracia-blend.svg"
+            },
+            {
+                "type": "tea",
+                "id": "infusao-orange-kalahari",
+                "name": "Infusão Orange Kalahari 45g",
+                "short_name": "Orange Kalahari",
+                "price": 56.39,
+                "image": "/api/imgs/infusao-orange-kalahari.svg"
+            }     
+        ],
+        "utensils": [
+            {
+                "type": "utensil",
+                "id": "bule-bico-fino-rosa",
+                "name": "Bule de Bico Fino Rosa",
+                "short_name": "Bule Bico Fino Rosa",
+                "price": 120.00,
+                "image": "/api/imgs/bule-bico-fino-rosa.jpg"
+            }
+        ]
+    }
 }
