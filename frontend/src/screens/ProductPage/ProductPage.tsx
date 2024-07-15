@@ -10,13 +10,13 @@ import { useState, useEffect } from 'react'
 
 import './ProductPage.css'
 
-async function getProduct(slug:string){
+async function getProduct(slug:string, productType: string){
   let response = await fetch(`http://localhost:3000/products/${productType}/${slug}`) 
   let data = await response.json() 
   return data
 }
 
-interface ITea {
+interface IGenericProduct {
   type: string
   id: string
   name: string
@@ -25,39 +25,34 @@ interface ITea {
   image: string
 }
 
-interface IGenericProduct {
-
-}
-
 export const ProductPage = () => {
+  const currentUrl = window.location.pathname
   const { slug } = useParams()
-
-  const [product, setProduct] = useState<ITea>()
+  const [product, setProduct] = useState<IGenericProduct>()
+  const [productType, setProductType] = useState<string>('')
 
   useEffect(() => {
-    if (slug)
-    getProduct(slug).then(data => {
+    switch (true) {
+      case currentUrl.includes('/teas/'):
+        setProductType('teas')
+        break;
+      case currentUrl.includes('/utensils/'):
+        setProductType('utensils')
+        break;
+    }
+
+    if (slug && productType)
+    getProduct(slug, productType).then(data => {
         setProduct(data)
     })
-}, [slug])
-
-  const currentUrl = window.location.pathname
-  
-  const productType = ''
-  
-  switch (true) {
-    case currentUrl.includes('/teas/'):
-      productType = 'teas'
-  }
-
-  const isATeaDetailPage = location.pathname.startsWith('/teas/')
+}, [slug, productType])
 
   return (
     <div className='productDetailsScreen'>
         <Header />
         <Navigation product={product}/>
         <ProductCard product={product}/>
-        {isATeaDetailPage && <Prepare />}
+        {productType === 'teas' ? <Prepare /> : null}
         <IsntThis />
         <Footer />
     </div>

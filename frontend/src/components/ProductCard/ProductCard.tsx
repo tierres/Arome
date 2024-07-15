@@ -6,7 +6,7 @@ import CupOfTeaImage from './images/cup_of_tea.png'
 import NutricionFacts from './images/nutricion_facts.png'
 import PlusIcon from './images/plus_icon.png'
 
-interface ITea {
+interface IGenericProduct {
     type: string
     id: string
     name: string
@@ -16,7 +16,7 @@ interface ITea {
 }
 
 interface IProductCardProps {
-    product?: ITea;
+    product?: IGenericProduct;
   }
 
 export const ProductCard = ({product} : IProductCardProps) => {
