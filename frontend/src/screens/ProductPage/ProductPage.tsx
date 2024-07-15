@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 import './ProductPage.css'
 
 async function getProduct(slug:string){
-  let response = await fetch(`http://localhost:3000/products/${slug}`) 
+  let response = await fetch(`http://localhost:3000/products/${productType}/${slug}`) 
   let data = await response.json() 
   return data
 }
@@ -40,12 +40,15 @@ export const ProductPage = () => {
         setProduct(data)
     })
 }, [slug])
+
+  const currentUrl = window.location.pathname
   
-  if (location.pathname.startsWith('/teas/')) {
-
+  const productType = ''
+  
+  switch (true) {
+    case currentUrl.includes('/teas/'):
+      productType = 'teas'
   }
-
-  switch
 
   const isATeaDetailPage = location.pathname.startsWith('/teas/')
 
