@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 import './ProductPage.css'
 
 async function getProduct(slug:string, productType: string){
-  let response = await fetch(`http://localhost:3000/products/${productType}/${slug}`) 
+  let response = await fetch(`http://localhost:3000/${productType}/${slug}`) 
   let data = await response.json() 
   return data
 }
@@ -25,22 +25,17 @@ interface IGenericProduct {
   image: string
 }
 
-export const ProductPage = () => {
-  const currentUrl = window.location.pathname
+interface IProductPageProps {
+  productType: string
+  typeLabel: string
+  typeLink: string
+}
+
+export const ProductPage = ({productType, typeLabel, typeLink}:IProductPageProps) => {
   const { slug } = useParams()
   const [product, setProduct] = useState<IGenericProduct>()
-  const [productType, setProductType] = useState<string>('')
 
   useEffect(() => {
-    switch (true) {
-      case currentUrl.includes('/teas/'):
-        setProductType('teas')
-        break;
-      case currentUrl.includes('/utensils/'):
-        setProductType('utensils')
-        break;
-    }
-
     if (slug && productType)
     getProduct(slug, productType).then(data => {
         setProduct(data)
@@ -50,8 +45,8 @@ export const ProductPage = () => {
   return (
     <div className='productDetailsScreen'>
         <Header />
-        <Navigation product={product}/>
-        <ProductCard product={product}/>
+        <Navigation product={product} typeLabel={typeLabel} typeLink={typeLink} />
+        <ProductCard product={product} />
         {productType === 'teas' ? <Prepare /> : null}
         <IsntThis />
         <Footer />

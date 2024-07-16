@@ -11,7 +11,7 @@ export const Utensils = () => {
     <div className='utensilsScreen'>
         <Header />
 
-        <Navigation />
+        <Navigation typeLink="/utensils/" typeLabel="Utensílios" />
         <ProductList />
         <Footer />
     </div>

@@ -21,9 +21,12 @@ export const App = () => {
           <Route path="/build-your" element={(<BuildYour />)} />
           <Route path="/cart" element={(<Cart />)} />
           <Route path="/teas" element={(<Teas />)} />
-          <Route path="/teas/:slug" element={(<ProductPage />)} />
+          <Route path="/teas/:slug" element={(<ProductPage productType='teas' typeLabel='Chás' typeLink='/teas/' />)} />
           <Route path="/utensils" element={(<Utensils />)} />
-          <Route path="/utensils/:slug" element={(<ProductPage />)} />
+          <Route path="/utensils/:slug" element={(<ProductPage 
+            productType='utensils' 
+            typeLabel='Utensílios' 
+            typeLink='/utensils'/>)} />
           <Route path='/*' element={<Home />} />
         </Routes>
       </Router>

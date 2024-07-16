@@ -11,7 +11,7 @@ export const Teas = () => {
     <div className='teasScreen'>
         <Header />
         <InfusionsAndTeas />
-        <Navigation />
+        <Navigation typeLink="/teas/" typeLabel="Chás" />
         <ProductList />
         <Footer />
     </div>

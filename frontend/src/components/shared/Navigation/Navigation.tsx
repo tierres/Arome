@@ -3,7 +3,7 @@ import { SectionContainer } from '../SectionContainer/SectionContainer'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
-interface ITea {
+interface IGenericProduct {
   type: string
   id: string
   name: string
@@ -13,33 +13,20 @@ interface ITea {
 }
 
 interface INavigationProps {
-  product?: ITea;
+  typeLabel: string
+  typeLink: string
+  product?: IGenericProduct;
 }
 
 
-export const Navigation = ({product} : INavigationProps) => {
-  const location = useLocation()
-  const isTheTeasPage = location.pathname.startsWith('/teas')
-  const isItATeaDetailsPage = location.pathname.startsWith('/teas/')
-  const isItAUtensilDetailsPage = location.pathname.startsWith('/utensils/')
-
-  let teaOrUtensil = ''
-  let teaOrUtensilLink = ''
-  if (isTheTeasPage) {
-      teaOrUtensil = "Chás" 
-      teaOrUtensilLink = '/teas'
-  } else { 
-      teaOrUtensil = "Utensílios"
-      teaOrUtensilLink = '/utensils'
-  }
-
+export const Navigation = ({typeLabel, typeLink, product} : INavigationProps) => {
   return(
     <div className={classes.navigationContainer}>
         <SectionContainer className={classes.sectionContainer}>
             <Link to="/" className={classes.firstsAnchors}>Página Inicial </Link>
             <span>{'>'} </span>
-            <Link to={teaOrUtensilLink} className={isItATeaDetailsPage ? classes.firstsAnchors : classes.lastAnchor}>{teaOrUtensil} </Link>
-            {(isItATeaDetailsPage || isItAUtensilDetailsPage) && product ? (
+            <Link to={typeLink} className={product ? classes.firstsAnchors : classes.lastAnchor}>{typeLabel} </Link>
+            {product ? (
             <>
               <span>{'>'} </span>
               <Link to="" className={classes.lastAnchor}>{product.short_name}</Link>

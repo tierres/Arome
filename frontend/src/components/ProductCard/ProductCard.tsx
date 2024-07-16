@@ -94,8 +94,6 @@ export const ProductCard = ({product} : IProductCardProps) => {
         )
     }
 
-    const isATeaDetailPage = location.pathname.startsWith('/teas/')
-
     return(
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
@@ -135,7 +133,7 @@ export const ProductCard = ({product} : IProductCardProps) => {
                         <div className={classes.aboutContainer}>
                             <hr />
                             <br />
-                            <h2 className={classes.aboutH2}>Sobre a {isATeaDetailPage ? product.name.slice(0, -3) : product.name}</h2>
+                            <h2 className={classes.aboutH2}>Sobre a {product.type === 'tea' ? product.name.slice(0, -3) : product.name}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
                                 Uma mescla redonda que combina o 
