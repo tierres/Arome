@@ -19,6 +19,25 @@ interface IProductCardProps {
     product?: IGenericProduct;
   }
 
+interface IProductGalleryProps {
+    product: IGenericProduct
+}
+
+const ProductGallery = ({product} : IProductGalleryProps) => {
+    return (
+        <div>
+            <div className={classes.littleMedias}>
+                <img className={classes.littleImage} src={CupOfTeaImage} alt="" />
+                <img className={classes.littleImage} src={NutricionFacts} alt="" />
+                <img className={classes.littleImage} src={PlusIcon} alt="" />
+            </div>
+            <div className={classes.bigMedia}>
+                <img className={classes.bigImage} src={product.image} alt="" />
+            </div>
+        </div>
+    )
+}
+
 export const ProductCard = ({product} : IProductCardProps) => {
     const [quantity, setQuantity] = useState<number>(1)
 
@@ -99,14 +118,7 @@ export const ProductCard = ({product} : IProductCardProps) => {
             <SectionContainer className={classes.sectionContainer}>
                 <div className={classes.mediaAndInfosContainer}>
                     <div className={classes.gallery}>
-                        <div className={classes.littleMedias}>
-                            <img className={classes.littleImage} src={CupOfTeaImage} alt="" />
-                            <img className={classes.littleImage} src={NutricionFacts} alt="" />
-                            <img className={classes.littleImage} src={PlusIcon} alt="" />
-                        </div>
-                        <div className={classes.bigMedia}>
-                            <img className={classes.bigImage} src={product.image} alt="" />
-                        </div>
+                        <ProductGallery product={product} />
                     </div>
                     <div className={classes.productInfos}>     
                         <h1 className={classes.tittle}>{product.name}</h1>
