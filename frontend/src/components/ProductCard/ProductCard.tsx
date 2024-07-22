@@ -25,7 +25,7 @@ interface IProductGalleryProps {
 
 const ProductGallery = ({product} : IProductGalleryProps) => {
     return (
-        <div>
+        <div className={classes.gallery}>
             <div className={classes.littleMedias}>
                 <img className={classes.littleImage} src={CupOfTeaImage} alt="" />
                 <img className={classes.littleImage} src={NutricionFacts} alt="" />
@@ -34,6 +34,14 @@ const ProductGallery = ({product} : IProductGalleryProps) => {
             <div className={classes.bigMedia}>
                 <img className={classes.bigImage} src={product.image} alt="" />
             </div>
+        </div>
+    )
+}
+
+const CardButtons = () => {
+    return(
+        <div>
+            
         </div>
     )
 }
@@ -117,7 +125,7 @@ export const ProductCard = ({product} : IProductCardProps) => {
         <div className={classes.productCardContainer}>
             <SectionContainer className={classes.sectionContainer}>
                 <div className={classes.mediaAndInfosContainer}>
-                    <div className={classes.gallery}>
+                    <div>
                         <ProductGallery product={product} />
                     </div>
                     <div className={classes.productInfos}>     
