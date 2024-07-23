@@ -2,8 +2,6 @@ import classes from './ProductCard.module.css'
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { useState } from 'react'
 
-import CupOfTeaImage from './images/cup_of_tea.png'
-import NutricionFacts from './images/nutricion_facts.png'
 import PlusIcon from './images/plus_icon.png'
 
 interface IGenericProduct {
@@ -12,7 +10,7 @@ interface IGenericProduct {
     name: string
     short_name: string
     price: number
-    image: string
+    image: string[]
 }
 
 interface IProductCardProps {
@@ -24,15 +22,17 @@ interface IProductGalleryProps {
 }
 
 const ProductGallery = ({product} : IProductGalleryProps) => {
+    const [bigImage, setBigImage] = useState<string>(product.image[0])
+
     return (
         <div className={classes.gallery}>
             <div className={classes.littleMedias}>
-                <img className={classes.littleImage} src={CupOfTeaImage} alt="" />
-                <img className={classes.littleImage} src={NutricionFacts} alt="" />
-                <img className={classes.littleImage} src={PlusIcon} alt="" />
+                {product.image.map((image, index) => (
+                    <img key={index} className={classes.littleImage} src={image} onClick={() => setBigImage(image)}/>
+                ))}
             </div>
             <div className={classes.bigMedia}>
-                <img className={classes.bigImage} src={product.image} alt="" />
+                <img className={classes.bigImage} src={bigImage} alt="" />
             </div>
         </div>
     )

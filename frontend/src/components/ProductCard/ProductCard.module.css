@@ -53,9 +53,16 @@
 }
 
 .littleImage {
-    width: 130px;
-    height: 130px;
+    width: 90px;
+    height: 90px;
     margin-bottom: 50px;
+    cursor: pointer;
+    transition: border 0s ease;
+}
+
+.littleImage:hover {
+    border: 1px solid #ff8785;
+    border-radius: 10px;
 }
 
 .bigMedia {

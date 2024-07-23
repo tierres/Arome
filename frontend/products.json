@@ -6,7 +6,7 @@
             "name": "Infusão Valeriana Lomonai 45g",
             "short_name": "Valeriana Lomonai",
             "price": 25,
-            "image": "/api/imgs/infusao-valeriana-lomonai.svg"
+            "image": ["/api/imgs/infusao-valeriana-lomonai.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -14,7 +14,7 @@
             "name": "Infusão Valeriana Garden 45g",
             "short_name": "Valeriana Garden",
             "price": 25,
-            "image": "/api/imgs/infusao-valeriana-garden.svg"
+            "image": ["/api/imgs/infusao-valeriana-garden.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -22,7 +22,7 @@
             "name": "Infusão Happy Pumpkin 45g",
             "short_name": "Happy Pumpkin",
             "price": 36.80,
-            "image": "/api/imgs/infusao-happy-pumpkin.svg"
+            "image": ["/api/imgs/infusao-happy-pumpkin.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -30,7 +30,7 @@
             "name": "Infusão Sangria Tea 45g",
             "short_name": "Sangria Tea",
             "price": 33.10,
-            "image": "/api/imgs/infusao-sangria-tea.svg"
+            "image": ["/api/imgs/infusao-sangria-tea.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -38,7 +38,7 @@
             "name": "Infusão Cocktail de Frutas 45g",
             "short_name": "Cocktail de Frutas",
             "price": 33.60,
-            "image": "/api/imgs/infusao-cocktail-de-frutas.svg"
+            "image": ["/api/imgs/infusao-cocktail-de-frutas.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -46,7 +46,7 @@
             "name": "Infusão Apple Temptation 45g",
             "short_name": "Apple Temptation",
             "price": 33.60,
-            "image": "/api/imgs/infusao-apple-temptation.svg"
+            "image": ["/api/imgs/infusao-apple-temptation.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -54,7 +54,7 @@
             "name": "Infusão Indian Secret 45g",
             "short_name": "Indian Secret",
             "price": 34.70,
-            "image": "/api/imgs/infusao-indian-secret.svg"
+            "image": ["/api/imgs/infusao-indian-secret.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -62,7 +62,7 @@
             "name": "Infusão Rooibos La Provence 45g",
             "short_name": "Rooibos La Provence",
             "price": 60.50,
-            "image": "/api/imgs/infusao-rooibos-laprovence.svg"
+            "image": ["/api/imgs/infusao-rooibos-laprovence.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -70,7 +70,7 @@
             "name": "Infusão Gracia Blend 45g",
             "short_name": "Gracia Blend",
             "price": 66.50,
-            "image": "/api/imgs/infusao-gracia-blend.svg"
+            "image": ["/api/imgs/infusao-gracia-blend.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         },
         {
             "type": "tea",
@@ -78,7 +78,7 @@
             "name": "Infusão Orange Kalahari 45g",
             "short_name": "Orange Kalahari",
             "price": 56.39,
-            "image": "/api/imgs/infusao-orange-kalahari.svg"
+            "image": ["/api/imgs/infusao-orange-kalahari.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
         }     
     ],
     "utensils": [
@@ -88,7 +88,7 @@
             "name": "Bule de Bico Fino Rosa",
             "short_name": "Bule Bico Fino Rosa",
             "price": 120.00,
-            "image": "/api/imgs/bule-bico-fino-rosa.jpg"
+            "image": ["/api/imgs/bule-bico-fino-rosa.jpg"]
         }
     ]
 }
