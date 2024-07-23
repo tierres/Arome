@@ -39,14 +39,6 @@ const ProductGallery = ({product} : IProductGalleryProps) => {
 }
 
 const CardButtons = () => {
-    return(
-        <div>
-            
-        </div>
-    )
-}
-
-export const ProductCard = ({product} : IProductCardProps) => {
     const [quantity, setQuantity] = useState<number>(1)
 
     const quantityDecrement = () => {
@@ -58,6 +50,26 @@ export const ProductCard = ({product} : IProductCardProps) => {
         setQuantity(quantity + 1)
     }
 
+    return(
+        <div className={classes.buttonsContainer}>
+            <div className={classes.quantityButton}>
+                <button className={classes.plusAndMinusButtons} onClick={quantityDecrement}>
+                    <strong>-</strong>
+                </button>
+                <p className={classes.quantityNumber}><strong>{quantity}</strong></p>
+                <button className={classes.plusAndMinusButtons} onClick={quantityIncrement}>
+                    <strong>+</strong>
+                </button>
+            </div>
+            <button className={classes.addCartButton}>
+                Adicionar ao carrinho
+                <img src='' />
+            </button>
+        </div>
+    )
+}
+
+export const ProductCard = ({product} : IProductCardProps) => {
     if (!product) {
         return( //skeleton:
             <div className={classes.productCardContainer}>
@@ -135,21 +147,7 @@ export const ProductCard = ({product} : IProductCardProps) => {
                         <p className={classes.price}>R$ {product.price.toFixed(2)}</p>
                         <br />
                         <br />
-                        <div className={classes.buttonsContainer}>
-                            <div className={classes.quantityButton}>
-                                <button className={classes.plusAndMinusButtons} onClick={quantityDecrement}>
-                                    <strong>-</strong>
-                                </button>
-                                <p className={classes.quantityNumber}><strong>{quantity}</strong></p>
-                                <button className={classes.plusAndMinusButtons} onClick={quantityIncrement}>
-                                    <strong>+</strong>
-                                </button>
-                            </div>
-                            <button className={classes.addCartButton}>
-                                Adicionar ao carrinho
-                                <img src='' />
-                            </button>
-                        </div>
+                        <CardButtons />
                         <div className={classes.aboutContainer}>
                             <hr />
                             <br />
