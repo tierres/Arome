@@ -12,3 +12,12 @@
     justify-content: space-around;
     height: 60px;
 }
+
+.labelStyle {
+    font-size: large;
+}
+
+.selectStyle {
+    border-radius: 10px;
+    background-color: #C4C4C4;
+}
