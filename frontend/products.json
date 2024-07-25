@@ -6,7 +6,8 @@
             "name": "Infusão Valeriana Lomonai 45g",
             "short_name": "Valeriana Lomonai",
             "price": 25,
-            "image": ["/api/imgs/infusao-valeriana-lomonai.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-valeriana-lomonai.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Descubra a tranquilidade e o bem-estar com o Chá Infusão Valeriana Lomonai, uma mistura cuidadosamente elaborada para promover relaxamento e alívio do estresse. A raiz de valeriana, conhecida por suas propriedades calmantes, é combinada com ervas naturais selecionadas, proporcionando um sabor suave e agradável. Ideal para ser consumido à noite, este chá ajuda a acalmar a mente, reduzir a ansiedade e melhorar a qualidade do sono. Aproveite os benefícios desta infusão e transforme seus momentos de estresse em instantes de paz."
         },
         {
             "type": "tea",
@@ -14,7 +15,8 @@
             "name": "Infusão Valeriana Garden 45g",
             "short_name": "Valeriana Garden",
             "price": 25,
-            "image": ["/api/imgs/infusao-valeriana-garden.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-valeriana-garden.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Experimente a serenidade e o conforto com a Infusão Valeriana Garden, uma combinação especial desenvolvida para promover o relaxamento e o bem-estar. Feita com a raiz de valeriana, famosa por suas propriedades calmantes, esta infusão é misturada com ervas naturais selecionadas para criar um sabor delicado e reconfortante. Ideal para ser consumida à noite, a Infusão Valeriana Garden ajuda a acalmar a mente, aliviar a ansiedade e melhorar a qualidade do sono. Transforme seus momentos de tensão em momentos de paz com esta infusão única."
         },
         {
             "type": "tea",
@@ -22,7 +24,8 @@
             "name": "Infusão Happy Pumpkin 45g",
             "short_name": "Happy Pumpkin",
             "price": 36.80,
-            "image": ["/api/imgs/infusao-happy-pumpkin.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-happy-pumpkin.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Descubra o aconchego e o sabor outonal com a Infusão Happy Pumpkin, uma mistura deliciosa que combina o toque doce da abóbora com especiarias quentes e ervas naturais. Ideal para aquecer os dias frios, esta infusão promove um sentimento de conforto e alegria. Com seu sabor único e agradável, a Infusão Happy Pumpkin é perfeita para qualquer momento do dia, trazendo uma sensação de bem-estar e felicidade. Deixe-se envolver pelo charme desta infusão especial e torne seus momentos mais doces e acolhedores."
         },
         {
             "type": "tea",
@@ -30,7 +33,8 @@
             "name": "Infusão Sangria Tea 45g",
             "short_name": "Sangria Tea",
             "price": 33.10,
-            "image": ["/api/imgs/infusao-sangria-tea.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-sangria-tea.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Desfrute de uma explosão de sabores com a Infusão Sangria Tea, uma mistura vibrante que captura a essência refrescante da tradicional sangria espanhola. Combinando frutas suculentas e ervas aromáticas, esta infusão proporciona uma experiência revitalizante e deliciosa. Ideal para ser servida gelada em dias quentes ou quente para uma sensação reconfortante, a Infusão Sangria Tea é perfeita para qualquer ocasião. Deixe-se levar pelo sabor frutado e envolvente desta infusão e transforme qualquer momento em uma celebração."
         },
         {
             "type": "tea",
@@ -38,7 +42,8 @@
             "name": "Infusão Cocktail de Frutas 45g",
             "short_name": "Cocktail de Frutas",
             "price": 33.60,
-            "image": ["/api/imgs/infusao-cocktail-de-frutas.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-cocktail-de-frutas.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Mergulhe em uma festa de sabores com a Infusão Cocktail de Frutas, uma mistura exuberante de frutas tropicais e ervas selecionadas. Esta infusão oferece uma experiência refrescante e revigorante, perfeita para qualquer momento do dia. Seja apreciada quente ou gelada, a Infusão Cocktail de Frutas proporciona um sabor frutado e vibrante que desperta os sentidos e traz uma sensação de alegria e bem-estar. Delicie-se com esta infusão e transforme seus momentos em uma celebração saborosa."
         },
         {
             "type": "tea",
@@ -46,7 +51,8 @@
             "name": "Infusão Apple Temptation 45g",
             "short_name": "Apple Temptation",
             "price": 33.60,
-            "image": ["/api/imgs/infusao-apple-temptation.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-apple-temptation.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Renda-se ao sabor irresistível da Infusão Apple Temptation, uma combinação perfeita de maçãs suculentas e especiarias aromáticas. Esta infusão proporciona uma experiência deliciosa e reconfortante, ideal para aquecer seus dias e trazer uma sensação de aconchego. Com seu sabor doce e levemente picante, a Infusão Apple Temptation é perfeita para qualquer momento, seja para relaxar à tarde ou para começar o dia com energia. Deixe-se seduzir por esta tentação de maçã e desfrute de uma xícara cheia de prazer e bem-estar."
         },
         {
             "type": "tea",
@@ -54,7 +60,8 @@
             "name": "Infusão Indian Secret 45g",
             "short_name": "Indian Secret",
             "price": 34.70,
-            "image": ["/api/imgs/infusao-indian-secret.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-indian-secret.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Descubra os mistérios e sabores exóticos com a Infusão Indian Secret, uma mistura rica e aromática inspirada nas tradições milenares da Índia. Combinando especiarias autênticas e ervas selecionadas, esta infusão oferece uma experiência sensorial única que desperta os sentidos e acalma a mente. Perfeita para momentos de relaxamento, a Infusão Indian Secret é ideal para ser apreciada a qualquer hora do dia, proporcionando um sabor profundo e reconfortante. Deixe-se envolver pelo segredo das especiarias indianas e transforme sua rotina com esta infusão especial."
         },
         {
             "type": "tea",
@@ -62,7 +69,8 @@
             "name": "Infusão Rooibos La Provence 45g",
             "short_name": "Rooibos La Provence",
             "price": 60.50,
-            "image": ["/api/imgs/infusao-rooibos-laprovence.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-rooibos-laprovence.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Deixe-se transportar para os campos ensolarados da Provence com a Infusão Rooibos La Provence. Esta mistura encantadora combina o suave e doce rooibos com um toque de lavanda e ervas aromáticas, criando uma infusão perfeita para momentos de paz e relaxamento. Com um sabor delicado e fragrância floral, a Infusão Rooibos La Provence é ideal para ser apreciada a qualquer hora do dia, trazendo uma sensação de bem-estar e tranquilidade. Experimente esta infusão única e desfrute de uma xícara que captura a essência da Provence."
         },
         {
             "type": "tea",
@@ -70,7 +78,8 @@
             "name": "Infusão Gracia Blend 45g",
             "short_name": "Gracia Blend",
             "price": 66.50,
-            "image": ["/api/imgs/infusao-gracia-blend.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-gracia-blend.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Encante seus sentidos com a Infusão Gracia Blend, uma mistura sofisticada de ervas e especiarias cuidadosamente selecionadas para criar uma experiência de sabor única. Este blend requintado oferece um equilíbrio perfeito entre notas suaves e intensas, proporcionando uma infusão que é ao mesmo tempo refrescante e reconfortante. Ideal para qualquer momento do dia, a Infusão Gracia Blend é perfeita para quem busca um toque de elegância e tranquilidade em cada xícara. Deixe-se envolver por este blend especial e descubra o prazer de uma infusão verdadeiramente graciosa."
         },
         {
             "type": "tea",
@@ -78,7 +87,8 @@
             "name": "Infusão Orange Kalahari 45g",
             "short_name": "Orange Kalahari",
             "price": 56.39,
-            "image": ["/api/imgs/infusao-orange-kalahari.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"]
+            "image": ["/api/imgs/infusao-orange-kalahari.svg", "/api/imgs/cup_of_tea.png", "/api/imgs/nutricion_facts.png"],
+            "description": "Deleite-se com o sabor vibrante e exótico da Infusão Orange Kalahari. Esta mistura refrescante combina o frescor cítrico da laranja com notas sutis de ervas e especiarias, evocando a essência dos vastos desertos do Kalahari. Perfeita para revitalizar os sentidos a qualquer hora do dia, a Infusão Orange Kalahari oferece uma experiência saborosa e energizante. Aprecie o equilíbrio perfeito entre o doce e o ácido e permita que esta infusão traga um toque de aventura e frescor para a sua rotina."
         }     
     ],
     "utensils": [
@@ -88,7 +98,8 @@
             "name": "Bule de Bico Fino Rosa",
             "short_name": "Bule Bico Fino Rosa",
             "price": 120.00,
-            "image": ["/api/imgs/bule-bico-fino-rosa.jpg"]
+            "image": ["/api/imgs/bule-bico-fino-rosa.jpg"],
+            "description": "Adicione um toque de charme e elegância à sua mesa com o Bule de Bico Fino Rosa. Este bule delicado é projetado com um bico fino para um despejo preciso e elegante, ideal para servir chá com estilo. Feito com materiais de alta qualidade e um acabamento rosa suave, ele combina funcionalidade e beleza, tornando-se um acessório indispensável para qualquer amante de chá. Seu design sofisticado é perfeito para ocasiões especiais ou para adicionar um toque de graça ao seu dia a dia. Transforme seus momentos de chá em uma experiência refinada com o Bule de Bico Fino Rosa."
         }
     ]
 }

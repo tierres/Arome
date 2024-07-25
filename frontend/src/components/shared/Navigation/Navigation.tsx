@@ -1,7 +1,6 @@
 import classes from './Navigation.module.css'
 import { SectionContainer } from '../SectionContainer/SectionContainer'
 import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
 
 interface IGenericProduct {
   type: string
@@ -9,7 +8,8 @@ interface IGenericProduct {
   name: string
   short_name: string
   price: number
-  image: string
+  image: string[]
+  description: string
 }
 
 interface INavigationProps {

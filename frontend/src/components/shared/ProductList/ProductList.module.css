@@ -1,12 +1,14 @@
 .productListContainer {
-
-}
-
-.sectionContainer {
     
 }
 
-.filtersContainer {
+.sectionContainer {
     background-color: #C4C4C4;
+}
+
+.filtersContainer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
     height: 60px;
 }

@@ -4,14 +4,29 @@ import { SectionContainer } from '../SectionContainer/SectionContainer'
 export const ProductList = () => {
   return(
     <div className={classes.productListContainer}>
-        <SectionContainer className={classes.sectionContainer}>
-            <div className={classes.filtersContainer}>
-              Tipo Ordenar
+      <SectionContainer className={classes.sectionContainer}>
+        <div className={classes.filtersContainer}>
+            <div className={classes.typeFilter}>
+              <label htmlFor="type">Tipo </label>
+              <select id="type" className={classes.selectStyle}>
+                <option value="">Chá Branco</option>
+                <option value="">Chá Preto</option>
+                <option value="">Chá Verde</option>
+                <option value="">Rooibos</option>
+              </select>
             </div>
-            <div>
-
+            
+            <div className={classes.orderFilter}>
+              <label htmlFor="order">Ordenar </label>
+              <select id="order">
+                <option value="">nome A-Z</option>
+                <option value="">nome Z-A</option>
+                <option value="">menores preços</option>
+                <option value="">maiores preços</option>
+              </select>
             </div>
-        </SectionContainer>
+        </div>
+      </SectionContainer>
     </div>
   );
 };

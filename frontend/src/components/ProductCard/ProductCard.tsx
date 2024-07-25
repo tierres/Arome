@@ -2,7 +2,7 @@ import classes from './ProductCard.module.css'
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { useState } from 'react'
 
-import PlusIcon from './images/plus_icon.png'
+// import PlusIcon from './images/plus_icon.png'
 
 interface IGenericProduct {
     type: string
@@ -11,6 +11,7 @@ interface IGenericProduct {
     short_name: string
     price: number
     image: string[]
+    description: string
 }
 
 interface IProductCardProps {
@@ -154,15 +155,7 @@ export const ProductCard = ({product} : IProductCardProps) => {
                             <h2 className={classes.aboutH2}>Sobre a {product.type === 'tea' ? product.name.slice(0, -3) : product.name}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
-                                Uma mescla redonda que combina o 
-                                sabor frutado do Rooibos africano, uma 
-                                infusão altamente mineralizante, que não 
-                                contém teína, com a carícia da baunilha, 
-                                casca de laranja, pétalas de rosa, de 
-                                marianinha e de girassol. Ideal para toda 
-                                a família a qualquer hora do dia. 
-                                Também disponível na base de Chá Preto, 
-                                Verde, Vermelho e Branco.
+                                {product.description}
                             </p>
                         </div>
                     </div>

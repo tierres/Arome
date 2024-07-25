@@ -22,7 +22,8 @@ interface IGenericProduct {
   name: string
   short_name: string
   price: number
-  image: string
+  image: string[]
+  description: string
 }
 
 interface IProductPageProps {
