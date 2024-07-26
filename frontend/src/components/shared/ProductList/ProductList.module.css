@@ -1,23 +1,51 @@
 .productListContainer {
-    
+    background-color: white;
 }
 
 .sectionContainer {
-    background-color: #C4C4C4;
+    background-color: white;
 }
 
 .filtersContainer {
-    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
     height: 60px;
+}
+
+.spanStyle {
+    color: #777;
+    flex: 1;
 }
 
 .labelStyle {
     font-size: large;
+    padding-left: 15px;
+    color: #425B41;
 }
 
 .selectStyle {
-    border-radius: 10px;
-    background-color: #C4C4C4;
+    -webkit-appearance: none; /* Remove o estilo padrão no Safari e Chrome */
+    -moz-appearance: none; /* Remove o estilo padrão no Firefox */
+    appearance: none; /* Remove o estilo padrão em navegadores que suportam a propriedade appearance */
+
+    /* Adicionando uma seta personalizada: */
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 4 5%22%3E%3Cpath fill%3D%22%23444444%22 d%3D%22M2 0L0 2h4z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    width: 160px;
+    height: 40px;
+    text-indent: 8%;
+}
+
+/* ------------------------------------ */
+
+.listContainer {
+    background-color: white;
 }

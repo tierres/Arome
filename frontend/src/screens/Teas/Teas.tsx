@@ -12,7 +12,7 @@ export const Teas = () => {
         <Header />
         <InfusionsAndTeas />
         <Navigation typeLink="/teas/" typeLabel="Chás" />
-        <ProductList />
+        <ProductList productType="teas" />
         <Footer />
     </div>
   );

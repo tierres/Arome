@@ -8,22 +8,14 @@ import { Footer } from "../../components/shared/Footer/Footer.tsx"
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
+import { IGenericProduct } from '@/types/generic_product'
+
 import './ProductPage.css'
 
 async function getProduct(slug:string, productType: string){
   let response = await fetch(`http://localhost:3000/${productType}/${slug}`) 
   let data = await response.json() 
   return data
-}
-
-interface IGenericProduct {
-  type: string
-  id: string
-  name: string
-  short_name: string
-  price: number
-  image: string[]
-  description: string
 }
 
 interface IProductPageProps {

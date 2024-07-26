@@ -12,7 +12,7 @@ export const Utensils = () => {
         <Header />
 
         <Navigation typeLink="/utensils/" typeLabel="Utensílios" />
-        <ProductList />
+        <ProductList productType="utensils" />
         <Footer />
     </div>
   );
