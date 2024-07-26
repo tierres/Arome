@@ -9,6 +9,7 @@ export const ProductList = () => {
             <div className={classes.typeFilter}>
               <label htmlFor="type" className={classes.labelStyle}>Tipo </label>
               <select id="type" className={classes.selectStyle}>
+                <option value="">Todos</option>
                 <option value="">Chá Branco</option>
                 <option value="">Chá Preto</option>
                 <option value="">Chá Verde</option>
@@ -19,6 +20,7 @@ export const ProductList = () => {
             <div className={classes.orderFilter}>
               <label htmlFor="order" className={classes.labelStyle}>Ordenar </label>
               <select id="order" className={classes.selectStyle}>
+                <option value="">Destaques</option>
                 <option value="">nome A-Z</option>
                 <option value="">nome Z-A</option>
                 <option value="">menores preços</option>
