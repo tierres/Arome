@@ -3,6 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard';
 import LeftArrow from './vectors/left-arrow.svg'
 import RightArrow from './vectors/right-arrow.svg'
+import { IGenericProduct } from '@/types/generic_product';
 
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -15,17 +16,8 @@ async function getProducts(){
     return data;
   }
 
-interface ITea {
-    type: string
-    id: string
-    name: string
-    short_name: string
-    price: number
-    image: string
-}
-
 export const HighlightedProducts = () => {
-    const [products, setProducts] = useState<ITea[]>([])
+    const [products, setProducts] = useState<IGenericProduct[]>([])
 
     useEffect(() => {
         getProducts().then(data => {
@@ -57,10 +49,9 @@ export const HighlightedProducts = () => {
                 </div>
                 <div className={classes.arrowsPlusCards}>
                         <Slider {...settings} className={classes.slider}>
-                                {products.map(tea => (
+                                {products.map(product => (
                                         <LittleProductCard
-                                            key={tea.id}
-                                            tea={tea}
+                                            product={product}
                                         />
                                 ))}
                         </Slider>

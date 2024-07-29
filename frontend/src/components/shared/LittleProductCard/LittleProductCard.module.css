@@ -21,12 +21,12 @@
     flex: 1;
 }
 
-.teaImage {
+.productImage {
     height: 244px;
     width: 244px;
 }
 
-.teaName {
+.productName {
     text-align: center;
     font-size: x-large;
     font-weight: 400;

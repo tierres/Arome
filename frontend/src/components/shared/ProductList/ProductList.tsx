@@ -1,5 +1,6 @@
 import classes from './ProductList.module.css'
 import { SectionContainer } from '../SectionContainer/SectionContainer'
+import { LittleProductCard } from '../LittleProductCard/LittleProductCard'
 import { useEffect, useState } from 'react';
 
 import { IGenericProduct } from '@/types/generic_product'
@@ -12,29 +13,18 @@ async function getProducts(productType: string) {
 
 interface IProductListProps {
   productType: string
-  // subTypeOptions: string[]
 }
 
 export const ProductList = ({productType} : IProductListProps) => {
   const [subTypes, setSubTypes] = useState<string[]>([])
+  const [products, setProducts] = useState<IGenericProduct[]>([])
 
   useEffect(() => {
-    // setSubTypes([...subTypes, '1'])
-    // setSubTypes([...subTypes, '2'])
-    // setSubTypes([...subTypes, '3'])
-    
-    // setSubTypes(prev1 => [...prev1, '1'])
-    // setSubTypes(old2 => [...old2, '2'])
-    // setSubTypes(oldAfter2 => [...oldAfter2, '3'])
-
     getProducts(productType).then(data => {
-      // data.map(product => (
-      //   setSubTypes([...subTypes, product.sub_type])
-      // ))
-
       setSubTypes(
         [...new Set(data.map(product => product.sub_type))]
       )
+      setProducts(data)
     })
   }, [])
 
@@ -46,7 +36,6 @@ export const ProductList = ({productType} : IProductListProps) => {
             <div className={classes.typeFilter}>
               <label htmlFor="type" className={classes.labelStyle}>Tipo </label>
               <select id="type" className={classes.selectStyle}>
-
                 {subTypes.map(subType => (
                   <option value={subType} key={subType}>{subType}</option>
                 ))}
@@ -65,14 +54,11 @@ export const ProductList = ({productType} : IProductListProps) => {
         </div>
         <hr />
         <div className={classes.listContainer}>
-          <br />
-          <br />
-          <br />
-
-          <p>produto</p>
-          <p>produto</p>
-          <p>produto</p>
-          <p>produto</p>
+          {products.map(product => (
+              <LittleProductCard
+                  product={product}
+              />
+          ))}
         </div>
       </SectionContainer>
     </div>

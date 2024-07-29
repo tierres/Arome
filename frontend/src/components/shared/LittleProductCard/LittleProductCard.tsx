@@ -1,25 +1,19 @@
 import classes from './LittleProductCard.module.css'
 import PlusIcon from './vectors/plus-icon.svg'
 import FavIcon from './vectors/fav-icon.svg'
+import { IGenericProduct } from '@/types/generic_product'
 
-interface IProductProps {
-    tea: {
-        type: string
-        id: string
-        name: string
-        short_name: string
-        price: number
-        image: string
-    }
+interface ILittleProductCardProps {
+    product: IGenericProduct
 }
    
-export const LittleProductCard = (params: IProductProps) => {
+export const LittleProductCard = ({product}: ILittleProductCardProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
             <div className={classes.topside}>
-                <img className={classes.teaImage} src={params.tea.image} alt="" />
-                <h2 className={classes.teaName}>
-                    {params.tea.name}
+                <img className={classes.productImage} src={product.image[0]} alt="" />
+                <h2 className={classes.productName}>
+                    {product.name}
                 </h2>
                 <br/>
             </div>
@@ -34,7 +28,7 @@ export const LittleProductCard = (params: IProductProps) => {
                 </div>
                 <div className={classes.priceContainer}>
                     <p className={classes.aPartirDe}>A partir de</p>
-                    <p className={classes.price}>R${params.tea.price.toFixed(2)}</p>
+                    <p className={classes.price}>R${product.price.toFixed(2)}</p>
                 </div>            
             </div>
         </div>    
