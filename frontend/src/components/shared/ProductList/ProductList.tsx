@@ -18,6 +18,8 @@ interface IProductListProps {
 export const ProductList = ({productType} : IProductListProps) => {
   const [subTypes, setSubTypes] = useState<string[]>([])
   const [products, setProducts] = useState<IGenericProduct[]>([])
+  const [typeFilterState, setTypeFilterState] = useState<string>('')
+  const [orderFilterState, setTypeOrderFilterState]
 
   useEffect(() => {
     getProducts(productType).then(data => {
@@ -27,6 +29,8 @@ export const ProductList = ({productType} : IProductListProps) => {
       setProducts(data)
     })
   }, [])
+
+  const handleTypeFilterChange = (event) => 
 
   return(
     <div className={classes.productListContainer}>
@@ -54,7 +58,7 @@ export const ProductList = ({productType} : IProductListProps) => {
         </div>
         <hr />
         <div className={classes.listContainer}>
-          {products.map(product => (
+          {products.filter(product => product.sub_type === ).map(product => (
               <LittleProductCard
                   product={product}
               />

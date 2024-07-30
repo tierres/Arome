@@ -47,5 +47,9 @@
 /* ------------------------------------ */
 
 .listContainer {
+    padding-top: 10px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; 
 }
