@@ -7,4 +7,5 @@ export interface IGenericProduct {
     price: number
     image: string[]
     description: string
+    relevance: number
   }
