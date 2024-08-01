@@ -88,6 +88,7 @@ export const ProductList = ({productType} : IProductListProps) => {
           sortedProducts.map(product => (
             <LittleProductCard
               product={product}
+              productType={productType}
               key={product.id}
             />
             ))

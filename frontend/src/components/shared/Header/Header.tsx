@@ -36,11 +36,8 @@ const CustomLink = (params: ICustomLink) => {
 };
 
 export const Header = () => {
-
-  const isProductDetailPage = location.pathname.startsWith('/teas/')
-
   return(
-    <header className={isProductDetailPage ? classes.headerContainerOption2 : classes.headerContainer}> 
+    <header className={classes.headerContainer}> 
       <SectionContainer className={classes.sectionContainer}>  
         <div className={classes.logoContainer}>
           <Link to='/'>
