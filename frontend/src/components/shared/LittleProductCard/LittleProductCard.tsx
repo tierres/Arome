@@ -13,7 +13,7 @@ interface ILittleProductCardProps {
 export const LittleProductCard = ({product, productType}: ILittleProductCardProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
-            <Link to={`/${productType}/${product.id}`}>
+            <Link to={`/${productType}/${product.id}`} className={classes.topSideLink}>
             <div className={classes.topside}>
                 <img className={classes.productImage} src={product.image[0]} />
                 <h2 className={classes.productName}>

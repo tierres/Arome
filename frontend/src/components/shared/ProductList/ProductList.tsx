@@ -69,6 +69,7 @@ export const ProductList = ({productType} : IProductListProps) => {
                 {subTypes.map(subType => (
                   <option value={subType} key={subType}>{subType}</option>
                 ))}
+                <option value='Meus Favoritos'>Meus Favoritos</option>
               </select>
             </div>
             <div className={classes.orderFilter}>
