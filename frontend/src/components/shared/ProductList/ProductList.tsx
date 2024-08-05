@@ -61,7 +61,13 @@ export const ProductList = ({productType} : IProductListProps) => {
     <div className={classes.productListContainer}>
       <SectionContainer className={classes.sectionContainer}>
         <div className={classes.filtersContainer}>
-            <span className={classes.spanStyle}>{`${sortedProducts.length} PRODUTOS ENCONTRADOS`}</span>
+            <span className={classes.spanStyle}>
+            {sortedProducts.length === 0
+              ? 'NENHUM PRODUTO ENCONTRADO'
+              : `${sortedProducts.length} PRODUTO${
+                  sortedProducts.length > 1 ? 'S' : ''
+                } ENCONTRADO${sortedProducts.length > 1 ? 'S' : ''}`}
+            </span>
             <div className={classes.typeFilter}>
               <label htmlFor="type" className={classes.labelStyle}>Tipo </label>
               <select onChange={handleTypeFilterChange} id="type" className={classes.selectStyle}>
