@@ -11,7 +11,7 @@ import { useState } from 'react';
 import Slider from "react-slick";
 
 async function getProducts(){
-    let response = await fetch('http://localhost:3000/products') 
+    let response = await fetch('http://localhost:3000/teas') 
     let data = await response.json() 
     return data;
   }
@@ -52,6 +52,7 @@ export const HighlightedProducts = () => {
                                 {products.map(product => (
                                         <LittleProductCard
                                             product={product}
+                                            productType="teas"
                                         />
                                 ))}
                         </Slider>
