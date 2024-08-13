@@ -2,7 +2,7 @@ import express, { Application, Request, Response } from "express";
 import productRoutes from './routes'
 
 const app: Application = express()
-const PORT = process.env.PORT || 4030
+const PORT = process.env.PORT || 3000
 
 // Middleware para permitir JSON
 app.use(express.json())
