@@ -21,6 +21,14 @@ app.listen(PORT, () => {
 
 
 
+
+
+
+
+
+
+
+
 // // Exemplo de rota GET
 // app.get('/api/items', (req: Request, res: Response) => {
 //     res.json({ message: 'Aqui você receberá uma lista de ítens!'})
