@@ -1,5 +1,5 @@
 import express, { Application, Request, Response } from "express";
-import productRoutes from './routes'
+import routes from './routes'
 
 const app: Application = express()
 const PORT = process.env.PORT || 3000
@@ -13,7 +13,9 @@ app.get('/', (req, res) => {
 })
 
 // Usar as rotas configuradas no arquivo routes.ts
-app.use('/api', productRoutes)
+app.use('/api', routes)
+
+app.use(express.static('public'))
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`)

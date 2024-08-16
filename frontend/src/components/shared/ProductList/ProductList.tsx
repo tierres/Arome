@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { IGenericProduct } from '@/types/generic_product'
 
 async function getProducts(productType: string) {
-  let response = await fetch(`http://localhost:3000/${productType}`) 
+  let response = await fetch(`http://localhost:3000/${productType}`,{method: "get"}) 
   let data: IGenericProduct[] = await response.json() 
   return data
 }
