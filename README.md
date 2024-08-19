@@ -46,9 +46,9 @@
 
 ![Screenshot do e-commerce - 4](screenshots/screenshot_frontend.png)
 
-asd
-asd
-asd
+<p><strong>backend:</strong></p>
+
+![Screenshot do e-commerce - 5](screenshots/screenshot_backend.png)
 
 
 <p>O meu projeto é divido em duas pastas principais: <strong>backend</strong> e <strong>frontend</strong>.</p>
