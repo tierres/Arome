@@ -52,7 +52,7 @@
 
 
 <p>O meu projeto é divido em duas pastas principais: <strong>backend</strong> e <strong>frontend</strong>.</p>
-<p>No <strong>frontend</strong> consta uma pasta de <strong>componentes</strong> e uma de <strong>telas</strong></p>
+<p>No <strong>frontend</strong> consta uma pasta de <strong>componentes</strong> e uma de <strong>telas</strong>.</p>
 <p>Cada tela é composta por diversos componentes, sendo o <strong>Header</strong> e o <strong>Footer</strong> sempre o primeiro e o último, respectivamente.</p>
 
 ## 🎨 CSS Modules
