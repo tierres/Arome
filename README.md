@@ -20,29 +20,35 @@
 
 
 
+## 🎠 react-slick
+
+
 ![Screenshot do e-commerce - 2](screenshots/screenshot_2.png)
 
-
-## 🎠 react-slick
 
 <p>Utilizei a biblioteca <strong>react-slick</strong> para fazer o carrossel de produtos em destaque.</p>
 
 
 
+## 📋 react-hook-form com zod e zod resolver
+
+
 ![Screenshot do e-commerce - 3](screenshots/screenshot_3.png)
 
-
-## 📋 react-hook-form com zod e zod resolver
 
 <p>Fiz o formulário de inscrição no club utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
 
 
 
-![Screenshot do e-commerce - 4](screenshots/screenshot_4.png)
-
-
 ## 🧱 Estrutura dos arquivos
-<p>O meu projeto consta com duas pastas principais: de <strong>componentes</strong> e de <strong>telas</strong>.</p>
+
+
+![Screenshot do e-commerce - 4](screenshots/screenshot_frontend.png)
+![Screenshot do e-commerce - 4](screenshots/screenshot_backend.png)
+
+
+<p>O meu projeto é divido em duas pastas principais: <strong>backend</strong> e <strong>frontend</strong>.</p>
+<p>No <strong>frontend</strong> consta uma pasta de <strong>componentes</strong> e uma de <strong>telas</strong></p>
 <p>Cada tela é composta por diversos componentes, sendo o <strong>Header</strong> e o <strong>Footer</strong> sempre o primeiro e o último, respectivamente.</p>
 
 ## 🎨 CSS Modules
