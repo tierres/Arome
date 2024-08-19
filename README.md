@@ -42,8 +42,12 @@
 
 ## 🧱 Estrutura dos arquivos
 
+<p><strong>frontend:</strong></p>
 
 ![Screenshot do e-commerce - 4](screenshots/screenshot_frontend.png)
+
+<p><strong>backend:</strong></p>
+
 ![Screenshot do e-commerce - 4](screenshots/screenshot_backend.png)
 
 
