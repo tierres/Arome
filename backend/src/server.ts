@@ -4,19 +4,22 @@ import routes from './routes'
 const app: Application = express()
 const PORT = process.env.PORT || 3000
 
-// Middleware para permitir JSON
+// Middleware para permitir JSON: Ele intercepta todas as requisições antes que cheguem às rotas, garantindo que o corpo da requisição esteja disponível em 'req.body' no formato de um objeto JS
 app.use(express.json())
 
-// Rota para a raiz do site
+// Middleware/Rota para a raiz do site
 app.get('/', (req, res) => {
     res.send('API da Arome está rodando!')
 })
 
-// Usar as rotas configuradas no arquivo routes.ts
+// Middleware para usar as rotas configuradas no arquivo routes.ts sob o caminho base '/api'
 app.use('/api', routes)
 
+// Middleware para poder acessar qualquer arquivo da pasta 'public' através do cliente --> " http://localhost:3000/images/infusao-valeriana-garden.svg " por exemplo.
 app.use(express.static('public'))
 
+
+// Função responsável por iniciar o servidor web, permitindo que ele comece a ouvir conexões HTTP na porta especificada(nesse caso 3000)
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`)
 })
