@@ -2,8 +2,16 @@ import { Request, Response } from 'express'
 import db from '../database'
 
 export const getProducts = (req: Request, res: Response) => {
-    const products = db.prepare('SELECT * FROM products').all()
-    res.json(products)
+    const { type } = req.params
+    const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM product_images i WHERE i.product_id = p.id) AS image FROM products p WHERE type = ?`).all(type)
+    const productsWithImages = products.map((product: any) => {
+        const imageUrls = product.image ? product.image.split(',') : [];
+        return {
+            ...product, // Spread operator to preserve existing product properties
+            image: imageUrls, // Add the split image URLs array
+        };
+    })
+    res.json(productsWithImages)
 }
 
 export const getProduct = (req: Request, res: Response) => {
@@ -38,6 +46,7 @@ export const updateProduct = (req: Request, res: Response) => {
 
 export const deleteProduct = (req: Request, res: Response) => {
     const { id } = req.params
+    console.log(id)
     const product = db.prepare('SELECT * FROM products WHERE id = ?').get(id)
 
     if (!product) {
@@ -49,11 +58,8 @@ export const deleteProduct = (req: Request, res: Response) => {
     const stmt = db.prepare('DELETE FROM products WHERE id = ?')
     const result = stmt.run(id)
 
-    if (result.changes > 0) {
-        res.json({ message: 'Produto excluído com sucesso' });
-    } else {
-        res.status(500).json({ error: 'Erro ao excluir o produto' });
-    }
+    
+    res.json({ message: 'Produto excluído com sucesso' });
 }
 
 // Para 'updateProduct' e 'deleteProduct': 

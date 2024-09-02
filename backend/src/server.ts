@@ -1,4 +1,5 @@
-import express, { Application, Request, Response } from "express";
+import express, { Application, Request, Response } from "express"
+import cors from "cors"
 import routes from './routes'
 
 const app: Application = express()
@@ -6,6 +7,8 @@ const PORT = process.env.PORT || 3000
 
 // Middleware para permitir JSON: Ele intercepta todas as requisições antes que cheguem às rotas, garantindo que o corpo da requisição esteja disponível em 'req.body' no formato de um objeto JS
 app.use(express.json())
+
+app.use(cors())
 
 // Middleware/Rota para a raiz do site
 app.get('/', (req, res) => {

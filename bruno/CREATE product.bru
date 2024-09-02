@@ -1,0 +1,24 @@
+meta {
+  name: CREATE product
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "slug": "infusao-brooklin-bridge",
+      "type": "tea",
+      "sub_type": "Chá de Frutas",
+      "name": "Infusão Brooklin Bridge 45g",
+      "short_name": "Brooklin Bridge",
+      "price": 77.90,
+      "description": "A ponte mais famosa do mundo, agora em chá",
+      "relevance": 1
+    }
+}
