@@ -2,6 +2,11 @@ import { Request, Response } from 'express'
 import db from '../database'
 
 export const getProducts = (req: Request, res: Response) => {
+    const products = db.prepare('SELECT * FROM products').all()
+    res.json(products)
+}
+
+export const getSpecificProducts = (req: Request, res: Response) => {
     const { type } = req.params
     const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM product_images i WHERE i.product_id = p.id) AS image FROM products p WHERE type = ?`).all(type)
     const productsWithImages = products.map((product: any) => {
@@ -15,8 +20,8 @@ export const getProducts = (req: Request, res: Response) => {
 }
 
 export const getProduct = (req: Request, res: Response) => {
-    const { id } = req.params
-    const product = db.prepare('SELECT * FROM products WHERE id = ?').get(id)
+    const { slug, type } = req.params
+    const product = db.prepare('SELECT * FROM products WHERE slug = ? AND type = ?').get(slug, type)
     res.json(product)
 }
 

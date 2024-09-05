@@ -12,8 +12,8 @@ import { IGenericProduct } from '@/types/generic_product'
 
 import './ProductPage.css'
 
-async function getProduct(slug:string, productType: string){
-  let response = await fetch(`http://localhost:3000/${productType}/${slug}`) 
+async function getProduct(slug: string, productType: string){
+  let response = await fetch(`http://localhost:3000/api/products/${productType}/${slug}`, {method: "get"}) 
   let data = await response.json() 
   return data
 }
