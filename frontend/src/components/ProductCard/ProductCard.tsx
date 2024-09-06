@@ -1,18 +1,9 @@
 import classes from './ProductCard.module.css'
 import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { useState } from 'react'
+import { IGenericProduct } from '@/types/generic_product'
 
 // import PlusIcon from './images/plus_icon.png'
-
-interface IGenericProduct {
-    type: string
-    id: string
-    name: string
-    short_name: string
-    price: number
-    image: string[]
-    description: string
-}
 
 interface IProductCardProps {
     product?: IGenericProduct;
@@ -23,12 +14,12 @@ interface IProductGalleryProps {
 }
 
 const ProductGallery = ({product} : IProductGalleryProps) => {
-    const [bigImage, setBigImage] = useState<string>(product.image[0])
+    const [bigImage, setBigImage] = useState<string>(product.images[0])
 
     return (
         <div className={classes.gallery}>
             <div className={classes.littleMedias}>
-                {product.image.map((image, index) => (
+                {product.images.map((image, index) => (
                     <img key={index} className={classes.littleImage} src={image} onClick={() => setBigImage(image)}/>
                 ))}
             </div>

@@ -15,7 +15,7 @@ export const LittleProductCard = ({product, productType}: ILittleProductCardProp
         <div className={classes.littleProductCardContainer}>
             <Link to={`/${productType}/${product.slug}`} className={classes.topSideLink}>
             <div className={classes.topside}>
-                <img className={classes.productImage} src={product.image[0]} />
+                <img className={classes.productImage} src={product.images[0]} />
                 <h2 className={classes.productName}>
                     {product.name}
                 </h2>

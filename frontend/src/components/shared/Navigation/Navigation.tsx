@@ -1,16 +1,7 @@
 import classes from './Navigation.module.css'
 import { SectionContainer } from '../SectionContainer/SectionContainer'
 import { Link } from 'react-router-dom'
-
-interface IGenericProduct {
-  type: string
-  id: string
-  name: string
-  short_name: string
-  price: number
-  image: string[]
-  description: string
-}
+import { IGenericProduct } from '@/types/generic_product'
 
 interface INavigationProps {
   typeLabel: string

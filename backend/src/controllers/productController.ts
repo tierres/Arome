@@ -8,12 +8,12 @@ export const getProducts = (req: Request, res: Response) => {
 
 export const getSpecificProducts = (req: Request, res: Response) => {
     const { type } = req.params
-    const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM product_images i WHERE i.product_id = p.id) AS image FROM products p WHERE type = ?`).all(type)
+    const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE type = ?`).all(type)
     const productsWithImages = products.map((product: any) => {
-        const imageUrls = product.image ? product.image.split(',') : [];
+        const imagesUrls = product.images ? product.images.split(',') : [];
         return {
             ...product, // Spread operator to preserve existing product properties
-            image: imageUrls, // Add the split image URLs array
+            images: imagesUrls, // Add the split image URLs array
         };
     })
     res.json(productsWithImages)
@@ -21,8 +21,21 @@ export const getSpecificProducts = (req: Request, res: Response) => {
 
 export const getProduct = (req: Request, res: Response) => {
     const { slug, type } = req.params
-    const product = db.prepare('SELECT * FROM products WHERE slug = ? AND type = ?').get(slug, type)
-    res.json(product)
+    const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type)
+    if (!product) {
+        return res.status(404).json({ error: 'Produto não encontrado' });
+      }
+
+      // Separar as URLs das imagens
+    const imagesUrls = product.images ? product.images.split(',') : [];
+
+    // Adicionar a propriedade "images" como um array de URLs
+    const productWithImages = {
+      ...product,
+      images: imagesUrls, // Substitui a string concatenada por um array de URLs
+    };
+
+    res.json(productWithImages)
 }
 
 export const addProduct = (req: Request, res: Response) => {
