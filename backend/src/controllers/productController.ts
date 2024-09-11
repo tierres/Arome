@@ -1,12 +1,16 @@
 import { Request, Response } from 'express'
 import db from '../database'
 
+import { IGenericProduct } from '../types/generic_product'
+
 export const getProducts = (req: Request, res: Response) => {
+    console.log('Executando getProducts()')
     const products = db.prepare('SELECT * FROM products').all()
     res.json(products)
 }
 
 export const getSpecificProducts = (req: Request, res: Response) => {
+    console.log('Executando getSpecificProducts()')
     const { type } = req.params
     const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE type = ?`).all(type)
     const productsWithImages = products.map((product: any) => {
@@ -20,12 +24,13 @@ export const getSpecificProducts = (req: Request, res: Response) => {
 }
 
 export const getProduct = (req: Request, res: Response) => {
+    console.log('Executando getProduct()')
     const { slug, type } = req.params
-    const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type)
+    const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type) as IGenericProduct | undefined;
+    
     if (!product) {
         return res.status(404).json({ error: 'Produto não encontrado' });
       }
-
       // Separar as URLs das imagens
     const imagesUrls = product.images ? product.images.split(',') : [];
 
@@ -39,6 +44,7 @@ export const getProduct = (req: Request, res: Response) => {
 }
 
 export const addProduct = (req: Request, res: Response) => {
+    console.log('Executando addProduct()')
     const { slug, type, sub_type, name, short_name, price, description, relevance } = req.body
     const stmt = db.prepare('INSERT INTO products (slug, type, sub_type, name, short_name, price, description, relevance) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
     const result = stmt.run(slug, type, sub_type, name, short_name, price, description, relevance)
@@ -46,6 +52,7 @@ export const addProduct = (req: Request, res: Response) => {
 }
 
 export const updateProduct = (req: Request, res: Response) => {
+    console.log('Executando updateProduct()')
     const { id } = req.params
     const product = db.prepare('SELECT * FROM products WHERE id = ?').get(id);
 
@@ -63,6 +70,7 @@ export const updateProduct = (req: Request, res: Response) => {
 }
 
 export const deleteProduct = (req: Request, res: Response) => {
+    console.log('Executando deleteProduct()')
     const { id } = req.params
     console.log(id)
     const product = db.prepare('SELECT * FROM products WHERE id = ?').get(id)
@@ -79,10 +87,3 @@ export const deleteProduct = (req: Request, res: Response) => {
     
     res.json({ message: 'Produto excluído com sucesso' });
 }
-
-// Para 'updateProduct' e 'deleteProduct': 
-    // 1- Buscar o produto com id
-    // 2- Caso não exista, retorar um erro
-    // 3- Pegar os dados do body
-    // 4- Atualizar (usar UPDATE do sql)
-    // 5- Retornar alguma coisa
