@@ -26,19 +26,20 @@ export const getSpecificProducts = (req: Request, res: Response) => {
 export const getProduct = (req: Request, res: Response) => {
     console.log('Executando getProduct()')
     const { slug, type } = req.params
-    const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type) as IGenericProduct | undefined;
+    const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type) as IGenericProduct
     
     if (!product) {
         return res.status(404).json({ error: 'Produto não encontrado' });
       }
-      // Separar as URLs das imagens
-    const imagesUrls = product.images ? product.images.split(',') : [];
+    
+    const imagesUrls = Array.isArray(product.images) 
+    ? product.images 
+    : product.images.split(',');
 
-    // Adicionar a propriedade "images" como um array de URLs
     const productWithImages = {
       ...product,
-      images: imagesUrls, // Substitui a string concatenada por um array de URLs
-    };
+      images: imagesUrls
+    }
 
     res.json(productWithImages)
 }
