@@ -3,7 +3,7 @@ import db from '../database'
 
 import { IGenericProduct } from '../types/generic_product'
 
-export const getProducts = (req: Request, res: Response) => {
+export const getAllProducts = (req: Request, res: Response) => {
     console.log('Executando getProducts()')
     const products = db.prepare('SELECT * FROM products').all()
     res.json(products)
