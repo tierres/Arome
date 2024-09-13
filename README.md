@@ -1,10 +1,13 @@
 # 🍵 Aromê
 
-<p>Um E-commerce de uma franquia focada em vender chás e infusões. <a href='https://arome.vercel.app/'>- Acesse a demo.</a> - projeto em desenvolvimento... 🚧</p> 
+<p>Aromê é um e-commerce especializado na venda de chás e infusões, que estou desenvolvendo de ponta a ponta — desde o frontend até o backend.
+
+🚧 Status: Projeto em desenvolvimento...
+<a href='https://arome.vercel.app/'>- Acesse a demo.</a></p> 
 
 ## 💡 Objetivo
 
-<p>Esse E-commerce está sendo produzido através desse <a href='https://www.figma.com/file/f3fkNm6wy74DNAVnucpb6TUD/site-arome?type=design&node-id=0%3A1&mode=design&t=HVve7kprLR3uc6fX-1'>projeto figma.</a> É o meu primeiro projeto grande e estou aprendendo diversas tecnologias desenvolvendo ele.</p>
+<p>Estou produzindo esse E-commerce através desse <a href='https://www.figma.com/file/f3fkNm6wy74DNAVnucpb6TUD/site-arome?type=design&node-id=0%3A1&mode=design&t=HVve7kprLR3uc6fX-1'>projeto figma</a> e utilizando tudo o que sei para fazer tanto o frontend quanto o backend.</p>
 
 
 ![Screenshot do e-commerce - 1](screenshots/screenshot_1.png)
