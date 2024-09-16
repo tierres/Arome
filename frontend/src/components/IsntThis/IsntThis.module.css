@@ -1,7 +1,48 @@
 .isntThisContainer {
-    background-color: #E9EAE9;
+    margin: 40px 0;
 }
 
 .sectionContainer {
+    background-color: #161616;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    max-width: 1256px;
+    height: auto;
+}
+
+.paragraphContainer {
+    color: white;
+    font-size: 32;
+}
+
+.imgAndButtonContainer {
+    display: flex;
+    
+    align-items: center;
+    position: relative; /* Permite o posicionamento absoluto dentro desta div */
+}
+
+.imgStyle {
+    
+}
+
+.buttonStyle {
+    background-color: #425B41;
+    color: white;
+    font-size: x-large;
+    font-family: "Josefin Sans", sans-serif;
+
+    border: none;
+    border-radius: 14px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    width: 238px;
+    height: 52px;
+
+    position: absolute; /* Faz o botão "flutuar" */
+    left: 70%; /* Centraliza horizontalmente, ajuste conforme necessário */
 }
