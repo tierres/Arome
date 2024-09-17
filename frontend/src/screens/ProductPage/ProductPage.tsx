@@ -41,7 +41,7 @@ export const ProductPage = ({productType, typeLabel, typeLink}:IProductPageProps
         <Navigation product={product} typeLabel={typeLabel} typeLink={typeLink} />
         <ProductCard product={product} />
         {productType === 'teas' ? <Prepare /> : null}
-        <IsntThis />
+        <IsntThis productType={productType} />
         <Footer />
     </div>
   );
