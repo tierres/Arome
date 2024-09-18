@@ -24,7 +24,7 @@ export const IsntThis = ({ productType }: IIsntThisProps) => {
                 <div className={classes.imgAndButtonContainer}>
                     <img src={productType === 'teas' ? IsntThisImgTea : IsntThisImgUtensil} alt="Aromê" className={classes.imgStyle}/>
                     <Link to={productType === 'teas' ? '/build-your' : '/utensils'} className={classes.linkStyle}>
-                        <button className={classes.buttonStyle}>Acesse &gt;</button>
+                        Acesse &gt;
                     </Link>
                 </div>
             </SectionContainer>

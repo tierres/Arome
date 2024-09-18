@@ -187,3 +187,9 @@
     width: 70px;
     height: 22px;
 }
+
+.aboutParagraphSkeleton {
+    background-color: #E9EAE9;
+    width: 433px;
+    height: 336px;
+}

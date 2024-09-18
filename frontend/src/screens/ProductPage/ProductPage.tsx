@@ -14,8 +14,12 @@ import './ProductPage.css'
 
 async function getProduct(slug: string, productType: string){
   let response = await fetch(`http://localhost:3000/api/products/${productType}/${slug}`, {method: "get"}) 
-  let data = await response.json() 
-  return data
+  console.log(response)
+  if(response.ok) {
+    let data = await response.json() 
+    return data
+  }
+  return null
 }
 
 interface IProductPageProps {
@@ -27,7 +31,7 @@ interface IProductPageProps {
 export const ProductPage = ({productType, typeLabel, typeLink}:IProductPageProps) => {
   const { slug } = useParams()
   const [product, setProduct] = useState<IGenericProduct>()
-
+  console.log(product)
   useEffect(() => {
     if (slug && productType)
     getProduct(slug, productType).then(data => {

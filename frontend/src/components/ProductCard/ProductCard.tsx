@@ -88,34 +88,30 @@ export const ProductCard = ({product} : IProductCardProps) => {
                             <p className={classes.price}>R$</p>
                             <div className={classes.priceSkeleton}></div>
                         </div>
-                        parei de fazer o skeleton aqui
                         <br />
                         <br />
                         <div className={classes.buttonsContainer}>
-                            <button className={classes.buttons}>
-                                Quantidade
-                                <img src='' />
-                            </button>
-                            <button className={classes.buttons}>
-                                Adicionar ao carrinho
-                                <img src='' />
+                            <div className={classes.quantityButton}>
+                                <button className={classes.plusAndMinusButtons}>
+                                    <strong>-</strong>
+                                </button>
+                                <p className={classes.quantityNumber}><strong>0</strong></p>
+                                <button className={classes.plusAndMinusButtons}>
+                                    <strong>+</strong>
+                                </button>
+                            </div>
+                            <button className={classes.addCartButton}>
+                            Adicionar ao carrinho
+                            <img src='' />
                             </button>
                         </div>
                         <div className={classes.aboutContainer}>
                             <hr />
                             <br />
-                            <h2 className={classes.aboutH2}>Sobre o chá </h2>
+                            <h2 className={classes.aboutH2}>Sobre </h2>
                             <br />
-                            <p className={classes.aboutParagraph}>
-                                Uma mescla redonda que combina o 
-                                sabor frutado do Rooibos africano, uma 
-                                infusão altamente mineralizante, que não 
-                                contém teína, com a carícia da baunilha, 
-                                casca de laranja, pétalas de rosa, de 
-                                marianinha e de girassol. Ideal para toda 
-                                a família a qualquer hora do dia. 
-                                Também disponível na base de Chá Preto, 
-                                Verde, Vermelho e Branco.
+                            <p className={classes.aboutParagraphSkeleton}>
+                                *produto não encontrado*
                             </p>
                         </div>
                     </div>
@@ -143,7 +139,7 @@ export const ProductCard = ({product} : IProductCardProps) => {
                         <div className={classes.aboutContainer}>
                             <hr />
                             <br />
-                            <h2 className={classes.aboutH2}>Sobre a {product.type === 'tea' ? product.name.slice(0, -3) : product.name}</h2>
+                            <h2 className={classes.aboutH2}>Sobre {product.short_name}</h2>
                             <br />
                             <p className={classes.aboutParagraph}>
                                 {product.description}

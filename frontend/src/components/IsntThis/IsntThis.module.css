@@ -29,7 +29,12 @@
     width: 261px;
 }
 
-.buttonStyle {
+.linkStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove o sublinhado */
+
     background-color: #425B41;
     color: white;
     font-size: x-large;
@@ -45,9 +50,5 @@
     height: 52px;
 
     position: absolute; /* Faz o botão "flutuar" */
-    left: 70%; /* Centraliza horizontalmente, ajuste conforme necessário */
-}
-
-.linkStyle {
-    display: flex;
+    left: 70%;
 }

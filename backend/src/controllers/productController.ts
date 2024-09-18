@@ -30,11 +30,15 @@ export const getProduct = (req: Request, res: Response) => {
     
     if (!product) {
         return res.status(404).json({ error: 'Produto não encontrado' });
-      }
+    }
+    
+    console.log({images: product.images})
     
     const imagesUrls = Array.isArray(product.images) 
-    ? product.images 
-    : product.images.split(',');
+        ? product.images 
+        : (product.images
+            ? product.images.split(',')
+            : [])
 
     const productWithImages = {
       ...product,
