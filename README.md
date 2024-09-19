@@ -15,14 +15,7 @@
 
  
 ## 🔧 Tecnologias empregadas
-### 💻 Website
-
-<ul>
- <li>Vite</li>
- <li>React</li>
-</ul>
-
-
+## 💻 Vite e React.JS
 
 ## 🎠 react-slick
 
