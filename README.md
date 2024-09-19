@@ -14,8 +14,10 @@
 ![Screenshot do e-commerce - 1](screenshots/screenshot_1.png)
 
  
-## 🔧 Tecnologias empregadas
+# 🔧 Tecnologias empregadas
 ## 💻 Vite e React.JS
+
+<p>Utilizei</p>
 
 ## 🎠 react-slick
 
