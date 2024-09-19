@@ -3,7 +3,8 @@
 <p>Aromê é um e-commerce especializado na venda de chás, infusões e utensílios relacionados, com a opção de um clube de assinatura exclusivo para os amantes de chá.
 
 🚧 Status: Projeto em desenvolvimento...
-<br/><a href='https://arome.vercel.app/'>🔗 Acesse a demo</a></p> 
+<br/>
+🔗 <a href='https://arome.vercel.app/'>Acesso a demo</a></p> 
 
 ## 💡 Objetivo
 
