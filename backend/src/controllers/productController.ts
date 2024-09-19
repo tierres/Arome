@@ -9,7 +9,7 @@ export const getAllProducts = (req: Request, res: Response) => {
     res.json(products)
 }
 
-export const getSpecificProducts = (req: Request, res: Response) => {
+export const getSpecificTypeProducts = (req: Request, res: Response) => {
     console.log('Executando getSpecificProducts()')
     const { type } = req.params
     const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE type = ?`).all(type)
@@ -23,7 +23,7 @@ export const getSpecificProducts = (req: Request, res: Response) => {
     res.json(productsWithImages)
 }
 
-export const getProduct = (req: Request, res: Response) => {
+export const getOneProduct = (req: Request, res: Response) => {
     console.log('Executando getProduct()')
     const { slug, type } = req.params
     const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type) as IGenericProduct

@@ -3,6 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer/SectionContainer'
 import { LittleProductCard } from '../shared/LittleProductCard/LittleProductCard';
 import LeftArrow from './vectors/left-arrow.svg'
 import RightArrow from './vectors/right-arrow.svg'
+
 import { IGenericProduct } from '@/types/generic_product';
 
 import { useEffect } from 'react';
@@ -10,17 +11,27 @@ import { useState } from 'react';
 
 import Slider from "react-slick";
 
-async function getProducts(){
-    let response = await fetch('http://localhost:3000/teas') 
-    let data = await response.json() 
-    return data;
+async function getSpecificProducts(productType: string) {
+    let response = await fetch(`http://localhost:3000/api/products/${productType}`, {method: "get"}) 
+    let data: IGenericProduct[] = await response.json() 
+    return data
+  }
+// ou
+async function getSpecificProssducts(slug: string, productType: string){
+    let response = await fetch(`http://localhost:3000/api/products/${productType}/${slug}`, {method: "get"}) 
+    console.log(response)
+    if(response.ok) {
+      let data = await response.json() 
+      return data
+    }
+    return null
   }
 
 export const HighlightedProducts = () => {
     const [products, setProducts] = useState<IGenericProduct[]>([])
 
     useEffect(() => {
-        getProducts().then(data => {
+        getSpecificProducts().then(data => {
             setProducts(data)
         })
     }, [])
