@@ -17,7 +17,8 @@
 # 🔧 Tecnologias empregadas
 ## 💻 Vite e React.JS
 
-<p>Utilizei</p>
+<p>Utilizei o Vite junto do React no meu projeto para otimizar o processo de desenvolvimento, aproveitando sua eficiência e inicialização extremamente rápida.</p>
+<p>Com o React, tenho o benefício da componentização, o que me permite reutilizar partes já programadas e realizar a manutenção do código de forma mais prática e eficiente.</p>
 
 ## 🎠 react-slick
 
@@ -25,7 +26,7 @@
 ![Screenshot do e-commerce - 2](screenshots/screenshot_2.png)
 
 
-<p>Utilizei a biblioteca <strong>react-slick</strong> para fazer o carrossel de produtos em destaque.</p>
+<p>Com a biblioteca <strong>react-slick</strong> montei o carrossel de produtos em destaque.</p>
 
 
 
@@ -35,7 +36,7 @@
 ![Screenshot do e-commerce - 3](screenshots/screenshot_3.png)
 
 
-<p>Fiz o formulário de inscrição no club utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
+<p>Fiz o formulário de inscrição no club de assinatura utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
 
 
 
