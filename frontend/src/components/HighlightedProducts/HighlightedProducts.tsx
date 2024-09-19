@@ -11,18 +11,13 @@ import { useState } from 'react';
 
 import Slider from "react-slick";
 
-async function getSpecificProducts(productType: string) {
-    let response = await fetch(`http://localhost:3000/api/products/${productType}`, {method: "get"}) 
-    let data: IGenericProduct[] = await response.json() 
-    return data
-  }
-// ou
-async function getSpecificProssducts(slug: string, productType: string){
-    let response = await fetch(`http://localhost:3000/api/products/${productType}/${slug}`, {method: "get"}) 
+async function getHighlightedProducts() {
+    let response = await fetch('http://localhost:3000/api/products', {method: "get"}) 
     console.log(response)
     if(response.ok) {
-      let data = await response.json() 
-      return data
+      let data: IGenericProduct[] = await response.json() 
+      let highlightedProducts = data.filter(product => product.relevance === 2)
+      return highlightedProducts
     }
     return null
   }
@@ -31,7 +26,7 @@ export const HighlightedProducts = () => {
     const [products, setProducts] = useState<IGenericProduct[]>([])
 
     useEffect(() => {
-        getSpecificProducts().then(data => {
+        getHighlightedProducts().then(data => {
             setProducts(data)
         })
     }, [])

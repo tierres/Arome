@@ -3,9 +3,9 @@ import { getAllProducts, getSpecificTypeProducts, getOneProduct, addProduct, upd
 
 const router = Router()
 
-router.get('/products', getAllProducts) // Essa rota NÃO retorna imagens
-router.get('/products/:type', getSpecificTypeProducts) // Essa rota retorna imagens
-router.get('/products/:type/:slug', getOneProduct) // Essa rota retorna imagens
+router.get('/products', getAllProducts)
+router.get('/products/:type', getSpecificTypeProducts) 
+router.get('/products/:type/:slug', getOneProduct)
 router.post('/products', addProduct)
 router.put('/products/:id', updateProduct)
 router.delete('/products/:id', deleteProduct)

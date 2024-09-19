@@ -4,15 +4,8 @@ import db from '../database'
 import { IGenericProduct } from '../types/generic_product'
 
 export const getAllProducts = (req: Request, res: Response) => {
-    console.log('Executando getProducts()')
-    const products = db.prepare('SELECT * FROM products').all()
-    res.json(products)
-}
-
-export const getSpecificTypeProducts = (req: Request, res: Response) => {
-    console.log('Executando getSpecificProducts()')
-    const { type } = req.params
-    const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE type = ?`).all(type)
+    console.log('Executando getAllProducts()')
+    const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p`).all()
     const productsWithImages = products.map((product: any) => {
         const imagesUrls = product.images ? product.images.split(',') : [];
         return {
@@ -23,8 +16,22 @@ export const getSpecificTypeProducts = (req: Request, res: Response) => {
     res.json(productsWithImages)
 }
 
+export const getSpecificTypeProducts = (req: Request, res: Response) => {
+    console.log('Executando getSpecificTypeProducts()')
+    const { type } = req.params
+    const products = db.prepare(`SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE type = ?`).all(type)
+    const productsWithImages = products.map((product: any) => {
+        const imagesUrls = product.images ? product.images.split(',') : [];
+        return {
+            ...product,
+            images: imagesUrls,
+        };
+    })
+    res.json(productsWithImages)
+}
+
 export const getOneProduct = (req: Request, res: Response) => {
-    console.log('Executando getProduct()')
+    console.log('Executando getOneProduct()')
     const { slug, type } = req.params
     const product = db.prepare('SELECT p.*, ( SELECT GROUP_CONCAT(i.url) FROM products_images i WHERE i.product_id = p.id) AS images FROM products p WHERE slug = ? AND type = ?').get(slug, type) as IGenericProduct
     
