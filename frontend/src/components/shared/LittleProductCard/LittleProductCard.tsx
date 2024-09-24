@@ -7,13 +7,12 @@ import { Link } from 'react-router-dom'
 
 interface ILittleProductCardProps {
     product: IGenericProduct
-    productType: string
 }
    
-export const LittleProductCard = ({product, productType}: ILittleProductCardProps) => {
+export const LittleProductCard = ({product}: ILittleProductCardProps) => {
     return(
         <div className={classes.littleProductCardContainer}>
-            <Link to={`/${productType}/${product.slug}`} className={classes.topSideLink}>
+            <Link to={`/${product.type}/${product.slug}`} className={classes.topSideLink}>
             <div className={classes.topside}>
                 <img className={classes.productImage} src={product.images[0]} />
                 <h2 className={classes.productName}>

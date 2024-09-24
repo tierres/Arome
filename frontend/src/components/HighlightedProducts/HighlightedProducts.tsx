@@ -16,7 +16,7 @@ async function getHighlightedProducts() {
     console.log(response)
     if(response.ok) {
       let data: IGenericProduct[] = await response.json() 
-      let highlightedProducts = data.filter(product => product.relevance === 2)
+      let highlightedProducts = data.filter(product => product.relevance > 1)
       return highlightedProducts
     }
     return null
@@ -27,7 +27,7 @@ export const HighlightedProducts = () => {
 
     useEffect(() => {
         getHighlightedProducts().then(data => {
-            setProducts(data)
+            setProducts(data ?? [])
         })
     }, [])
 
@@ -58,7 +58,6 @@ export const HighlightedProducts = () => {
                                 {products.map(product => (
                                         <LittleProductCard
                                             product={product}
-                                            productType="teas"
                                         />
                                 ))}
                         </Slider>
