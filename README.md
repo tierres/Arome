@@ -18,7 +18,7 @@
 
 <p>O meu projeto é divido em duas pastas principais: <strong>frontend</strong> e <strong>backend</strong>.</p>
 
-## Frontend:
+# Frontend:
 
 ![Screenshot do e-commerce - 4](readme_screenshots/screenshot_frontend.png)
 
@@ -26,17 +26,17 @@
 <p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
 <p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
 
-### Typescript
+## Typescript
 
 <p>Escrever sobre o TypeScript</p>
 scheenshot de exemplo do typescript
 
-### 💻 Vite e React.JS
+## 💻 Vite e React.JS
 
 <p>Utilizei o Vite junto do React no meu projeto para otimizar o processo de desenvolvimento, aproveitando sua eficiência e inicialização extremamente rápida.</p>
 <p>Com o React, tenho o benefício da componentização, o que me permite reutilizar partes já programadas e realizar a manutenção do código de forma mais prática e eficiente.</p>
 
-### 🎠 react-slick
+## 🎠 react-slick
 
 
 ![Screenshot do e-commerce - 2](readme_screenshots/screenshot_react-slick.png)
@@ -46,7 +46,7 @@ scheenshot de exemplo do typescript
 
 
 
-### 📋 react-hook-form com zod e zod resolver
+## 📋 react-hook-form com zod e zod resolver
 
 
 ![Screenshot do e-commerce - 3](readme_screenshots/screenshot_react-hook-form_zod_zod-resolver.png)
@@ -54,11 +54,11 @@ scheenshot de exemplo do typescript
 
 <p>Fiz o formulário de inscrição no club de assinatura utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
 
-### 🎨 CSS Modules
+## 🎨 CSS Modules
 
 <p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
 
-## Backend:
+# Backend:
 
 ![Screenshot do e-commerce - 5](readme_screenshots/screenshot_backend.png)
 
