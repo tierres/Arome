@@ -56,7 +56,12 @@
 
 ![Screenshot do e-commerce - 5](readme_screenshots/screenshot_backend.png)
 
-<p>Escreva aqui depois</p>
+<p>No <strong>backend</strong>, utilizei um banco de dados do tipo SQLite chamado <strong>arome.db</strong> e a seguinte estrutura de arquivos dentro da pasta <strong>src</strong>:</p> 
+<ul> 
+    <li><strong>server.ts</strong>: Arquivo responsável pela configuração e inicialização do servidor backend da Aromê, onde são definidas as configurações principais, como middleware, rotas e a conexão com o banco de dados, assegurando que a aplicação esteja pronta para atender às requisições dos usuários.</li> 
+    <li><strong>routes.ts</strong>: Neste arquivo, estão configuradas todas as rotas disponíveis para o backend, definindo as requisições HTTP que o servidor irá responder e as respectivas funções a serem executadas em cada uma delas. Isso garante uma estrutura organizada e fácil de manter para a manipulação de dados e interações com o cliente.</li> 
+    <li><strong>database.ts</strong>: Arquivo responsável pela configuração da conexão com o banco de dados SQLite, gerenciando as operações de leitura e escrita e garantindo a integridade dos dados armazenados.</li> <li><strong>productController.ts</strong>: Contém as funções que lidam com a lógica de negócios relacionada aos produtos, como a criação, atualização, deleção e recuperação de informações, servindo como intermediário entre as rotas e o banco de dados.</li> 
+</ul>
 
 ## 🎨 CSS Modules
 <p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
