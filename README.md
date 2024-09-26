@@ -14,7 +14,13 @@
 ![Screenshot do e-commerce - 1](readme_screenshots/screenshot_objetivo.png)
 
  
-# 🔧 Tecnologias empregadas
+# 🔧 Tecnologias empregadas e Estrutura dos arquivos 🧱
+
+Separar 'Tecnologias empregadas e Estrutura dos arquivos' em frontend e backend
+
+<p>Escrever sobre o TypeScript</p>
+scheenshot de exemplo do typescript
+
 ## 💻 Vite e React.JS
 
 <p>Utilizei o Vite junto do React no meu projeto para otimizar o processo de desenvolvimento, aproveitando sua eficiência e inicialização extremamente rápida.</p>
