@@ -16,17 +16,27 @@
  
 # 🔧 Tecnologias empregadas e Estrutura dos arquivos 🧱
 
-Separar 'Tecnologias empregadas e Estrutura dos arquivos' em frontend e backend
+<p>O meu projeto é divido em duas pastas principais: <strong>frontend</strong> e <strong>backend</strong>.</p>
+
+## Frontend:
+
+![Screenshot do e-commerce - 4](readme_screenshots/screenshot_frontend.png)
+
+<p>No <strong>frontend</strong>, organizei o projeto em pastas específicas para <strong>telas</strong> e <strong>componentes</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
+<p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
+<p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
+
+### Typescript
 
 <p>Escrever sobre o TypeScript</p>
 scheenshot de exemplo do typescript
 
-## 💻 Vite e React.JS
+### 💻 Vite e React.JS
 
 <p>Utilizei o Vite junto do React no meu projeto para otimizar o processo de desenvolvimento, aproveitando sua eficiência e inicialização extremamente rápida.</p>
 <p>Com o React, tenho o benefício da componentização, o que me permite reutilizar partes já programadas e realizar a manutenção do código de forma mais prática e eficiente.</p>
 
-## 🎠 react-slick
+### 🎠 react-slick
 
 
 ![Screenshot do e-commerce - 2](readme_screenshots/screenshot_react-slick.png)
@@ -36,7 +46,7 @@ scheenshot de exemplo do typescript
 
 
 
-## 📋 react-hook-form com zod e zod resolver
+### 📋 react-hook-form com zod e zod resolver
 
 
 ![Screenshot do e-commerce - 3](readme_screenshots/screenshot_react-hook-form_zod_zod-resolver.png)
@@ -44,21 +54,11 @@ scheenshot de exemplo do typescript
 
 <p>Fiz o formulário de inscrição no club de assinatura utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
 
+### 🎨 CSS Modules
 
+<p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
 
-## 🧱 Estrutura dos arquivos
-
-<p>O meu projeto é divido em duas pastas principais: <strong>backend</strong> e <strong>frontend</strong>.</p>
-
-### Frontend:
-
-![Screenshot do e-commerce - 4](readme_screenshots/screenshot_frontend.png)
-
-<p>No <strong>frontend</strong>, organizei o projeto em pastas específicas para <strong>telas</strong> e <strong>componentes</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
-<p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
-<p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
-
-### Backend:
+## Backend:
 
 ![Screenshot do e-commerce - 5](readme_screenshots/screenshot_backend.png)
 
@@ -68,9 +68,6 @@ scheenshot de exemplo do typescript
     <li><strong>routes.ts</strong>: Neste arquivo, estão configuradas todas as rotas disponíveis para o backend, definindo as requisições HTTP que o servidor irá responder e as respectivas funções a serem executadas em cada uma delas. Isso garante uma estrutura organizada e fácil de manter para a manipulação de dados e interações com o cliente.</li> 
     <li><strong>database.ts</strong>: Arquivo responsável pela configuração da conexão com o banco de dados SQLite, gerenciando as operações de leitura e escrita e garantindo a integridade dos dados armazenados.</li> <li><strong>productController.ts</strong>: Contém as funções que lidam com a lógica de negócios relacionada aos produtos, como a criação, atualização, deleção e recuperação de informações, servindo como intermediário entre as rotas e o banco de dados.</li> 
 </ul>
-
-## 🎨 CSS Modules
-<p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
 
 ## 🚧 Status do projeto
 ### Frontend: Em desenvolvimento...
