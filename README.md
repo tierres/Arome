@@ -56,9 +56,7 @@
 
 ![Screenshot do e-commerce - 5](readme_screenshots/screenshot_backend.png)
 
-
-
-
+<p>Escreva aqui</p>
 
 ## 🎨 CSS Modules
 <p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
