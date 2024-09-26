@@ -9,8 +9,8 @@ export const getAllProducts = (req: Request, res: Response) => {
     const productsWithImages = products.map((product: any) => {
         const imagesUrls = product.images ? product.images.split(',') : [];
         return {
-            ...product, // Spread operator to preserve existing product properties
-            images: imagesUrls, // Add the split image URLs array
+            ...product,
+            images: imagesUrls, 
         };
     })
     res.json(productsWithImages)
