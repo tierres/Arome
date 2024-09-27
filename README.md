@@ -14,7 +14,7 @@
 ![Screenshot do e-commerce - 1](readme_screenshots/screenshot_objetivo.png)
 
  
-# 🔧 Tecnologias empregadas e Estrutura dos arquivos 🧱
+# 🧱 Estrutura dos arquivos e Tecnologias empregadas 🔧 
 
 <p>O meu projeto é divido em duas pastas principais: <strong>frontend</strong> e <strong>backend</strong>.</p>
 
