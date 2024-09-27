@@ -53,8 +53,7 @@
 
 ## 🎨 CSS Modules
 
-![Screenshot do código - Exemplo de arquivo .module.css](readme_screenshots/screenshot_css-modules_1.png)
-![Screenshot do código - Exemplo de aplicação das classes de estilo](readme_screenshots/screenshot_css-modules_2.png)
+![Screenshot do código - Exemplo de uso de .module.css](readme_screenshots/screenshot_css-modules.png)
 
 <p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
 
