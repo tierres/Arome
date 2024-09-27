@@ -11,7 +11,12 @@
 <p>Estou programando este e-commerce com base em um <a href='https://www.figma.com/file/f3fkNm6wy74DNAVnucpb6TUD/site-arome?type=design&node-id=0%3A1&mode=design&t=HVve7kprLR3uc6fX-1'>projeto Figma</a>, com o objetivo de aplicar e expandir meus conhecimentos em frontend e backend. Esse trabalho me permite desenvolver uma solução fullstack completa, aprimorando minhas habilidades em todas as etapas da construção de uma plataforma.</p>
 
 
-![Screenshot do e-commerce - Página Inicial](readme_screenshots/screenshot_objetivo.png)
+![Screenshot do e-commerce - Página Inicial](readme_screenshots/screenshot_home.png)
+![Screenshot do e-commerce - Página de chás](readme_screenshots/screenshot_teas.png)
+![Screenshot do e-commerce - Página de um chá](readme_screenshots/screenshot_tea_page.png)
+![Screenshot do e-commerce - Página de utensílios](readme_screenshots/screenshot_utensils.png)
+![Screenshot do e-commerce - Página de um utensílio](readme_screenshots/screenshot_utensil_page.png)
+
 
  
 # 🧱 Estrutura dos arquivos e Tecnologias empregadas 🔧 
