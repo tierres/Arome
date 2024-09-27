@@ -26,16 +26,17 @@
 <p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
 <p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
 
-## 💻 Typescript
-
-![Screenshot do Typescript - 1](readme_screenshots/screenshot_typescript_1.png)
-
-<p>Escolhi usar TypeScript no projeto porque ele ajuda a evitar erros, mostrando problemas no código enquanto estou programando. Além disso, a tipagem torna o desenvolvimento mais organizado e facilita a manutenção do projeto no futuro. Ele também melhora o autocompletar, o que acelera o trabalho e torna o código mais claro e fácil de entender.</p>
-
 ## ⚡️ Vite e React.JS ⚛️
 
 <p>Utilizei o Vite junto do React no meu projeto para otimizar o processo de desenvolvimento, aproveitando sua eficiência e inicialização extremamente rápida.</p>
 <p>Com o React, tenho o benefício da componentização, o que me permite reutilizar partes já programadas e realizar a manutenção do código de forma mais prática e eficiente.</p>
+
+## 💻 Typescript
+
+![Screenshot do Typescript - 1](readme_screenshots/screenshot_typescript_1.png)
+![Screenshot do Typescript - 2](readme_screenshots/screenshot_typescript_2.png)
+
+<p>Escolhi usar TypeScript no projeto porque ele ajuda a evitar erros, mostrando problemas no código enquanto estou programando. Além disso, a tipagem torna o desenvolvimento mais organizado e facilita a manutenção do projeto no futuro. Ele também melhora o autocompletar, o que acelera o trabalho e torna o código mais claro e fácil de entender.</p>
 
 ## 🎠 react-slick
 
