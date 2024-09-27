@@ -47,7 +47,7 @@
 <p>O componente raíz da aplicação React é o <strong>App.tsx</strong>.</p>
 <p>Nele configurei todas as rotas do frontend através da biblioteca <strong>react-router-dom</strong>, onde cada rota renderiza uma 'screen' diferente.</p>
 
-![Screenshot das pastas 'screens' e 'components'](readme_screenshots/screenshot_screens_and_components.png)
+![Screenshot do componente ProductList](readme_screenshots/screenshot_ProductList.png)
 
 <p>Organizei o frontend em pastas específicas para <strong>telas</strong> e <strong>componentes</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
 <p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
