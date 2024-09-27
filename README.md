@@ -22,16 +22,36 @@
 
 # Frontend:
 
-![Screenshot das pastas do Frontend - 1](readme_screenshots/screenshot_frontend.png)
-
-<p>No <strong>frontend</strong>, organizei o projeto em pastas específicas para <strong>telas</strong> e <strong>componentes</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
-<p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
-<p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
+![Screenshot do arquivo index.html](readme_screenshots/screenshot_index-html.png)
 
 ## ⚡️ Vite e React.JS ⚛️
 
 <p>Utilizei o Vite junto do React no meu projeto para otimizar o processo de desenvolvimento, aproveitando sua eficiência e inicialização extremamente rápida.</p>
 <p>Com o React, tenho o benefício da componentização, o que me permite reutilizar partes já programadas e realizar a manutenção do código de forma mais prática e eficiente.</p>
+</br>
+<p>A aplicação React inicializa no arquivo <strong>main.tsx</strong>, renderizando o componente raiz e configurando a aplicação.</p>
+
+![Screenshot do arquivo main.tsx](readme_screenshots/screenshot_main-tsx.png)
+
+<p>Ainda nesse arquivo temos a importação de um arquivo CSS para estilização global da aplicação.</p>
+<p>O <stong>global.css</strong>:</p>
+
+![Screenshot do arquivo global.css](readme_screenshots/screenshot_global-css.png)
+
+<p>Nesse CSS está definido a fonte de todo o e-commerce e um <strong>Reset CSS</strong>, que nada mais é do que uma técnica ou conjunto de estilos CSS projetados para normalizar o estilo padrão dos elementos HTML em todos os navegadores da web.</p>
+
+## 🛣️ react-router-dom
+
+![Screenshot do arquivo App.tsx](readme_screenshots/screenshot_app-tsx.png)
+
+<p>O componente raíz da aplicação React é o <strong>App.tsx</strong>.</p>
+<p>Nele configurei todas as rotas do frontend através da biblioteca <strong>react-router-dom</strong>, onde cada rota renderiza uma 'screen' diferente.</p>
+
+![Screenshot das pastas do Frontend](readme_screenshots/screenshot_frontend.png)
+
+<p>Organizei o frontend em pastas específicas para <strong>telas</strong> e <strong>componentes</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
+<p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
+<p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
 
 ## 💻 Typescript
 
@@ -39,6 +59,8 @@
 ![Screenshot do Typescript - 2](readme_screenshots/screenshot_typescript_2.png)
 
 <p>Escolhi usar TypeScript no projeto porque ele ajuda a evitar erros, mostrando problemas no código enquanto estou programando. Além disso, a tipagem torna o desenvolvimento mais organizado e facilita a manutenção do projeto no futuro. Ele também melhora o autocompletar, o que acelera o trabalho e torna o código mais claro e fácil de entender.</p>
+
+
 
 ## 🎠 react-slick
 
