@@ -40,23 +40,21 @@
 
 ## 🎠 react-slick
 
-
 ![Screenshot do e-commerce - Carrossel de produtos em destaque](readme_screenshots/screenshot_react-slick_1.png)
 
 
 <p>Com a biblioteca <strong>react-slick</strong> montei o carrossel de produtos em destaque.</p>
 
-
-
 ## 📋 react-hook-form com zod e zod resolver
 
-
 ![Screenshot do e-commerce - Formulário](readme_screenshots/screenshot_react-hook-form_zod_zod-resolver.png)
-
 
 <p>Fiz o formulário de inscrição no club de assinatura utilizando <strong>react-hook-form</strong> e fiz a validação com <strong>zod</strong> e <strong>zod resolver</strong>.</p>
 
 ## 🎨 CSS Modules
+
+![Screenshot do código - Exemplo de arquivo .module.css](readme_screenshots/screenshot_css-modules_1.png)
+![Screenshot do código - Exemplo de aplicação das classes de estilo](readme_screenshots/screenshot_css-modules_2.png)
 
 <p>Todo o estilo do site é feito utilizando 'módulos CSS', que ajudam a evitar conflitos de estilos e facilitam a manutenção do código.</p>
 

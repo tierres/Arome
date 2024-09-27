@@ -14,8 +14,8 @@
 }
 
 .topSideLink {
-    color: inherit; /* Herda a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
+    color: inherit;
+    text-decoration: none;
 }
 
 .topside {
