@@ -16,9 +16,9 @@
 ![Screenshot do e-commerce - Página de um chá](readme_screenshots/screenshot_tea_page.png)
 ![Screenshot do e-commerce - Página de utensílios](readme_screenshots/screenshot_utensils.png)
 ![Screenshot do e-commerce - Página de um utensílio](readme_screenshots/screenshot_utensil_page.png)
+![Screenshot do e-commerce - Página de chás em tela pequena](readme_screenshots/screenshot_teas_small_screen.png)
 
 
- 
 # 🧱 Estrutura dos arquivos e Tecnologias empregadas 🔧 
 
 <p>Eu dividi o meu projeto em duas pastas principais: uma para o <strong>frontend</strong> e outra para o <strong>backend</strong>.</p>
