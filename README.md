@@ -16,7 +16,7 @@
  
 # 🧱 Estrutura dos arquivos e Tecnologias empregadas 🔧 
 
-<p>O meu projeto é divido em duas pastas principais: <strong>frontend</strong> e <strong>backend</strong>.</p>
+<p>Eu dividi o meu projeto em duas pastas principais: uma para o <strong>frontend</strong> e outra para o <strong>backend</strong>.</p>
 
 # Frontend:
 
