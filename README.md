@@ -41,7 +41,7 @@
 ## 🎠 react-slick
 
 
-![Screenshot do e-commerce - Carrossel de produtos em destaque](readme_screenshots/screenshot_react-slick.png)
+![Screenshot do e-commerce - Carrossel de produtos em destaque](readme_screenshots/screenshot_react-slick_1.png)
 
 
 <p>Com a biblioteca <strong>react-slick</strong> montei o carrossel de produtos em destaque.</p>
