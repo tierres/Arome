@@ -84,8 +84,6 @@
 
 # Backend:
 
-![Screenshot das pastas do Backend - 1](readme_screenshots/screenshot_backend.png)
-
 <p>No <strong>backend</strong>, utilizei um banco de dados do tipo SQLite chamado <strong>arome.db</strong> e a seguinte estrutura de arquivos dentro da pasta <strong>src</strong>:</p> 
 <ul> 
     <li><strong>server.ts</strong>: Arquivo responsável pela configuração e inicialização do servidor backend da Aromê, onde são definidas as configurações principais, como middleware, rotas e a conexão com o banco de dados, assegurando que a aplicação esteja pronta para atender às requisições dos usuários.</li> 
@@ -93,6 +91,38 @@
     <li><strong>database.ts</strong>: Arquivo responsável pela configuração da conexão com o banco de dados SQLite, gerenciando as operações de leitura e escrita e garantindo a integridade dos dados armazenados.</li> <li><strong>productController.ts</strong>: Contém as funções que lidam com a lógica de negócios relacionada aos produtos, como a criação, atualização, deleção e recuperação de informações, servindo como intermediário entre as rotas e o banco de dados.</li> 
 </ul>
 
+<p><strong>routes.ts</strong>:</p>
+
+![Screenshot routes.rs](readme_screenshots/screenshot_routes-ts.png)
+
+<p><strong>productController.ts</strong>:</p>
+
+![Screenshot productController.ts](readme_screenshots/screenshot_productController-ts.png)
+
+## 🐶 Bruno:
+
+![Screenshot Bruno - 1](readme_screenshots/screenshot_bruno.png)
+
+<p>Com o Bruno, realizo testes das rotas e controladores que programei.</p>
+
+## 🐝 Beekeeper:
+
+![Screenshot Beekeeper - products](readme_screenshots/screenshot_beekeeper_products.png)
+![Screenshot Beekeeper - products_images](readme_screenshots/screenshot_beekeeper_products_images.png)
+
+<p>Com o Beekeeper, consigo fazer alterações manuais no meu banco de dados.</p>
+
+## 📊 Banco de Dados:
+
+<p>Estou utilizando um banco de dados do tipo <strong>SQLite</strong> e o dividi da seguinte maneira:</p> 
+<ul> 
+    <li>Entidade <strong>products</strong>: Onde ficam todos os produtos da Aromê. Cada linha representa um produto, e as colunas dos produtos são: id, slug, type, sub-type, name, short_name, price, description e relevance.</li> <li>Entidade <strong>products_images</strong>: Optei por manter as imagens dos produtos em uma entidade separada. Nessa entidade, cada linha representa uma imagem, e as colunas são:</li> 
+    <ul> 
+        <li>product_id: ID do produto ao qual a imagem está associada.</li> <li>url: link do caminho da imagem.</li> 
+    </ul> 
+</ul> 
+
+<p>Apesar das imagens ficarem separadas, todas as rotas do tipo GET executam funções com um código SQL que retorna os dados do produto junto com a imagem.</p>
 
 ## 📚 Como usar
 
