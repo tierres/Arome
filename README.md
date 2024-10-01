@@ -124,6 +124,8 @@
 
 <p>Apesar das imagens ficarem separadas, todas as rotas do tipo GET executam funções com um código SQL que retorna os dados do produto junto com a imagem.</p>
 
+![Screenshot getAllProducts](readme_screenshots/screenshot_getAllProducts.png)
+
 ## 📚 Como usar
 
 ```
