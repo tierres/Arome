@@ -50,7 +50,7 @@
 ![Screenshot da screen Teas](readme_screenshots/screenshot_screen_Teas.png)
 ![Screenshot do componente ProductList](readme_screenshots/screenshot_ProductList.png)
 
-<p>Organizei o frontend em pastas específicas para <strong>telas</strong> e <strong>componentes</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
+<p>Organizei o frontend em pastas específicas para <strong>screens</strong> e <strong>components</strong>. Dentro da pasta de componentes, há uma subpasta <strong>shared</strong>, onde armazenei componentes reutilizáveis em várias telas.</p>
 <p>Cada componente possui um arquivo <strong>.tsx</strong>, um arquivo <strong>.module.css</strong>, e, quando necessário, uma pasta <strong>vectors</strong> para os vetores ou imagens.</p>
 <p>As telas são compostas por diversos componentes, com o <strong>Header</strong> e o <strong>Footer</strong> sempre posicionados como o primeiro e o último elementos, respectivamente.</p>
 
