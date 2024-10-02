@@ -46,7 +46,7 @@
 
 <p>O componente raíz da aplicação React é o <strong>App.tsx</strong>.</p>
 <p>Nele configurei todas as rotas do frontend através da biblioteca <strong>react-router-dom</strong>, onde cada rota renderiza uma 'screen' diferente.</p>
-<p>screen <strong>Teas</strong>:</p>
+<p>tela <strong>Teas</strong>:</p>
 
 ![Screenshot da screen Teas](readme_screenshots/screenshot_screen_Teas.png)
 
