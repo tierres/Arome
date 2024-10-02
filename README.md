@@ -135,15 +135,23 @@
 ## 📚 Como usar
 
 ```
-# Entre na pasta do projeto através de um console e digite o seguinte comando
+Para iniciar o Frontend entre na pasta 'arome/frontend' através de um console e digite o seguinte comando:
 
-$ npm run dev
+npm run dev 
+ou 
+yarn dev
 
-ou
+O servidor irá iniciar na porta 5173
+```
 
-$ yarn dev
+```
+Para iniciar o Backend entre na pasta 'arome/backend' através de um console e digite o seguinte comando:
 
-# O servidor irá iniciar na porta 5173
+npm run dev 
+ou 
+yarn dev
+
+O servidor irá iniciar na porta 3000
 ```
 
 <hr>
