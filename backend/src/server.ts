@@ -8,7 +8,13 @@ const PORT = process.env.PORT || 3000
 // Middleware para permitir JSON: Ele intercepta todas as requisições antes que cheguem às rotas, garantindo que o corpo da requisição esteja disponível em 'req.body' no formato de um objeto JS
 app.use(express.json())
 
-app.use(cors())
+const corsOptions = {
+    origin: 'https://arome.vercel.app', // Substitua pelo URL do seu frontend na Vercel
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
+    credentials: true, // Permite o envio de cookies, se necessário
+}
+
+app.use(cors(corsOptions))
 
 // Middleware/Rota para a raiz do site
 app.get('/', (req, res) => {

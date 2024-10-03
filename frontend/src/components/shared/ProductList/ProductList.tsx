@@ -6,9 +6,15 @@ import { useEffect, useState } from 'react';
 import { IGenericProduct } from '@/types/generic_product'
 
 async function getProducts(productType: string) {
-  let response = await fetch(`https://arome.onrender.com/products/${productType}`, {method: "get"}) 
-  let data: IGenericProduct[] = await response.json() 
-  return data
+  let response = await fetch(`https://arome.onrender.com/api/products/${productType}`, {method: "get"}) 
+
+  if (response.ok) {
+    let data: IGenericProduct[] = await response.json();
+    return data;  // Se a requisição foi bem-sucedida, converte a resposta para JSON e retorna os dados
+  } else {
+      console.error('Erro ao buscar os produtos:', response.statusText);
+      return []; // Se houve um erro, registra no console e retorna um array vazio
+    }
 }
 
 interface IProductListProps {
