@@ -13,7 +13,7 @@ import { IGenericProduct } from '@/types/generic_product'
 import './ProductPage.css'
 
 async function getProduct(slug: string, productType: string){
-  let response = await fetch(`http://localhost:3000/api/products/${productType}/${slug}`, {method: "get"}) 
+  let response = await fetch(`https://arome.onrender.com/api/products/${productType}/${slug}`, {method: "get"}) 
   console.log(response)
   if(response.ok) {
     let data = await response.json() 
