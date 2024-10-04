@@ -22,12 +22,13 @@ app.get('/', (req, res) => {
     res.send('API da Arome está rodando!')
 })
 
-// Middleware para usar as rotas configuradas no arquivo routes.ts sob o caminho base '/api'
-app.use('/api', routes)
-
 // Middleware para servir arquivos estáticos da pasta 'public'
 // Isso permite que você acesse arquivos da pasta public através da URL
-app.use('/public', express.static(path.join(__dirname, 'public'))); // Use a rota '/public' para acessar a pasta 'public'
+app.use('/public', express.static(path.join(__dirname, 'public'))); 
+// Use a rota '/public' para acessar a pasta 'public'
+
+// Middleware para usar as rotas configuradas no arquivo routes.ts sob o caminho base '/api'
+app.use('/api', routes)
 
 // Função responsável por iniciar o servidor web
 app.listen(PORT, () => {
