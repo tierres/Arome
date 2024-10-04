@@ -1,6 +1,7 @@
 import express, { Application, Request, Response } from "express"
 import cors from "cors"
 import routes from './routes'
+import path from 'path'
 
 const app: Application = express()
 const PORT = process.env.PORT || 3000
@@ -24,14 +25,14 @@ app.get('/', (req, res) => {
 // Middleware para usar as rotas configuradas no arquivo routes.ts sob o caminho base '/api'
 app.use('/api', routes)
 
-// Middleware para poder acessar qualquer arquivo da pasta 'public' através do cliente --> " http://localhost:3000/images/infusao-valeriana-garden.svg " por exemplo.
-app.use(express.static('public'))
+// Middleware para servir arquivos estáticos da pasta 'public'
+// Isso permite que você acesse arquivos da pasta public através da URL
+app.use('/public', express.static(path.join(__dirname, 'public'))); // Use a rota '/public' para acessar a pasta 'public'
 
-
-// Função responsável por iniciar o servidor web, permitindo que ele comece a ouvir conexões HTTP na porta especificada(nesse caso 3000)
+// Função responsável por iniciar o servidor web
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`)
-})
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
 
 
 
