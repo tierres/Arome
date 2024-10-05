@@ -12,7 +12,7 @@ import { useState } from 'react';
 import Slider from "react-slick";
 
 async function getHighlightedProducts() {
-    let response = await fetch('http://localhost:3000/api/products', {method: "get"}) 
+    let response = await fetch('https://arome.onrender.com/api/products', {method: "get"}) 
     console.log(response)
     if(response.ok) {
       let data: IGenericProduct[] = await response.json() 
