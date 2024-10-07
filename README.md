@@ -90,6 +90,16 @@
 
 ![Screenshot Backend](readme_screenshots/screenshot_backend.png)
 
+## 🟢 Node.Js
+
+<p>O Node.js me permitiu utilizar JavaScript/TypeScript no backend, facilitando a manutenção e garantindo a consistência do código, já que eu já estava familiarizado com essa linguagem.</p>
+
+## 📦 Express
+
+<p>O Express simplificou a criação de rotas e middlewares, permitindo desenvolver a API de forma rápida e eficiente, ideal para a estrutura do backend.</p>
+
+<hr>
+
 <p>No <strong>backend</strong>, utilizei um banco de dados do tipo SQLite chamado <strong>arome.db</strong> e a seguinte estrutura de arquivos dentro da pasta <strong>src</strong>:</p> 
 <ul> 
     <li><strong>server.ts</strong>: Arquivo responsável pela configuração e inicialização do servidor backend da Aromê, onde são definidas as configurações principais, como middleware, rotas e a conexão com o banco de dados, assegurando que a aplicação esteja pronta para atender às requisições dos usuários.</li> 
