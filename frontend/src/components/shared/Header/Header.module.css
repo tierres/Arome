@@ -31,10 +31,54 @@
     gap: 10px;
 }
 
-.buttons {
+.cartButton {
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+.searchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.userButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.menuButton {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sectionContainer {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .linksContainerItem {
+        display: none;
+    }
+
+    .cartButton {
+        display: none;
+    }
+
+    .userButton {
+        display: none;
+    }
+
+    .menuButton {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
