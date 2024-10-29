@@ -89,3 +89,41 @@
     color: #848484;
     padding: 20px 0;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .upSide {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    .upSideLeft {
+        margin-left: 0;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 81px;
+        height: 129px;
+    }
+
+    .upSideRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .upSideRight > * {
+        padding-bottom: 16px;
+      }
+
+    .logosContainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 16px;
+    }  
+}
+

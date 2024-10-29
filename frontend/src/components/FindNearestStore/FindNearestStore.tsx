@@ -14,7 +14,7 @@ export const FindNearestStore = () => {
                     </h1>
                 </div>
                 <div className={classes.storeImage}>
-                    <img src={storeImg} alt="" />
+                    <img className={classes.image} src={storeImg} alt="" />
                 </div>
             </SectionContainer>
         </div>

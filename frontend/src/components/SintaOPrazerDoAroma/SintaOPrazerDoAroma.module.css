@@ -10,17 +10,6 @@
     object-position: 50% 70%;
 }
 
-@media (max-width: 768px) {
-    .img {
-        width: 50%
-    }
+@media screen and (max-width: 768px) {
+   
 }
-
-
-
-
-
-
-
-
-/* Tierres Romig Griep */
