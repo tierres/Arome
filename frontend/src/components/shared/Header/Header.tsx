@@ -42,7 +42,7 @@ export const Header = () => {
       <SectionContainer className={classes.sectionContainer}>  
         <div className={classes.logoContainer}>
           <Link to='/'>
-            <img src={Logo} alt="Vector-Logo" />
+            <img className={classes.logoImg} src={Logo} alt="Vector-Logo" />
           </Link>
         </div>
       

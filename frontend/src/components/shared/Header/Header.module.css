@@ -83,4 +83,9 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
+
+    .logoImg {
+        width: 200px;
+        height: 50px;
+    }
 }
