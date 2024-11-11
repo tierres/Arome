@@ -58,6 +58,7 @@
 
 @media screen and (max-width: 768px) {
     .sectionContainer {
+        padding: 0 0;
         height: 100px;
         display: flex;
         justify-content: space-between;
