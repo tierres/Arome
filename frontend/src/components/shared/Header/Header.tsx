@@ -1,6 +1,7 @@
 import classes from './Header.module.css'
 
-import Logo from './vectors/logo.svg'
+import LogoDesktop from './vectors/logo_desktop.svg'
+import LogoMobile from './vectors/logo_mobile_aumentado.svg'
 import Cart from './vectors/cart.svg'
 import Lupa from './vectors/lupa.svg'
 import User from './vectors/user.svg'
@@ -42,7 +43,9 @@ export const Header = () => {
       <SectionContainer className={classes.sectionContainer}>  
         <div className={classes.logoContainer}>
           <Link to='/'>
-            <img className={classes.logoImg} src={Logo} alt="Vector-Logo" />
+            <img className={classes.logoImg} src={LogoMobile} srcSet={`${LogoDesktop} 768w, ${LogoMobile} 1200w`}
+  sizes="(max-width: 768px) 100vw, 50vw"
+  alt="Logo do site"/>
           </Link>
         </div>
       
