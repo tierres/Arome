@@ -5,12 +5,13 @@
 .sectionContainer {
     display: flex;
     flex-direction: column;
+    padding: 50px 50px;
 }
 
 
 .upSide {
     display: flex;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 
 .upSideLeft {

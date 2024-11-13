@@ -21,7 +21,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        padding-bottom: 45px;
+    }
+
     .video {
-        display: none;
+        width: 350px;
+        height: 200px;
     }
 }

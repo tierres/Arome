@@ -5,6 +5,12 @@
     padding: 0 64px;
 }
 
+@media screen and (max-width: 768px) {
+    .sectionContainer {
+        padding: 45px 64px;
+    }
+}
+
 /*
 Não é bom utilizar com o nosso componente SectionContainer:
 

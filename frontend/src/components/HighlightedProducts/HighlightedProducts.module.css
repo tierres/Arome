@@ -50,3 +50,9 @@
 .dots {
     bottom: -33px !important;
 }
+
+@media screen and (max-width: 768px) {
+    .tittle {
+        padding-bottom: 10px;
+    }
+}
