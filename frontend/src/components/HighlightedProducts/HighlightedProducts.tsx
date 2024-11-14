@@ -46,7 +46,16 @@ export const HighlightedProducts = () => {
             nextArrow: (
                     <img src={RightArrow} alt="" />
             ),
-            dotsClass: 'slick-dots ' + classes.dots
+            dotsClass: 'slick-dots ' + classes.dots,
+            responsive: [
+                {
+                  breakpoint: 768, // Para telas menores que 768px (como dispositivos móveis)
+                  settings: {
+                    slidesToShow: 1, // Mostra apenas 1 produto no mobile
+                    slidesToScroll: 1,
+                  },
+                },
+              ],
       };
 
     return(
