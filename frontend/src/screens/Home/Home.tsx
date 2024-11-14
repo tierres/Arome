@@ -12,8 +12,8 @@ export const Home = () => {
     <div className='homeScreen'>
       <Header/>
       <SintaOPrazerDoAroma/>
-      <LearnHowTo/>
       <HighlightedProducts/>
+      <LearnHowTo/>
       <FindNearestStore/>
       <Footer/>
     </div>
