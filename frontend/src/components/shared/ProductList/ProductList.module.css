@@ -53,3 +53,27 @@
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     justify-content: space-between; 
 }
+
+@media screen and (max-width: 768px) {
+    .sectionContainer {
+        padding: 0 10px;
+    }
+
+    .filtersContainer {
+        display: flex;
+        flex-wrap: wrap; /* Permite quebra de linha, necessário para mobile */
+        gap: 16px; /* Espaço entre os elementos */
+    }
+
+    .spanStyle {
+        order: 3;
+    }
+
+    .typeFilter {
+        order: 1;
+    }
+
+    .orderFilter {
+        order: 2
+    }
+}
