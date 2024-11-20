@@ -49,7 +49,7 @@ export const HighlightedProducts = () => {
             dotsClass: 'slick-dots ' + classes.dots,
             responsive: [
                 {
-                  breakpoint: 768, // Para telas menores que 768px (como dispositivos móveis)
+                  breakpoint: 768, // Para telas menores que 768px
                   settings: {
                     slidesToShow: 1, // Mostra apenas 1 produto no mobile
                     slidesToScroll: 1,
