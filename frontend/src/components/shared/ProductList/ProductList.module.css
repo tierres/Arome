@@ -70,6 +70,8 @@
 
     .spanStyle {
         order: 3;
+        align-self: center; 
+        padding-top: 5px;
     }
 
     .typeFilter {
