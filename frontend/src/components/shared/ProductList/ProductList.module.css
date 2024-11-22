@@ -63,6 +63,9 @@
         display: flex;
         flex-wrap: wrap; /* Permite quebra de linha, necessário para mobile */
         gap: 16px; /* Espaço entre os elementos */
+        flex-direction: column;
+        align-items: flex-end;
+        height: 150px;
     }
 
     .spanStyle {
