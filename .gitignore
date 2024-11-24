@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 *.DS_Store
+
+# Ignorar arquivos .env locais não rastreados
+.env.local

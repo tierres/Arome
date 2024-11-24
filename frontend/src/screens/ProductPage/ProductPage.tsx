@@ -12,15 +12,36 @@ import { IGenericProduct } from '@/types/generic_product'
 
 import './ProductPage.css'
 
-async function getProduct(slug: string, productType: string){
-  let response = await fetch(`https://arome.onrender.com/api/products/${productType}/${slug}`, {method: "get"}) 
-  console.log(response)
-  if(response.ok) {
-    let data = await response.json() 
-    return data
+// async function getProduct(slug: string, productType: string){
+//   let response = await fetch(`https://arome.onrender.com/api/products/${productType}/${slug}`, {method: "get"}) 
+//   console.log(response)
+//   if(response.ok) {
+//     let data = await response.json() 
+//     return data
+//   }
+//   return null
+// }
+
+async function getProduct(slug: string, productType: string) {
+  const baseUrl = import.meta.env.VITE_API_URL; // Captura a URL do ambiente
+  if (!baseUrl) {
+    throw new Error("A variável de ambiente VITE_API_URL não está configurada!");
   }
-  return null
+
+  const response = await fetch(`${baseUrl}/products/${productType}/${slug}`, {
+    method: "GET",
+  });
+  
+  console.log(response);
+
+  if (response.ok) {
+    const data = await response.json();
+    return data;
+  }
+
+  return null;
 }
+
 
 interface IProductPageProps {
   productType: string
