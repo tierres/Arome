@@ -28,20 +28,30 @@ async function getProduct(slug: string, productType: string) {
     throw new Error("A variável de ambiente VITE_API_URL não está configurada!");
   }
 
-  const response = await fetch(`${baseUrl}/products/${productType}/${slug}`, {
-    method: "GET",
-  });
-  
-  console.log(response);
+  // Requisição à API ou ao arquivo estático
+  const response = await fetch(
+    baseUrl.includes("products.json") // Verifica se está acessando o arquivo local
+      ? baseUrl
+      : `${baseUrl}/${productType}/${slug}`, // Caso seja a API no Render
+    { method: "GET" }
+  );
 
   if (response.ok) {
     const data = await response.json();
+
+    // Se for local (products.json), filtra no frontend
+    if (baseUrl.includes("products.json")) {
+      return data.find(
+        (p: any) => p.slug === slug && p.type === productType
+      ) || null;
+    }
+
+    // Se for o backend, o dado já vem filtrado
     return data;
   }
 
   return null;
 }
-
 
 interface IProductPageProps {
   productType: string
@@ -52,7 +62,9 @@ interface IProductPageProps {
 export const ProductPage = ({productType, typeLabel, typeLink}:IProductPageProps) => {
   const { slug } = useParams()
   const [product, setProduct] = useState<IGenericProduct>()
+
   console.log(product)
+
   useEffect(() => {
     if (slug && productType)
     getProduct(slug, productType).then(data => {
