@@ -5,17 +5,48 @@ import { useEffect, useState } from 'react';
 
 import { IGenericProduct } from '@/types/generic_product'
 
+// async function getProducts(productType: string) {
+//   let response = await fetch(`https://arome.onrender.com/api/products/${productType}`, {method: "get"}) 
+
+//   if (response.ok) {
+//     let data: IGenericProduct[] = await response.json();
+//     return data;  // Se a requisição foi bem-sucedida, converte a resposta para JSON e retorna os dados
+//   } else {
+//       console.error('Erro ao buscar os produtos:', response.statusText);
+//       return []; // Se houve um erro, registra no console e retorna um array vazio
+//     }
+// }
+
 async function getProducts(productType: string) {
-  let response = await fetch(`https://arome.onrender.com/api/products/${productType}`, {method: "get"}) 
+  const baseUrl = import.meta.env.VITE_API_URL; // Captura a URL do ambiente
+  if (!baseUrl) {
+    throw new Error("A variável de ambiente VITE_API_URL não está configurada!");
+  }
+
+  // Requisição à API ou ao arquivo estático
+  const response = await fetch(
+    baseUrl.includes("products.json") // Verifica se está acessando o arquivo local
+      ? baseUrl
+      : `${baseUrl}/${productType}`, // Caso seja a API no Render
+    { method: "GET" }
+  );
 
   if (response.ok) {
-    let data: IGenericProduct[] = await response.json();
-    return data;  // Se a requisição foi bem-sucedida, converte a resposta para JSON e retorna os dados
-  } else {
-      console.error('Erro ao buscar os produtos:', response.statusText);
-      return []; // Se houve um erro, registra no console e retorna um array vazio
+    const data: IGenericProduct[] = await response.json();
+
+    // Se for local (products.json), filtra no frontend
+    if (baseUrl.includes("products.json")) {
+      return data.filter((p: any) => p.type === productType);
     }
+
+    // Se for o backend, os dados já vêm filtrados
+    return data;
+  }
+
+  console.error("Erro ao buscar os produtos:", response.statusText);
+  return []; // Retorna um array vazio em caso de erro
 }
+
 
 interface IProductListProps {
   productType: string

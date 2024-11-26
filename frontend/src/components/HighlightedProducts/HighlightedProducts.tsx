@@ -11,16 +11,39 @@ import { useState } from 'react';
 
 import Slider from "react-slick";
 
+// async function getHighlightedProducts() {
+//     let response = await fetch('https://arome.onrender.com/api/products', {method: "get"}) 
+//     console.log(response)
+//     if(response.ok) {
+//       let data: IGenericProduct[] = await response.json() 
+//       let highlightedProducts = data.filter(product => product.relevance > 1)
+//       return highlightedProducts
+//     }
+//     return null
+//   }
+
 async function getHighlightedProducts() {
-    let response = await fetch('https://arome.onrender.com/api/products', {method: "get"}) 
-    console.log(response)
-    if(response.ok) {
-      let data: IGenericProduct[] = await response.json() 
-      let highlightedProducts = data.filter(product => product.relevance > 1)
-      return highlightedProducts
-    }
-    return null
+  const baseUrl = import.meta.env.VITE_API_URL; // Captura a URL do ambiente
+  if (!baseUrl) {
+    throw new Error("A variável de ambiente VITE_API_URL não está configurada!");
   }
+
+  // Requisição à API ou ao arquivo estático
+  const response = await fetch(baseUrl, { method: "GET" });
+
+  if (response.ok) {
+    const data: IGenericProduct[] = await response.json();
+
+    // Se for local (products.json), processa os produtos diretamente
+    const highlightedProducts = data.filter(product => product.relevance > 1);
+
+    return highlightedProducts;
+  }
+
+  console.error("Erro ao buscar os produtos destacados:", response.statusText);
+  return null;
+}
+
 
 export const HighlightedProducts = () => {
     const [products, setProducts] = useState<IGenericProduct[]>([])
