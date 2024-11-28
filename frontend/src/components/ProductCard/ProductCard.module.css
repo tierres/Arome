@@ -150,6 +150,16 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .mediaAndInfosContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    
+}
+
 /* ---------- Skeleton ------------------ */
 
 .navSkeleton {
