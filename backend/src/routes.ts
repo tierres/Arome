@@ -13,3 +13,5 @@ router.delete('/products/:id', deleteProduct)
 
 export default router
 export { router }
+
+// Tierres Griep
