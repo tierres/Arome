@@ -52,3 +52,19 @@
     position: absolute; /* Faz o botão "flutuar" */
     left: 70%;
 }
+
+@media screen and (max-width: 768px) {
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgStyle {
+        /* height: 333px;
+        width: 414px; */
+    }
+
+    .linkStyle {
+        left: 0%;
+    }
+}
