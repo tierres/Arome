@@ -60,11 +60,11 @@
     }
 
     .imgStyle {
-        /* height: 333px;
-        width: 414px; */
+        height: 333px;
+        width: 414px;
     }
 
     .linkStyle {
-        left: 0%;
+        left: 20%;
     }
 }

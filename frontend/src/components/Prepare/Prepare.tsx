@@ -11,7 +11,7 @@ import SunAndIce from './vectors/sun-ice.svg'
 export const Prepare = () => {
     return(
         <div className={classes.prepareContainer}>
-            <SectionContainer>
+            <SectionContainer className={classes.sectionContainer}>
                 <h1 className={classes.prepareTittle}>PREPARO</h1>
                 <div className={classes.prepareSteps}>
                     <div className={classes.step}>
