@@ -54,14 +54,24 @@
 }
 
 @media screen and (max-width: 768px) {
+    .isntThisContainer {
+        margin: 0;
+    }
+
     .sectionContainer {
         display: flex;
         flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .paragraphContainer {
+        text-align: center;
+        padding-bottom: 10px;
     }
 
     .imgStyle {
-        height: 333px;
-        width: 414px;
+        height: 359px;
+        width: 440px;
     }
 
     .linkStyle {
