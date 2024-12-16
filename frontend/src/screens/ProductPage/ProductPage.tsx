@@ -72,11 +72,6 @@ export const ProductPage = ({productType, typeLabel, typeLink}:IProductPageProps
     })
 }, [slug, productType])
 
-  // Adiciona o efeito para rolar para o topo
-  useEffect(() => {
-    window.scrollTo(0, 0); // Rola a página para o topo
-  }, []); // Executa apenas na montagem do componente
-
   return (
     <div className='productDetailsScreen'>
         <Header />

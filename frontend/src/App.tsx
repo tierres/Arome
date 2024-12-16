@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import { Home } from './screens/Home/Home'
 import { BecomeAMember } from './screens/BecomeAMember/BecomeAMember';
@@ -10,11 +10,27 @@ import { Utensils } from './screens/Utensils/Utensils';
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { useEffect } from 'react';
+
+const Scroller = () => {
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: 0,
+      left: 0
+    });
+  }, [pathname]);
+
+  return null
+}
 
 export const App = () => {
   return (
     <div>
       <Router>
+        <Scroller></Scroller>
         <Routes>
           <Route path="/" element={(<Home />)} />
           <Route path='/become-a-member' element={(<BecomeAMember />)} />
