@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.linksContainerItem {
+.spanStyle {
     text-decoration: none;
     font-size: 18px;
     font-weight: regular;
@@ -71,14 +71,6 @@
 
     .userButton {
         display: none;
-    }
-
-    .menuButton {
-        display: block;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
     }
 
     .logoImg {

@@ -5,37 +5,14 @@ import LogoMobile from './vectors/logo_mobile.svg'
 import Cart from './vectors/cart.svg'
 import Lupa from './vectors/lupa.svg'
 import User from './vectors/user.svg'
-import Menu from './vectors/menu.svg'
 
 import { SectionContainer } from '../SectionContainer/SectionContainer'
 
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { CustomLink } from '../CustomLink/CustomLink'
 
-interface ICustomLink {
-  to: string
-  children: string
-}
+import { Menu } from '../../Menu/Menu'
 
-const CustomLink = (params: ICustomLink) => {
-  return (
-    <NavLink
-      className={({ isActive }) => classes.linksContainerItem + ' ' + (isActive ? classes.activeLink : "")}
-      // a linha 20 é igual a isso:
-
-      // className={function (navLinksParams) {
-      //   const isActive = navLinksParams.isActive
-      //        ou
-      //   const { isActive: possoEscolherONome } = navLinksParams
-
-      //   if (isActive === true) return classes.activeLink
-      //   else return ''
-      // }}
-      to={params.to}
-    >
-      {params.children}
-    </NavLink>
-  );
-};
 
 export const Header = () => {
   return(
@@ -56,13 +33,13 @@ export const Header = () => {
         <div className={classes.linksContainer}>
           <nav>
             <CustomLink to='/about'>SAIBA MAIS</CustomLink>
-            <span className={classes.linksContainerItem}>•</span>
+            <span className={classes.spanStyle}>•</span>
             <CustomLink to='/teas'>CHÁS</CustomLink>
-            <span className={classes.linksContainerItem}>•</span>
+            <span className={classes.spanStyle}>•</span>
             <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>
-            <span className={classes.linksContainerItem}>•</span>
+            <span className={classes.spanStyle}>•</span>
             <CustomLink to='/build-your'>MONTE O SEU</CustomLink>
-            <span className={classes.linksContainerItem}>•</span>
+            <span className={classes.spanStyle}>•</span>
             <CustomLink to='/become-a-member'>AROME CLUB</CustomLink>
           </nav>
         </div>
@@ -77,9 +54,7 @@ export const Header = () => {
           <button className={classes.userButton}>
             <img src={User} alt="Botão Painel de Usuário" />
           </button>
-          <button className={classes.menuButton}>
-            <img src={Menu} alt="Botão Menu" />
-          </button>
+          <Menu />
         </div>
       </SectionContainer>
     </header>

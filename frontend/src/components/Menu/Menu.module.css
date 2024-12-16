@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+    .menuButton {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .menuStyle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 75vw;
+        height: 100vh;
+        background-color: red;
+    
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: regular;
+        color: #000000;
+    
+        display: inline-block;
+        margin-right: 15px;
+        height: 25px;
+    }
+
+    .spanStyle {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: regular;
+        margin-right: 15px;
+        color: #000000;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .activeLink {
+        border: 1px solid black;
+        border-radius: 14px;
+        padding: 4px;
+    }
+}
