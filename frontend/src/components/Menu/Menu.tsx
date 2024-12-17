@@ -12,6 +12,8 @@ export const Menu = () => {
 
             {isOpen && (
                 <div className={classes.menuStyle}>
+                    
+
                     <nav className={classes.navStyle}>
                         <CustomLink to='/about'>SAIBA MAIS</CustomLink>        
                         <CustomLink to='/teas'>CHÁS</CustomLink>            
