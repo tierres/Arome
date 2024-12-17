@@ -3,20 +3,33 @@
 }
 
 .sectionContainer {
+    display: flex;
     height: 133px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logoContainer {
+    flex: 1;
+}
+
+.linksContainer {
+    flex: 2;
+}
+
+.navLinksContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .linkStyle {
     text-decoration: none;
     font-size: 18px;
-    font-weight: regular;
-    margin-right: 15px !important;
     color: #000000;
     height: 25px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .activeLink {
@@ -26,9 +39,11 @@
 }
 
 .iconsLinksContainer {
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    width: 250px;
 }
 
 .cartButton {

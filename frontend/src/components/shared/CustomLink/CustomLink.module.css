@@ -1,6 +1,7 @@
 .linkStyle {
     text-decoration: none;
     color: #000000;
+    /* padding-right: 15px; */
 }
 
 .activeLink {

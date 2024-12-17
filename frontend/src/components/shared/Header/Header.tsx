@@ -31,7 +31,7 @@ export const Header = () => {
         </div>
       
         <div className={classes.linksContainer}>
-          <nav>
+          <nav className={classes.navLinksContainer}>
             <CustomLink className={classes.linkStyle} to='/about'>SAIBA MAIS</CustomLink>
             <span className={classes.linkStyle}>•</span>
             <CustomLink className={classes.linkStyle} to='/teas'>CHÁS</CustomLink>
