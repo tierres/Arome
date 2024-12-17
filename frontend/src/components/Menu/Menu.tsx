@@ -12,15 +12,11 @@ export const Menu = () => {
 
             {isOpen && (
                 <div className={classes.menuStyle}>
-                    <nav>
-                        <CustomLink to='/about'>SAIBA MAIS</CustomLink>
-                        <span className={classes.spanStyle}>•</span>
-                        <CustomLink to='/teas'>CHÁS</CustomLink>
-                        <span className={classes.spanStyle}>•</span>
-                        <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>
-                        <span className={classes.spanStyle}>•</span>
-                        <CustomLink to='/build-your'>MONTE O SEU</CustomLink>
-                        <span className={classes.spanStyle}>•</span>
+                    <nav className={classes.navStyle}>
+                        <CustomLink to='/about'>SAIBA MAIS</CustomLink>        
+                        <CustomLink to='/teas'>CHÁS</CustomLink>            
+                        <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>  
+                        <CustomLink to='/build-your'>MONTE O SEU</CustomLink>         
                         <CustomLink to='/become-a-member'>AROME CLUB</CustomLink>
                     </nav>
                 </div>

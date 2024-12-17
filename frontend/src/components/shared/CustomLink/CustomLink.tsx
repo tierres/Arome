@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import classes from './CustomLink.module.css'
 
 interface ICustomLink {
+    className?: string
     to: string
     children: string
   }

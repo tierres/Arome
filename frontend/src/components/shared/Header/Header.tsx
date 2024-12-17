@@ -32,15 +32,15 @@ export const Header = () => {
       
         <div className={classes.linksContainer}>
           <nav>
-            <CustomLink to='/about'>SAIBA MAIS</CustomLink>
-            <span className={classes.spanStyle}>•</span>
-            <CustomLink to='/teas'>CHÁS</CustomLink>
-            <span className={classes.spanStyle}>•</span>
-            <CustomLink to='/utensils'>UTENSÍLIOS</CustomLink>
-            <span className={classes.spanStyle}>•</span>
-            <CustomLink to='/build-your'>MONTE O SEU</CustomLink>
-            <span className={classes.spanStyle}>•</span>
-            <CustomLink to='/become-a-member'>AROME CLUB</CustomLink>
+            <CustomLink className={classes.linkStyle} to='/about'>SAIBA MAIS</CustomLink>
+            <span className={classes.linkStyle}>•</span>
+            <CustomLink className={classes.linkStyle} to='/teas'>CHÁS</CustomLink>
+            <span className={classes.linkStyle}>•</span>
+            <CustomLink className={classes.linkStyle} to='/utensils'>UTENSÍLIOS</CustomLink>
+            <span className={classes.linkStyle}>•</span>
+            <CustomLink className={classes.linkStyle} to='/build-your'>MONTE O SEU</CustomLink>
+            <span className={classes.linkStyle}>•</span>
+            <CustomLink className={classes.linkStyle} to='/become-a-member'>AROME CLUB</CustomLink>
           </nav>
         </div>
 

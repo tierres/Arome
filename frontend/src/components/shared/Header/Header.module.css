@@ -9,11 +9,11 @@
     align-items: center;
 }
 
-.spanStyle {
+.linkStyle {
     text-decoration: none;
     font-size: 18px;
     font-weight: regular;
-    margin-right: 15px;
+    margin-right: 15px !important;
     color: #000000;
     height: 25px;
     display: inline-block;
@@ -65,7 +65,7 @@
         align-items: center;
     }
 
-    .linksContainerItem {
+    .linksContainer {
         display: none;
     }
 

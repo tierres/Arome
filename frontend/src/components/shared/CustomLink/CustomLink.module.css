@@ -1,11 +1,6 @@
 .linkStyle {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: regular;
-    margin-right: 15px;
     color: #000000;
-    height: 25px;
-    display: inline-block;
 }
 
 .activeLink {
