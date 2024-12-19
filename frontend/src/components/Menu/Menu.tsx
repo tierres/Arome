@@ -1,7 +1,10 @@
 import classes from './Menu.module.css'
 import MenuIcon from './vectors/menu_icon.svg'
+import Logo from './vectors/logo_full.svg'
 import { CustomLink } from '../shared/CustomLink/CustomLink'
 import { useState } from "react"
+
+import { Link } from 'react-router-dom'
 
 export const Menu = () => {
     const [isOpen, setOpen] = useState(false)
@@ -12,7 +15,16 @@ export const Menu = () => {
 
             {isOpen && (
                 <div className={classes.menuStyle}>
-                    
+                    <div className={classes.logoContainer}>
+                        <Link to='/'>
+                            <picture>
+                                <img 
+                                    className={classes.logoImg} 
+                                    src={Logo} 
+                                    alt="Logo do site"/>
+                            </picture>
+                        </Link>
+                    </div>
 
                     <nav className={classes.navStyle}>
                         <CustomLink to='/about'>SAIBA MAIS</CustomLink>        

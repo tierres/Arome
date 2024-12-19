@@ -21,6 +21,7 @@
 .navLinksContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -28,7 +29,6 @@
     text-decoration: none;
     font-size: 18px;
     color: #000000;
-    height: 25px;
     /* display: inline-block; */
 }
 
