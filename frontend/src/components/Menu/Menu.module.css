@@ -21,13 +21,22 @@
         background-color: #cacaca;
     }
 
+    .logoContainer {
+        padding: 15px;
+    }
+
+    .logoImg {
+        width: 80%;
+    }
+
     .navStyle {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         font-size: 25px;
-        font-weight: regular;
         color: #000000;
+        justify-content: space-around;
+        padding-top: 20px;
     }
     
     .activeLink {

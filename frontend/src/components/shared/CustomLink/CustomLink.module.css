@@ -9,3 +9,9 @@
     border-radius: 14px;
     padding: 4px;
 }
+
+@media screen and (max-width: 768px) {
+    .linkStyle {
+        padding-bottom: 20px;
+    }
+}
