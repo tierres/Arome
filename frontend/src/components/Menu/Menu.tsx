@@ -1,6 +1,7 @@
 import classes from './Menu.module.css'
 import MenuIcon from './vectors/menu_icon.svg'
 import Logo from './vectors/logo_full.svg'
+import closeIcon from './vectors/close.svg'
 import { CustomLink } from '../shared/CustomLink/CustomLink'
 import { useState } from "react"
 
@@ -15,16 +16,25 @@ export const Menu = () => {
 
             {isOpen && (
                 <div className={classes.menuStyle}>
-                    <div className={classes.logoContainer}>
-                        <Link to='/'>
-                            <picture>
-                                <img 
-                                    className={classes.logoImg} 
-                                    src={Logo} 
-                                    alt="Logo do site"/>
-                            </picture>
-                        </Link>
+                    <div className={classes.upSideContainer}>
+                        <div className={classes.logoContainer}>
+                            <Link to='/'>
+                                <picture>
+                                    <img 
+                                        className={classes.logoImg} 
+                                        src={Logo} 
+                                        alt="Logo do site"/>
+                                </picture>
+                            </Link>
+                        </div>
+                        <div className={classes.closeContainer}>
+                            <button className={classes.closeButton}>
+                                <img className={classes.closeImage} src={closeIcon} alt="" />
+                            </button>
+                        </div>
                     </div>
+
+                    <div className={classes.hrStyle}></div>
 
                     <nav className={classes.navStyle}>
                         <CustomLink to='/about'>SAIBA MAIS</CustomLink>        
