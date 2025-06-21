@@ -18,7 +18,6 @@ export const signup = (req: Request, res: Response) => {
         if (existingUser) {
             return res.status(409).json({ error: 'E-mail já cadastrado'})
         }
-    }
 
     const hashedPassword = bcrypt.hashSync(password, 10);
 
@@ -29,7 +28,8 @@ export const signup = (req: Request, res: Response) => {
         stmt.run(name, email, hashedPassword, role)
 
         return res.status(201).json({ message: 'Usuário cadastrado com sucesso'})
-}       catch (error) {
+    }       catch (error) {
         console.error('Erro ao cadastrar usuário', error);
-        return resizeBy.status(500).json({ error: 'Erro interno no servidor' })
+        return res.status(500).json({ error: 'Erro interno no servidor' })
+    }
 }
